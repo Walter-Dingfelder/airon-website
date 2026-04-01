@@ -1,0 +1,103 @@
+/* src/styles/globals.css */
+
+@import "./tokens.css";
+@import "./layout.css";
+@import "./shell.css";
+@import "./components.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--body);
+  line-height: var(--line-body);
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(126, 195, 255, 0.08), transparent 28%),
+    linear-gradient(180deg, #0a0e14 0%, #0d1117 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent-2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 var(--space-4);
+  color: var(--text-soft);
+}
+
+ul,
+ol {
+  margin: 0 0 var(--space-4);
+  padding-left: 1.2rem;
+  color: var(--text-soft);
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 var(--space-4);
+  line-height: var(--line-tight);
+  color: var(--text);
+  font-family: var(--font-heading);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+strong {
+  color: var(--text);
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+}

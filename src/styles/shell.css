@@ -1,0 +1,157 @@
+/* src/styles/shell.css */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(16px);
+  background: rgba(10, 14, 20, 0.86);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-inner {
+  min-height: 84px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: max-content;
+}
+
+.brand-name {
+  color: var(--text);
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.08em;
+}
+
+.brand-support {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.site-nav {
+  justify-self: center;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--text-soft);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.18s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text);
+}
+
+.header-cta {
+  justify-self: end;
+}
+
+.site-footer {
+  margin-top: var(--space-8);
+  padding: var(--space-8) 0 var(--space-7);
+  background: linear-gradient(180deg, rgba(8, 12, 18, 0.4), rgba(8, 12, 18, 0.85));
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-inner {
+  display: grid;
+  gap: var(--space-7);
+}
+
+.footer-brand {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer-brand-name {
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.footer-brand-support {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.footer-grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.footer-heading {
+  margin-bottom: var(--space-3);
+  font-size: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li + li {
+  margin-top: var(--space-2);
+}
+
+.footer-links,
+.footer-links a {
+  color: var(--text-soft);
+}
+
+.footer-cta-band {
+  padding-top: var(--space-6);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-cta-headline {
+  max-width: 840px;
+  margin: 0 auto var(--space-5);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .header-inner {
+    grid-template-columns: 1fr;
+    padding: var(--space-4) 0;
+  }
+
+  .site-nav {
+    justify-self: start;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .nav-list {
+    min-width: max-content;
+  }
+
+  .header-cta {
+    justify-self: start;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

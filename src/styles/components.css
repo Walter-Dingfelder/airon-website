@@ -1,0 +1,235 @@
+/* src/styles/components.css */
+
+.eyebrow,
+.pronunciation,
+.section-subtitle,
+.support-line,
+.module-eyebrow,
+.form-note {
+  display: block;
+}
+
+.eyebrow {
+  margin-bottom: var(--space-3);
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pronunciation {
+  margin: 0 0 var(--space-4);
+  color: var(--accent-2);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.hero-subhead {
+  margin-bottom: var(--space-4);
+  max-width: 800px;
+  color: var(--text);
+  font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+  font-weight: 600;
+}
+
+.hero-body {
+  max-width: 760px;
+}
+
+.section-heading {
+  margin-bottom: var(--space-5);
+}
+
+.section-heading-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  max-width: 860px;
+  color: var(--text-muted);
+}
+
+.support-line {
+  margin-top: var(--space-5);
+  color: var(--text-muted);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #d8b46b, #b98b38);
+  color: #11161d;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.hero-image-placeholder,
+.card,
+.module-card,
+.related-link-card,
+.comparison-card,
+.use-case-card,
+.doctrine-line-card,
+.intent-card,
+.stack-card,
+.callout-card,
+.contact-card,
+.contrast-card,
+.doctrine-block {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015));
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-image-placeholder {
+  min-height: 380px;
+  border-radius: var(--radius-xl);
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  text-align: center;
+  color: var(--text-muted);
+  background:
+    linear-gradient(180deg, rgba(126, 195, 255, 0.08), rgba(126, 195, 255, 0.02)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
+}
+
+.card,
+.module-card,
+.related-link-card,
+.comparison-card,
+.use-case-card,
+.doctrine-line-card,
+.intent-card,
+.stack-card,
+.callout-card,
+.contact-card,
+.contrast-card {
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.card {
+  color: var(--text-soft);
+}
+
+.card h3,
+.module-card h3,
+.related-link-card h3,
+.comparison-card h3,
+.use-case-card h3,
+.doctrine-line-card h3,
+.stack-card h3 {
+  margin-bottom: var(--space-3);
+}
+
+.module-card,
+.related-link-card {
+  color: inherit;
+}
+
+.module-card:hover,
+.related-link-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.module-eyebrow {
+  margin-bottom: var(--space-2);
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.module-link {
+  display: inline-block;
+  margin-top: var(--space-3);
+  color: var(--accent-2);
+  font-weight: 700;
+}
+
+.doctrine-block {
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.doctrine-block p:last-child,
+.contact-card p:last-child {
+  margin-bottom: 0;
+}
+
+.doctrine-lines-grid .doctrine-line-card p {
+  margin: 0;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.intent-card {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.intent-card input {
+  margin-top: 0.2rem;
+}
+
+.form-row {
+  display: grid;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  padding: 0.9rem 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  margin-top: var(--space-5);
+}
+
+.form-note {
+  margin-top: var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--small);
+}
+
+.numbered-list li + li {
+  margin-top: var(--space-3);
+}
