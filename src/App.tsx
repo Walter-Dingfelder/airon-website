@@ -24,7 +24,7 @@ import DoctorFamilyPage from "./pages/a-i-r-o-n/doctor-family";
  */
 
 function normalizePath(pathname: string): string {
-  if (!pathname) return "/a-i-r-o-n";
+  if (!pathname) return "/";
   if (pathname.length > 1 && pathname.endsWith("/")) return pathname.slice(0, -1);
   return pathname;
 }
@@ -37,7 +37,7 @@ function NotFoundPage(): JSX.Element {
         <h1>A.I.R.O.N.</h1>
         <p>The requested route is not currently mapped in this app entry.</p>
         <div className="cta-row center">
-          <a className="btn btn-primary" href="/a-i-r-o-n">
+          <a className="btn btn-primary" href="/">
             Go to Home
           </a>
           <a className="btn btn-secondary" href="/a-i-r-o-n/contact">
@@ -53,6 +53,7 @@ export default function App(): JSX.Element {
   const pathname = normalizePath(window.location.pathname);
 
   switch (pathname) {
+    case "/":
     case "/a-i-r-o-n":
       return <HomePage />;
     case "/a-i-r-o-n/contact":
