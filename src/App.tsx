@@ -12,6 +12,7 @@ import PlayYourWorkPage from "./pages/a-i-r-o-n/play-your-work";
 import IndustryPeriodPage from "./pages/a-i-r-o-n/industry-period";
 import SafetyPage from "./pages/a-i-r-o-n/safety";
 import DoctorFamilyPage from "./pages/a-i-r-o-n/doctor-family";
+import SystemLivePlayerLivePage from "./pages/a-i-r-o-n/system-live-player-live";
 
 /**
  * Intended path:
@@ -80,6 +81,8 @@ export default function App(): JSX.Element {
       return <SafetyPage />;
     case "/a-i-r-o-n/doctor-family":
       return <DoctorFamilyPage />;
+    case "/a-i-r-o-n/system-live-player-live":
+      return <SystemLivePlayerLivePage />;
     default:
       return <NotFoundPage />;
   }
