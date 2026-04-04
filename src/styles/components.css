@@ -419,3 +419,53 @@ textarea {
     width: 100%;
   }
 }
+
+
+@media (max-width: 560px) {
+  .intro-popup-overlay {
+    padding: 0.5rem;
+    align-items: start;
+  }
+
+  .intro-popup-dialog {
+    width: 100%;
+    max-height: calc(100vh - 1rem);
+    border-radius: 20px;
+  }
+
+  .intro-popup-media-wrap-compact {
+    padding: 0.75rem 0.75rem 0;
+  }
+
+  .intro-popup-media-compact {
+    max-height: 34vh;
+    width: 100%;
+  }
+
+  .intro-popup-copy-compact {
+    padding: 0.9rem 0.85rem 1rem;
+  }
+
+  .intro-popup-copy h2 {
+    font-size: clamp(1.35rem, 7vw, 1.8rem);
+    line-height: 1.06;
+  }
+
+  .intro-popup-copy p {
+    margin-bottom: 0.75rem;
+    font-size: 0.98rem;
+  }
+
+  .intro-popup-note-compact {
+    font-size: 0.82rem;
+  }
+
+  .intro-popup-actions-compact {
+    gap: 0.7rem;
+  }
+
+  .intro-popup-actions-compact .btn {
+    min-height: 46px;
+    padding: 0.8rem 1rem;
+  }
+}
