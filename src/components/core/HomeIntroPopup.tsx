@@ -22,6 +22,13 @@ function shouldShowPopup(): boolean {
 export default function HomeIntroPopup(): JSX.Element | null {
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const dismissPopup = React.useCallback(() => {
+    if (!SHOW_INTRO_POPUP_ALWAYS) {
+      window.localStorage.setItem(INTRO_POPUP_STORAGE_KEY, String(Date.now()));
+    }
+    setIsOpen(false);
+  }, []);
+
   React.useEffect(() => {
     setIsOpen(shouldShowPopup());
   }, []);
@@ -44,21 +51,14 @@ export default function HomeIntroPopup(): JSX.Element | null {
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", handleEscape);
     };
-  }, [isOpen]);
-
-  const dismissPopup = React.useCallback(() => {
-    if (!SHOW_INTRO_POPUP_ALWAYS) {
-      window.localStorage.setItem(INTRO_POPUP_STORAGE_KEY, String(Date.now()));
-    }
-    setIsOpen(false);
-  }, []);
+  }, [dismissPopup, isOpen]);
 
   if (!isOpen) return null;
 
   return (
     <div className="intro-popup-overlay" role="presentation">
       <div
-        className="intro-popup-dialog"
+        className="intro-popup-dialog intro-popup-dialog-compact"
         role="dialog"
         aria-modal="true"
         aria-labelledby="airon-intro-popup-title"
@@ -73,15 +73,15 @@ export default function HomeIntroPopup(): JSX.Element | null {
           ×
         </button>
 
-        <div className="intro-popup-media-wrap">
+        <div className="intro-popup-media-wrap intro-popup-media-wrap-compact">
           <img
-            className="intro-popup-media"
+            className="intro-popup-media intro-popup-media-compact"
             src={popupArtwork}
             alt="A.I.R.O.N. Play Your Work - Work Your Play workforce concept artwork"
           />
         </div>
 
-        <div className="intro-popup-copy">
+        <div className="intro-popup-copy intro-popup-copy-compact">
           <p className="eyebrow">It’s a new dawn, it’s a new day</p>
           <h2 id="airon-intro-popup-title">PLAY YOUR WORK - WORK YOUR PLAY</h2>
           <p id="airon-intro-popup-description">
@@ -89,7 +89,7 @@ export default function HomeIntroPopup(): JSX.Element | null {
             Follow the trail into SYSTEM-LIVE / PLAYER-LIVE, or continue into A.I.R.O.N.
           </p>
 
-          <div className="cta-row intro-popup-actions">
+          <div className="cta-row intro-popup-actions intro-popup-actions-compact">
             <a
               className="btn btn-primary"
               href="/a-i-r-o-n/system-live-player-live"
@@ -114,7 +114,7 @@ export default function HomeIntroPopup(): JSX.Element | null {
             </p>
           ) : null}
 
-          <p className="intro-popup-note">
+          <p className="intro-popup-note intro-popup-note-compact">
             Development mode is active. This popup is currently set to appear on every homepage visit so we can catch layout issues before production.
           </p>
         </div>
