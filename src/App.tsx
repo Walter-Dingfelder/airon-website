@@ -16,6 +16,7 @@ import SystemLivePlayerLivePage from "./pages/a-i-r-o-n/system-live-player-live"
 import ControlsAutomationPage from "./pages/a-i-r-o-n/controls-automation";
 import ContinuousImprovementPage from "./pages/a-i-r-o-n/continuous-improvement";
 import BetterDaysPage from "./pages/a-i-r-o-n/better-days";
+import PredictiveDiagnosticsPage from "./pages/a-i-r-o-n/predictive-diagnostics";
 
 function normalizePath(pathname: string): string {
   if (!pathname) return "/";
@@ -82,6 +83,8 @@ export default function App(): JSX.Element {
       return <ContinuousImprovementPage />;
     case "/a-i-r-o-n/better-days":
       return <BetterDaysPage />;
+    case "/a-i-r-o-n/predictive-diagnostics":
+      return <PredictiveDiagnosticsPage />;
     default:
       return <NotFoundPage />;
   }
