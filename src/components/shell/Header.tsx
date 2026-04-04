@@ -13,6 +13,10 @@ import React from "react";
 type NavItem = {
   label: string;
   href: string;
+  external?: boolean;
+  infoTitle?: string;
+  infoBody?: string;
+  infoNote?: string;
 };
 
 type HeaderProps = {
@@ -24,6 +28,15 @@ const navItems: NavItem[] = [
   { label: "Home", href: "/a-i-r-o-n" },
   { label: "Modules", href: "/a-i-r-o-n/modules" },
   { label: "Campus", href: "/a-i-r-o-n/industrial-campus" },
+  {
+    label: "Training",
+    href: "https://training.dingfelder.co/",
+    external: true,
+    infoTitle: "Live Training Environment",
+    infoBody:
+      "Launch the ready-to-use Dingfelder training site for structured industrial learning, role-fit pathways, and serious workforce readiness.",
+    infoNote: "Opens training.dingfelder.co in a new tab.",
+  },
   { label: "Industry", href: "/a-i-r-o-n/industry-period" },
   { label: "Safety", href: "/a-i-r-o-n/safety" },
   { label: "Contact", href: "/a-i-r-o-n/contact" },
@@ -45,18 +58,35 @@ export default function Header({
           <ul className="nav-list">
             {navItems.map((item) => {
               const isActive =
-                currentPath === item.href ||
-                (item.href !== "/a-i-r-o-n" && currentPath.startsWith(item.href));
+                !item.external &&
+                (currentPath === item.href ||
+                  (item.href !== "/a-i-r-o-n" && currentPath.startsWith(item.href)));
 
               return (
-                <li key={item.href}>
+                <li
+                  key={item.href}
+                  className={item.infoTitle ? "nav-item nav-item-has-panel" : "nav-item"}
+                >
                   <a
                     href={item.href}
                     className={isActive ? "nav-link active" : "nav-link"}
                     aria-current={isActive ? "page" : undefined}
+                    target={item.external ? "_blank" : undefined}
+                    rel={item.external ? "noreferrer noopener" : undefined}
                   >
                     {item.label}
+                    {item.external ? <span className="nav-external-dot">↗</span> : null}
                   </a>
+
+                  {item.infoTitle ? (
+                    <div className="nav-hover-panel" role="note">
+                      <p className="nav-hover-title">{item.infoTitle}</p>
+                      <p className="nav-hover-body">{item.infoBody}</p>
+                      {item.infoNote ? (
+                        <p className="nav-hover-note">{item.infoNote}</p>
+                      ) : null}
+                    </div>
+                  ) : null}
                 </li>
               );
             })}
