@@ -61,20 +61,35 @@ export default function Header({
                 !item.external &&
                 (currentPath === item.href ||
                   (item.href !== "/a-i-r-o-n" && currentPath.startsWith(item.href)));
+              const isTraining = item.label === "Training";
 
               return (
                 <li
                   key={item.href}
-                  className={item.infoTitle ? "nav-item nav-item-has-panel" : "nav-item"}
+                  className={[
+                    "nav-item",
+                    item.infoTitle ? "nav-item-has-panel" : "",
+                    isTraining ? "nav-item-training" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                 >
                   <a
                     href={item.href}
-                    className={isActive ? "nav-link active" : "nav-link"}
+                    className={[
+                      "nav-link",
+                      isActive ? "active" : "",
+                      isTraining ? "nav-link-training" : "",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")}
                     aria-current={isActive ? "page" : undefined}
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noreferrer noopener" : undefined}
                   >
-                    {item.label}
+                    <span className={isTraining ? "nav-link-text training-sheen" : "nav-link-text"}>
+                      {item.label}
+                    </span>
                     {item.external ? <span className="nav-external-dot">↗</span> : null}
                   </a>
 

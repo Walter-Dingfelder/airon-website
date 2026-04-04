@@ -60,11 +60,19 @@
   transition: color 0.18s ease;
 }
 
+.nav-link-text {
+  display: inline-block;
+}
+
 .nav-link:hover,
 .nav-link.active,
 .nav-item-has-panel:hover > .nav-link,
 .nav-item-has-panel:focus-within > .nav-link {
   color: var(--text);
+}
+
+.nav-link-training .training-sheen {
+  color: var(--text-soft);
 }
 
 .nav-external-dot {
@@ -204,6 +212,45 @@
   text-align: center;
 }
 
+@media (min-width: 981px) {
+  .nav-link-training .training-sheen {
+    background-image: linear-gradient(
+      110deg,
+      var(--text-soft) 0%,
+      var(--text-soft) 42%,
+      rgba(230, 186, 84, 0.95) 49%,
+      rgba(255, 245, 200, 0.98) 50%,
+      rgba(230, 186, 84, 0.95) 51%,
+      var(--text-soft) 58%,
+      var(--text-soft) 100%
+    );
+    background-size: 240% 100%;
+    background-position: 140% 50%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: trainingNavSweep 13s ease-in-out infinite;
+  }
+
+  .nav-link-training:hover .training-sheen,
+  .nav-item-training:focus-within .training-sheen {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes trainingNavSweep {
+  0%,
+  78%,
+  100% {
+    background-position: 140% 50%;
+  }
+
+  88% {
+    background-position: -30% 50%;
+  }
+}
+
 @media (max-width: 1180px) {
   .nav-list {
     gap: var(--space-4);
@@ -232,6 +279,13 @@
 
   .nav-hover-panel {
     display: none;
+  }
+
+  .nav-link-training .training-sheen {
+    color: inherit;
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    animation: none;
   }
 
   .header-cta {
