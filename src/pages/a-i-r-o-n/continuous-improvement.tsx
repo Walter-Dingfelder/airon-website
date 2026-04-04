@@ -116,7 +116,7 @@ export default function ContinuousImprovementPage(): JSX.Element {
         eyebrow="Not a meeting. Not a slogan. Not a department."
         title="CONTINUOUS IMPROVEMENT"
         supportingLine="The operating spine of A.I.R.O.N."
-        subhead="Continuous Improvement is not just one more module inside A.I.R.O.N. It is the reason A.I.R.O.N. exists."
+        subhead="Continuous Improvement is not just one more part of A.I.R.O.N. It is the reason A.I.R.O.N. exists."
         body={
           <>
             <p>
