@@ -14,6 +14,7 @@ import SafetyPage from "./pages/a-i-r-o-n/safety";
 import DoctorFamilyPage from "./pages/a-i-r-o-n/doctor-family";
 import SystemLivePlayerLivePage from "./pages/a-i-r-o-n/system-live-player-live";
 import ControlsAutomationPage from "./pages/a-i-r-o-n/controls-automation";
+import ContinuousImprovementPage from "./pages/a-i-r-o-n/continuous-improvement";
 
 function normalizePath(pathname: string): string {
   if (!pathname) return "/";
@@ -76,6 +77,8 @@ export default function App(): JSX.Element {
       return <SystemLivePlayerLivePage />;
     case "/a-i-r-o-n/controls-automation":
       return <ControlsAutomationPage />;
+    case "/a-i-r-o-n/continuous-improvement":
+      return <ContinuousImprovementPage />;
     default:
       return <NotFoundPage />;
   }
