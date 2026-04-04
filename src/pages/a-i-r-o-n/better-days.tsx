@@ -25,6 +25,31 @@ const processPoints = [
   "Turn approved lessons into usable training and guidance",
 ];
 
+const stewardshipPoints = [
+  "Every contribution is timestamped when it enters Better Days",
+  "Each item is assigned a respond-by date for accountability",
+  "Suggestions are categorized, sorted, and routed to the correct departments",
+  "Acknowledgement and review stay visible instead of disappearing into memory",
+  "Automatic reminders can be sent if a concern is not being addressed",
+  "The contribution stays live in the user account with ongoing status updates",
+];
+
+const notificationPoints = [
+  "Users can receive updates by preferred method such as text or email",
+  "Contributors can track routing, status, acknowledgement, and progress",
+  "The system acts as a steward, not just a collector",
+  "Useful truth stays visible until it is addressed or resolved",
+  "Follow-through becomes part of the process, not a matter of luck",
+  "Contributors are not left wondering whether their concern was received",
+];
+
+const moderationPoints = [
+  "All contributions are filtered for language and abusive content",
+  "Abuse of the system may result in rejection of the submission",
+  "Governance protects signal quality for legitimate users",
+  "The goal is useful truth, not noise",
+];
+
 const audiencePoints = [
   "Operators",
   "Mechanics",
@@ -192,6 +217,62 @@ export default function BetterDaysPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
+            title="Stewardship, response, and accountability"
+            subtitle="With A.I.R.O.N.'s Better Days, your suggestions are never lost."
+            align="center"
+          />
+          <CapabilityGrid items={stewardshipPoints} compact />
+          <div className="doctrine-block top-gap">
+            <p>
+              Better Days is a good steward of the contribution. If a concern is
+              not being addressed in the expected time, the system can send
+              reminders so the matter stays visible and accountable instead of
+              fading out of view.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Live contribution tracking and preferred updates"
+            subtitle="A good contribution system is not only about collection. It is about stewardship, response, visibility, and follow-through."
+            align="center"
+          />
+          <CapabilityGrid items={notificationPoints} compact />
+          <div className="doctrine-block top-gap">
+            <p>
+              Each contribution remains live in the contributor’s account,
+              giving the user a clear place to see status, acknowledgement,
+              routing, and progress. Updates can be delivered by the
+              contributor’s preferred method, including text or email, so people
+              are not left wondering whether their concern was received or acted
+              upon.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="Governance and abuse prevention"
+            subtitle="Signal quality matters."
+            align="center"
+          />
+          <CapabilityGrid items={moderationPoints} compact />
+          <p className="support-line center">
+            All contributions to the Better Days program are filtered for
+            language and abusive content and are subject to rejection for abuse
+            of the system.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
             title="Who Better Days is for"
             subtitle="Good ideas do not always arrive from titles."
             align="center"
@@ -205,7 +286,7 @@ export default function BetterDaysPage(): JSX.Element {
         </div>
       </section>
 
-      <section className="section section-alt">
+      <section className="section">
         <div className="container">
           <SectionHeading
             title="Better Days and human dignity"
@@ -216,7 +297,7 @@ export default function BetterDaysPage(): JSX.Element {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
           <SectionHeading
             title="Better Days, V.A.U.L.T., and memory"
@@ -238,7 +319,6 @@ export default function BetterDaysPage(): JSX.Element {
           "That is one of the most powerful A.I.R.O.N. ideas: the person doing the work today can quietly improve the readiness of the person doing the work tomorrow.",
           "That is Continuous Improvement preserved on purpose.",
         ]}
-        sectionClassName="section section-alt"
       />
 
       <TextIntroBlock
@@ -248,6 +328,7 @@ export default function BetterDaysPage(): JSX.Element {
           "It is a living path where people can improve the operation without waiting for the perfect committee, the perfect title, or the perfect moment.",
           "That is why Better Days belongs under Continuous Improvement, not off to the side.",
         ]}
+        sectionClassName="section section-alt"
       />
 
       <section className="section">
