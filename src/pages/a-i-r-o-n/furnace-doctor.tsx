@@ -8,17 +8,6 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-/**
- * A.I.R.O.N. Furnace Doctor source file — refactored
- *
- * Intended path:
- *   src/pages/a-i-r-o-n/furnace-doctor.tsx
- *
- * Notes:
- * - Example page using shared layout and shared core components.
- * - Import paths should be adjusted to match your final repo structure.
- */
-
 const watchedSignals = [
   "Command vs actual",
   "Startup vs production behavior",
@@ -79,15 +68,19 @@ const relatedPages = [
     description: "Truth, memory, and recoverable lessons.",
   },
   {
-    title: "Doctor Family",
+    title: "Doctor Family™",
     href: "/a-i-r-o-n/doctor-family",
-    description: "Specialist architecture overview.",
+    description:
+      "Furnace Doctor™ is one specialist inside the broader Doctor Family™ architecture.",
   },
 ];
 
-export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
+export default function FurnaceDoctorPage(): JSX.Element {
   return (
-    <SiteLayout currentPath="/a-i-r-o-n/furnace-doctor" mainClassName="airon-module-page furnace-doctor-page">
+    <SiteLayout
+      currentPath="/a-i-r-o-n/furnace-doctor"
+      mainClassName="airon-module-page furnace-doctor-page"
+    >
       <HeroBlock
         eyebrow="A.I.R.O.N.’s hot-end advisory specialist"
         title="Furnace Doctor™"
@@ -95,7 +88,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
         body={
           <>
             <p>
-              Furnace Doctor is tailored for furnaces, burners, electric melt
+              Furnace Doctor™ is tailored for furnaces, burners, electric melt
               systems, thermal zones, conditioned hot-end delivery, and related
               thermal-process behavior where early drift matters.
             </p>
@@ -120,10 +113,28 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
         </div>
       </HeroBlock>
 
+      <section className="section section-alt">
+        <div className="container narrow">
+          <div className="doctrine-block">
+            <p className="eyebrow">Part of the Doctor Family™</p>
+            <p>
+              Furnace Doctor™ is one specialist inside the larger Doctor Family™
+              architecture. A.I.R.O.N. can create Doctors for any component,
+              subsystem, device, or process that needs special care.
+            </p>
+            <div className="cta-row">
+              <a className="btn btn-secondary" href="/a-i-r-o-n/doctor-family">
+                See the Doctor Family™
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TextIntroBlock
         title="Built for the hot end"
         paragraphs={[
-          "Furnace Doctor is A.I.R.O.N.’s specialist layer for heat-driven process behavior where early drift matters.",
+          "Furnace Doctor™ is A.I.R.O.N.’s specialist layer for heat-driven process behavior where early drift matters.",
           "It is designed to help operations, maintenance, and engineering see hot-end truth earlier and act with evidence instead of guesswork.",
         ]}
       />
@@ -131,7 +142,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
       <section className="section">
         <div className="container narrow">
           <div className="contrast-card">
-            <h3>Furnace Doctor is not:</h3>
+            <h3>Furnace Doctor™ is not:</h3>
             <ul>
               <li>The universal doctor for every asset class</li>
               <li>A replacement for control systems</li>
@@ -144,7 +155,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="What Furnace Doctor watches" />
+          <SectionHeading title="What Furnace Doctor™ watches" />
           <CapabilityGrid items={watchedSignals} />
           <p className="support-line center">
             It pays attention to heat-input response, blower and burner
@@ -157,7 +168,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
 
       <section className="section">
         <div className="container">
-          <SectionHeading title="What Furnace Doctor can do" />
+          <SectionHeading title="What Furnace Doctor™ can do" />
           <CapabilityGrid items={capabilities} />
         </div>
       </section>
@@ -175,7 +186,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
             </div>
             <div className="callout-card">
               <p>
-                If the problem begins in the hot end, Furnace Doctor is one of
+                If the problem begins in the hot end, Furnace Doctor™ is one of
                 the strongest entry points into the A.I.R.O.N. system.
               </p>
             </div>
@@ -186,7 +197,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
       <TextIntroBlock
         title="Advisory, not theatrical"
         paragraphs={[
-          "Furnace Doctor is not a replacement for certified control or safety systems.",
+          "Furnace Doctor™ is not a replacement for certified control or safety systems.",
           "It is an advisory instrument built to shorten recognition time, improve understanding, and focus attention where it matters most.",
         ]}
         sectionClassName="section"
@@ -196,7 +207,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
         <div className="container narrow">
           <div className="doctrine-block">
             <p>
-              <strong>If the hot end whispers, Furnace Doctor hears it.</strong>
+              <strong>If the hot end whispers, Furnace Doctor™ hears it.</strong>
             </p>
           </div>
         </div>
@@ -204,9 +215,9 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
 
       <ContrastBlock
         title="Hot-end systems rarely fail without warning. They drift first."
-        leftTitle="Without Furnace Doctor"
+        leftTitle="Without Furnace Doctor™"
         leftItems={withoutFD}
-        rightTitle="With Furnace Doctor"
+        rightTitle="With Furnace Doctor™"
         rightItems={withFD}
       />
 
@@ -224,7 +235,7 @@ export default function AIRONFurnaceDoctorPageRefactored(): JSX.Element {
         <RelatedLinksBlock
           title="Related A.I.R.O.N. modules"
           items={relatedPages}
-          supportingLine="Start with hot-end truth. Expand into prediction, startup, and memory when the system is ready."
+          supportingLine="Start with hot-end truth. Expand into prediction, startup, memory, and the broader Doctor Family™ when the system is ready."
         />
       </div>
 
