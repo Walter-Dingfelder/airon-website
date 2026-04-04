@@ -8,6 +8,7 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import SystemPlayerBlock from "../../components/doctrine/SystemPlayerBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 import HomeIntroPopup from "../../components/core/HomeIntroPopup";
+import homeHeroOperatorPanel from "../../assets/airon-home-hero-operator-panel.png";
 
 /**
  * A.I.R.O.N. homepage source file — refactored
@@ -107,8 +108,13 @@ export default function AIRONHomePageRefactored(): JSX.Element {
           href: "/a-i-r-o-n/contact",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved A.I.R.O.N. hero image goes here</span>
+        <div className="hero-demo-visual">
+          <img
+            src={homeHeroOperatorPanel}
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
         </div>
       </HeroBlock>
 
