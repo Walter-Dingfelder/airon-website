@@ -13,16 +13,7 @@ import IndustryPeriodPage from "./pages/a-i-r-o-n/industry-period";
 import SafetyPage from "./pages/a-i-r-o-n/safety";
 import DoctorFamilyPage from "./pages/a-i-r-o-n/doctor-family";
 import SystemLivePlayerLivePage from "./pages/a-i-r-o-n/system-live-player-live";
-
-/**
- * Intended path:
- *   src/App.tsx
- *
- * Notes:
- * - Simple path-based SPA router for Netlify/static hosting.
- * - Keeps the repo runnable without adding a routing dependency immediately.
- * - Netlify redirect should point all routes to /index.html for SPA behavior.
- */
+import ControlsAutomationPage from "./pages/a-i-r-o-n/controls-automation";
 
 function normalizePath(pathname: string): string {
   if (!pathname) return "/";
@@ -38,7 +29,7 @@ function NotFoundPage(): JSX.Element {
         <h1>A.I.R.O.N.</h1>
         <p>The requested route is not currently mapped in this app entry.</p>
         <div className="cta-row center">
-          <a className="btn btn-primary" href="/">
+          <a className="btn btn-primary" href="/a-i-r-o-n">
             Go to Home
           </a>
           <a className="btn btn-secondary" href="/a-i-r-o-n/contact">
@@ -83,6 +74,8 @@ export default function App(): JSX.Element {
       return <DoctorFamilyPage />;
     case "/a-i-r-o-n/system-live-player-live":
       return <SystemLivePlayerLivePage />;
+    case "/a-i-r-o-n/controls-automation":
+      return <ControlsAutomationPage />;
     default:
       return <NotFoundPage />;
   }
