@@ -7,6 +7,7 @@ import ModuleCard from "../../components/core/ModuleCard";
 import ContrastBlock from "../../components/core/ContrastBlock";
 import SystemPlayerBlock from "../../components/doctrine/SystemPlayerBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
+import HomeIntroPopup from "../../components/core/HomeIntroPopup";
 
 /**
  * A.I.R.O.N. homepage source file — refactored
@@ -83,6 +84,7 @@ const withAIRON = [
 export default function AIRONHomePageRefactored(): JSX.Element {
   return (
     <SiteLayout currentPath="/a-i-r-o-n" mainClassName="airon-home">
+      <HomeIntroPopup />
       <HeroBlock
         eyebrow="Forging tomorrow’s efficiency with every minute of today’s operation"
         title="A.I.R.O.N.™"
