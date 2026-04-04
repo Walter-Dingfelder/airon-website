@@ -7,174 +7,239 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-/**
- * A.I.R.O.N. modules overview source file — refactored
- *
- * Intended path:
- *   src/pages/a-i-r-o-n/modules.tsx
- *
- * Notes:
- * - Example page using shared layout and shared core components.
- * - Import paths should be adjusted to match your final repo structure.
- */
-
-type ModuleItem = {
+type ModuleFamily = {
   name: string;
   eyebrow: string;
   description: string;
   href: string;
+  linkLabel?: string;
 };
 
-const primaryModules: ModuleItem[] = [
+const moduleFamilies: ModuleFamily[] = [
   {
-    name: "Furnace Doctor™",
-    eyebrow: "Hot-end advisory specialist",
-    description: "Hot-end truth before hot-end trouble.",
-    href: "/a-i-r-o-n/furnace-doctor",
+    name: "A.I.R.O.N. Core",
+    eyebrow: "Doctrine / operating philosophy",
+    description:
+      "The umbrella system, the philosophy behind it, and the way machine truth and human truth meet on common ground.",
+    href: "/a-i-r-o-n/system-live-player-live",
   },
   {
-    name: "Fortune Teller™",
-    eyebrow: "Predictive layer",
-    description: "See the breakpoint before the breakdown.",
-    href: "/a-i-r-o-n/fortune-teller",
+    name: "Continuous Improvement",
+    eyebrow: "Operating spine",
+    description:
+      "Not a side module. The central discipline that powers every major A.I.R.O.N. family.",
+    href: "/a-i-r-o-n/continuous-improvement",
   },
   {
-    name: "V.A.U.L.T.®",
-    eyebrow: "Truth and memory layer",
-    description: "If it mattered once, it should still matter later.",
+    name: "Controls & Automation",
+    eyebrow: "Machine brain / process behavior",
+    description:
+      "PLCs, HMIs, sequencing, batching, startup, shutdown, interlocks, robotics, retrofit, and greenfield automation.",
+    href: "/a-i-r-o-n/controls-automation",
+  },
+  {
+    name: "Safety",
+    eyebrow: "Human protection first",
+    description:
+      "Safety structure, startup annunciation, local authority, abnormal-condition communication, and protection under consequence.",
+    href: "/a-i-r-o-n/safety",
+  },
+  {
+    name: "Training",
+    eyebrow: "Readiness / role-fit development",
+    description:
+      "Structured industrial learning, serious workforce readiness, and progression-based capability building.",
+    href: "https://training.dingfelder.co/",
+    linkLabel: "Open training →",
+  },
+  {
+    name: "V.A.U.L.T. / Memory",
+    eyebrow: "Truth / memory / proof",
+    description:
+      "Institutional memory, preserved fixes, historical trend context, and proof that survives shift change, turnover, and politics.",
     href: "/a-i-r-o-n/vault",
   },
   {
-    name: "One-Touch Startup™",
-    eyebrow: "Startup structure and proof",
-    description: "Startup should be controlled, provable, and repeatable.",
-    href: "/a-i-r-o-n/one-touch-startup",
+    name: "Predictive & Diagnostics",
+    eyebrow: "Drift / advisory / prevention",
+    description:
+      "Furnace Doctor, Fortune Teller, startup signatures, acoustic advisory intelligence, and early warning before failure grows teeth.",
+    href: "/a-i-r-o-n/furnace-doctor",
   },
   {
-    name: "C.A.T.A.S.T.R.O.P.H.E.™",
-    eyebrow: "Abnormal-event human protection",
-    description: "When everything else goes silent, protect your people.",
+    name: "C.A.T.A.S.T.R.O.P.H.E.",
+    eyebrow: "Abnormal-event architecture",
+    description:
+      "High-consequence event support, protected decision integrity, emergency communication, and local authority under stress.",
     href: "/a-i-r-o-n/catastrophe",
   },
   {
-    name: "Dingfelder Industrial Campus",
-    eyebrow: "Workforce activation and simulation",
-    description: "Build real readiness before consequence arrives.",
+    name: "Industrial Campus",
+    eyebrow: "Workforce activation / human systems",
+    description:
+      "How A.I.R.O.N. meets operators, mechanics, trainees, and leadership where they are and gives everyone a home in the system.",
     href: "/a-i-r-o-n/industrial-campus",
+  },
+  {
+    name: "Contact / Discovery",
+    eyebrow: "Practical next step",
+    description:
+      "Start the right conversation around controls, training, CI, support, startup, safety, memory, or broader system deployment.",
+    href: "/a-i-r-o-n/contact",
   },
 ];
 
-const specialistReasons = [
-  "Different signal weighting",
-  "Different baseline logic",
-  "Different failure vocabulary",
-  "Different operator guidance",
-  "Different predictive models",
+const architectureTruths = [
+  "Continuous Improvement is the operating spine of A.I.R.O.N.",
+  "SYSTEM-LIVE / PLAYER-LIVE is CI applied to human-to-machine engagement.",
+  "Controls & Automation is CI applied to machine behavior.",
+  "Safety is CI applied to human protection and governed control.",
+  "V.A.U.L.T. is CI applied to memory, proof, and preserved lessons.",
+  "Predictive intelligence is CI applied to drift, trend, and prevention.",
 ];
 
-const hotEndStack = [
-  "Furnace Doctor",
-  "Fortune Teller",
-  "One-Touch Startup",
+const familyHighlights = [
+  "Better Days belongs under Continuous Improvement as the front door for participation.",
+  "One-Touch Startup belongs under Controls & Automation as governed startup, shutdown, runout, and empty-down logic.",
+  "Furnace Doctor and Fortune Teller belong under Predictive & Diagnostics as specialist advisory tools.",
+  "Training is a full family, not just a link, because readiness and progression are core A.I.R.O.N. functions.",
+  "C.A.T.A.S.T.R.O.P.H.E. stays top-level because abnormal-event structure is distinct from ordinary safety or diagnostics.",
+  "Industrial Campus stays visible because A.I.R.O.N. is built around people, not just assets.",
 ];
 
-const continuityStack = [
-  "V.A.U.L.T.",
-  "Fortune Teller",
-  "One-Touch Startup",
-];
-
-const safetyStack = [
-  "C.A.T.A.S.T.R.O.P.H.E.",
-  "Safety / Tree of Knowledge",
-  "V.A.U.L.T.",
-];
-
-const workforceStack = [
-  "Dingfelder Industrial Campus",
-  "PLAY YOUR WORK",
-  "One-Touch Startup",
+const startingPoints = [
+  {
+    title: "Need help controlling the machine?",
+    links: [
+      { label: "Controls & Automation", href: "/a-i-r-o-n/controls-automation" },
+      { label: "One-Touch Startup", href: "/a-i-r-o-n/one-touch-startup" },
+    ],
+  },
+  {
+    title: "Need help protecting people and startup risk?",
+    links: [
+      { label: "Safety", href: "/a-i-r-o-n/safety" },
+      { label: "C.A.T.A.S.T.R.O.P.H.E.", href: "/a-i-r-o-n/catastrophe" },
+    ],
+  },
+  {
+    title: "Need memory, proof, or preserved lessons?",
+    links: [
+      { label: "V.A.U.L.T.", href: "/a-i-r-o-n/vault" },
+      { label: "Continuous Improvement", href: "/a-i-r-o-n/continuous-improvement" },
+    ],
+  },
+  {
+    title: "Need drift, signatures, or predictive help?",
+    links: [
+      { label: "Furnace Doctor", href: "/a-i-r-o-n/furnace-doctor" },
+      { label: "Fortune Teller", href: "/a-i-r-o-n/fortune-teller" },
+    ],
+  },
+  {
+    title: "Need workforce readiness or training?",
+    links: [
+      { label: "Industrial Campus", href: "/a-i-r-o-n/industrial-campus" },
+      { label: "Training", href: "https://training.dingfelder.co/" },
+    ],
+  },
+  {
+    title: "Need the right conversation first?",
+    links: [
+      { label: "SYSTEM-LIVE / PLAYER-LIVE", href: "/a-i-r-o-n/system-live-player-live" },
+      { label: "Contact / Discovery", href: "/a-i-r-o-n/contact" },
+    ],
+  },
 ];
 
 const relatedPages = [
   {
-    title: "Doctor Family",
-    href: "/a-i-r-o-n/doctor-family",
-    description: "See how the specialist architecture fits together.",
+    title: "Continuous Improvement",
+    href: "/a-i-r-o-n/continuous-improvement",
+    description: "Read the operating spine that powers every major A.I.R.O.N. family.",
   },
   {
-    title: "Industry. Period.",
-    href: "/a-i-r-o-n/industry-period",
-    description: "Read the strategic position behind the system.",
+    title: "Controls & Automation",
+    href: "/a-i-r-o-n/controls-automation",
+    description: "See how A.I.R.O.N. meets the machine brain itself.",
   },
   {
-    title: "Contact / Discovery",
-    href: "/a-i-r-o-n/contact",
-    description: "Start the next conversation.",
+    title: "SYSTEM-LIVE / PLAYER-LIVE",
+    href: "/a-i-r-o-n/system-live-player-live",
+    description: "See how A.I.R.O.N. improves the whole relationship between person and process.",
   },
 ];
 
-export default function AIRONModulesPageRefactored(): JSX.Element {
+export default function AIRONModulesPage(): JSX.Element {
   return (
     <SiteLayout currentPath="/a-i-r-o-n/modules" mainClassName="airon-modules-page">
       <HeroBlock
-        eyebrow="One nervous system. Multiple specialist layers."
+        eyebrow="See the full A.I.R.O.N. architecture in one place."
         title="A.I.R.O.N. Modules"
-        subhead="Specialist pages for guidance, diagnostics, prediction, memory, startup, safety, and workforce activation."
+        subhead="One operating spine. Multiple module families. One system built to improve machines, people, memory, safety, and process truth together."
         body={
           <>
             <p>
-              A.I.R.O.N. expands through specialist modules that can be deployed
-              on one asset, one line, one process block, or the full operation.
+              This page is the architecture map. It shows the major families
+              inside A.I.R.O.N., what they are for, and where each one belongs.
+            </p>
+            <p>
+              Continuous Improvement is the spine. The other families are how
+              that spine expresses itself in real industrial form.
             </p>
           </>
         }
         primaryCTA={{
-          label: "Request a Discovery Conversation",
+          label: "Start Discovery",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See the System Overview",
+          label: "See the Homepage",
           href: "/a-i-r-o-n",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Clean A.I.R.O.N. brand treatment or structure visual goes here</span>
+        <div className="comparison-grid">
+          <div className="comparison-card">
+            <h3>Operating Spine</h3>
+            <p>
+              Continuous Improvement is not just one more part of A.I.R.O.N.
+              It is the reason A.I.R.O.N. exists.
+            </p>
+          </div>
+          <div className="comparison-card">
+            <h3>Module Families</h3>
+            <p>
+              Controls, Safety, Training, Memory, Diagnostics, Campus, and
+              abnormal-event architecture are all CI expressed in different
+              industrial forms.
+            </p>
+          </div>
         </div>
       </HeroBlock>
 
       <section className="section">
         <div className="container narrow">
-          <SectionHeading title="One umbrella system. Specialist capabilities underneath." />
+          <SectionHeading title="Start with the family that matches the problem" />
           <p>
-            A.I.R.O.N. is the umbrella nervous system that remembers, protects,
-            guides, and improves while the operation runs.
+            A.I.R.O.N. is not a random collection of branded tools. It is a
+            structured architecture. The families below help you find the right
+            doorway without guessing.
           </p>
-          <p>
-            The modules are the specialist layers that let that intelligence
-            focus on hot-end truth, predictive timing, memory and continuity,
-            startup structure, abnormal-event protection, and workforce activation.
-          </p>
-
-          <div className="doctrine-block">
-            <p><strong>A.I.R.O.N. is the nervous system.</strong></p>
-            <p><strong>The modules are the specialists.</strong></p>
-          </div>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="Choose the next page by problem, not by guesswork" />
+          <SectionHeading title="Top-level A.I.R.O.N. module families" />
           <div className="module-grid">
-            {primaryModules.map((module) => (
+            {moduleFamilies.map((module) => (
               <ModuleCard
                 key={module.name}
                 name={module.name}
                 eyebrow={module.eyebrow}
                 description={module.description}
                 href={module.href}
-                linkLabel="Open page →"
+                linkLabel={module.linkLabel ?? "Open family →"}
               />
             ))}
           </div>
@@ -183,62 +248,23 @@ export default function AIRONModulesPageRefactored(): JSX.Element {
 
       <section className="section">
         <div className="container">
-          <SectionHeading title="Different processes need different specialists" />
+          <SectionHeading title="How the architecture actually works" />
           <p className="center narrow-text">
-            A melt deck does not drift like a furnace. A foundry does not fail
-            like a food plant. A startup problem does not behave like a memory
-            problem. A live abnormal event does not behave like a predictive
-            maintenance problem.
+            If you understand the six truths below, you understand why the
+            site is organized the way it is.
           </p>
-          <CapabilityGrid items={specialistReasons} compact />
-          <div className="cta-row center">
-            <a className="btn btn-secondary" href="/a-i-r-o-n/doctor-family">
-              See the Doctor Family
-            </a>
-          </div>
+          <CapabilityGrid items={architectureTruths} compact />
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="Deploy one layer — or several together" />
-          <div className="comparison-grid">
-            <div className="comparison-card">
-              <h3>Hot-End Stack</h3>
-              <ul>
-                {hotEndStack.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="comparison-card">
-              <h3>Continuity Stack</h3>
-              <ul>
-                {continuityStack.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="comparison-card">
-              <h3>Safety / Abnormal-Event Stack</h3>
-              <ul>
-                {safetyStack.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="comparison-card">
-              <h3>Workforce / Campus Stack</h3>
-              <ul>
-                {workforceStack.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <SectionHeading title="Important family relationships" />
+          <p className="center narrow-text">
+            These are the structural links that keep the site honest and keep
+            the architecture from drifting into disconnected marketing pages.
+          </p>
+          <CapabilityGrid items={familyHighlights} compact />
         </div>
       </section>
 
@@ -246,45 +272,18 @@ export default function AIRONModulesPageRefactored(): JSX.Element {
         <div className="container">
           <SectionHeading title="Where should you start?" />
           <div className="use-case-grid">
-            <div className="use-case-card">
-              <h3>Hot-end / furnace issue</h3>
-              <ul>
-                <li><a href="/a-i-r-o-n/furnace-doctor">Furnace Doctor</a></li>
-                <li><a href="/a-i-r-o-n/fortune-teller">Fortune Teller</a></li>
-              </ul>
-            </div>
-
-            <div className="use-case-card">
-              <h3>Startup inconsistency / tribal startup</h3>
-              <ul>
-                <li><a href="/a-i-r-o-n/one-touch-startup">One-Touch Startup</a></li>
-                <li><a href="/a-i-r-o-n/vault">V.A.U.L.T.</a></li>
-              </ul>
-            </div>
-
-            <div className="use-case-card">
-              <h3>Emergency / abnormal-event concern</h3>
-              <ul>
-                <li><a href="/a-i-r-o-n/catastrophe">C.A.T.A.S.T.R.O.P.H.E.</a></li>
-                <li><a href="/a-i-r-o-n/safety">Safety / Tree of Knowledge</a></li>
-              </ul>
-            </div>
-
-            <div className="use-case-card">
-              <h3>Workforce / training / readiness</h3>
-              <ul>
-                <li><a href="/a-i-r-o-n/industrial-campus">Dingfelder Industrial Campus</a></li>
-                <li><a href="/a-i-r-o-n/play-your-work">PLAY YOUR WORK</a></li>
-              </ul>
-            </div>
-
-            <div className="use-case-card">
-              <h3>Strategic / brand understanding</h3>
-              <ul>
-                <li><a href="/a-i-r-o-n">A.I.R.O.N. Home</a></li>
-                <li><a href="/a-i-r-o-n/industry-period">Industry. Period.</a></li>
-              </ul>
-            </div>
+            {startingPoints.map((group) => (
+              <div className="use-case-card" key={group.title}>
+                <h3>{group.title}</h3>
+                <ul>
+                  {group.links.map((link) => (
+                    <li key={link.label}>
+                      <a href={link.href}>{link.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -292,20 +291,20 @@ export default function AIRONModulesPageRefactored(): JSX.Element {
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Start with the architecture if you need fit clarity. Move into the specialist page when you know which process truth matters most."
+        supportingLine="The more clearly the families are mapped, the easier it becomes to see where the next right move belongs."
       />
 
       <CTAFooterBand
-        headline="Start where the problem is. Expand when the system is ready."
+        headline="One architecture. Many specialists. One operating spine."
         primaryCTA={{
-          label: "Request a Discovery Conversation",
+          label: "Start Discovery",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See the Homepage",
-          href: "/a-i-r-o-n",
+          label: "See Continuous Improvement",
+          href: "/a-i-r-o-n/continuous-improvement",
         }}
-        supportingLine="One asset. One line. One module. Or the full operation."
+        supportingLine="A.I.R.O.N. is not just a set of pages. It is a structured industrial system built to improve what matters most."
       />
     </SiteLayout>
   );
