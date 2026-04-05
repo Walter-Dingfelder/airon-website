@@ -98,6 +98,12 @@ const relatedPages = [
       "See the dust-collection specialist built to connect airflow, cleaning, filter condition, hopper continuity, fan behavior, and operator reality.",
   },
   {
+    title: "Cooling Tower Doctor™",
+    href: "/a-i-r-o-n/cooling-tower-doctor",
+    description:
+      "See the heat-rejection specialist built to connect water temperature, flow, fan staging, fill condition, chemistry, drift, freeze exposure, and operator reality.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
@@ -387,6 +393,29 @@ export default function DoctorFamilyPage(): JSX.Element {
           <div className="cta-row">
             <a className="btn btn-secondary" href="/a-i-r-o-n/baghouse-doctor">
               See Baghouse Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container narrow">
+          <SectionHeading title="Cooling Tower Doctor™ as the heat-rejection specialist" />
+          <p>
+            Cooling Tower Doctor™ proves the family can also sit tightly on one of the plant&apos;s most consequential utility systems
+            where the real pain lives in approach temperature, flow truth, fan staging, fill condition, basin behavior, drift posture, chemistry consequence, and freeze exposure.
+          </p>
+          <p>
+            It is built for operations where one weak cooling tower can quietly become plant-wide thermal pain — throttling uptime,
+            destabilizing process temperature, stressing motors and drives, and turning ordinary summer load or winter weather into repeated operational compromise.
+          </p>
+          <p>
+            That matters because heat-rejection truth deserves its own specialist vocabulary instead of being flattened
+            into one basin temperature, one fan alarm, or one maintenance complaint about scaling, vibration, or plume.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/cooling-tower-doctor">
+              See Cooling Tower Doctor™
             </a>
           </div>
         </div>
