@@ -6,6 +6,11 @@ import SectionHeading from "../../components/core/SectionHeading";
 import CapabilityGrid from "../../components/core/CapabilityGrid";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
+import treeOfKnowledgeImage from "../../assets/catastrophe-tree-of-knowledge.png";
+import emtSosBadgeImage from "../../assets/catastrophe-emt-sos-badge.png";
+import catastropheTabletImage from "../../assets/catastrophe-tablet.jpg";
+import machineModeImage from "../../assets/catastrophe-machine-mode.png";
+import emtSosModeImage from "../../assets/catastrophe-emt-sos-mode.png";
 
 const doctrineRoles = [
   "Protect human life during abnormal and catastrophic events",
@@ -99,6 +104,65 @@ const growthAndRecordPoints = [
   "The incident record is treated as the live event, not a later reconstruction",
   "The system should reduce time-to-stabilize, time-to-handoff, and repeat failure rediscovery over time",
 ];
+
+
+const visualGridStyle: React.CSSProperties = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+  gap: "1.5rem",
+  alignItems: "start",
+};
+
+const visualCardStyle: React.CSSProperties = {
+  background: "linear-gradient(180deg, rgba(7,18,35,0.94), rgba(5,13,26,0.98))",
+  border: "1px solid rgba(120,150,190,0.22)",
+  borderRadius: "24px",
+  padding: "1rem",
+  boxShadow: "0 18px 40px rgba(0,0,0,0.28)",
+};
+
+const visualImageStyle: React.CSSProperties = {
+  width: "100%",
+  display: "block",
+  borderRadius: "18px",
+  border: "1px solid rgba(120,150,190,0.16)",
+};
+
+const visualCaptionTitleStyle: React.CSSProperties = {
+  margin: "0.95rem 0 0.35rem",
+  fontSize: "1.05rem",
+  fontWeight: 700,
+  color: "#f4f7fb",
+};
+
+const visualCaptionTextStyle: React.CSSProperties = {
+  margin: 0,
+  color: "rgba(226,234,245,0.82)",
+  lineHeight: 1.6,
+  fontSize: "0.98rem",
+};
+
+function VisualFigure({
+  src,
+  alt,
+  title,
+  caption,
+}: {
+  src: string;
+  alt: string;
+  title: string;
+  caption: string;
+}): JSX.Element {
+  return (
+    <figure style={visualCardStyle}>
+      <img src={src} alt={alt} style={visualImageStyle} />
+      <figcaption>
+        <h3 style={visualCaptionTitleStyle}>{title}</h3>
+        <p style={visualCaptionTextStyle}>{caption}</p>
+      </figcaption>
+    </figure>
+  );
+}
 
 const relatedPages = [
   {
@@ -235,6 +299,25 @@ export default function AIRONCatastrophePage(): JSX.Element {
         sectionClassName="section section-alt"
       />
 
+      <section className="section section-alt" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div style={visualGridStyle}>
+            <VisualFigure
+              src={catastropheTabletImage}
+              alt="Concept image of the optional C.A.T.A.S.T.R.O.P.H.E. field tablet endpoint"
+              title="Optional field endpoint concept"
+              caption="One governed mobile surface can carry incident visibility, responder guidance, documentation access, communications, and state continuity away from fixed danger points without redefining the underlying doctrine as a tablet-only product."
+            />
+            <VisualFigure
+              src={emtSosBadgeImage}
+              alt="EMT-SOS Savior-On-Site badge"
+              title="EMT-SOS / Savior-On-Site"
+              caption="When human life priority is active, SOS identifies the on-site continuity role: the person carrying scene truth, disciplined communication, responder readiness, and clean handoff responsibility under stress."
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <SectionHeading
@@ -251,6 +334,16 @@ export default function AIRONCatastrophePage(): JSX.Element {
             </p>
           </div>
           <CapabilityGrid items={humanPriorityRules} compact />
+          <div className="container" style={{ padding: 0, marginTop: "1.5rem" }}>
+            <div style={{ maxWidth: "420px", margin: "0 auto" }}>
+              <VisualFigure
+                src={emtSosBadgeImage}
+                alt="EMT-SOS Savior-On-Site badge"
+                title="SOS is a role, not just a screen mode"
+                caption="The person in possession of the active tablet becomes the mobile continuity point for life safety, responder preparation, message discipline, and trusted on-site event truth until formal handoff occurs."
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -313,6 +406,25 @@ export default function AIRONCatastrophePage(): JSX.Element {
         sectionClassName="section"
       />
 
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div style={visualGridStyle}>
+            <VisualFigure
+              src={machineModeImage}
+              alt="Machine Event Mode interface concept for C.A.T.A.S.T.R.O.P.H.E."
+              title="Machine Event Mode"
+              caption="Machine-first abnormal states focus on stabilization, exclusion, hazardous energy verification, local response speed dial, and carried Last Known Snapshot truth before recovery begins."
+            />
+            <VisualFigure
+              src={emtSosModeImage}
+              alt="EMT-SOS mode interface concept with shared message stream"
+              title="EMT-SOS Human Event Mode"
+              caption="Human-life priority shifts the surface toward immediate actions, shared messaging, SDS access, role assignment, and a handoff record that responders can trust when seconds matter."
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
@@ -372,6 +484,19 @@ export default function AIRONCatastrophePage(): JSX.Element {
         ]}
         sectionClassName="section"
       />
+
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="container">
+          <div style={{ maxWidth: "780px", margin: "0 auto" }}>
+            <VisualFigure
+              src={treeOfKnowledgeImage}
+              alt="Safety The Tree of Knowledge emblem"
+              title="Safety / The Tree of Knowledge"
+              caption="Experience, truth, and memory are not decoration here. They are the underlying doctrine that lets real incidents become rooted knowledge for safer handoffs, stronger repair sequencing, and better judgment during the next event."
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="section">
         <div className="container narrow">
