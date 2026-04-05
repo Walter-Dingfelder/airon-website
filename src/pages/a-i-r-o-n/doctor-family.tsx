@@ -80,6 +80,12 @@ const relatedPages = [
       "See the motion-control specialist built to connect commanded position, actual motion, feedback truth, and mechanical reality.",
   },
   {
+    title: "Crane Doctor™",
+    href: "/a-i-r-o-n/crane-doctor",
+    description:
+      "See the suspended-load specialist built to connect motion, braking, interlocks, load behavior, and operator reality.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
@@ -303,6 +309,29 @@ export default function DoctorFamilyPage(): JSX.Element {
         </div>
       </section>
 
+
+      <section className="section section-alt">
+        <div className="container narrow">
+          <SectionHeading title="Crane Doctor™ as the suspended-load specialist" />
+          <p>
+            Crane Doctor™ proves the family can sit tightly on one of the plant's most consequential motion systems
+            where the real pain lives in brake confidence, limit integrity, motion truth, load behavior, and disputed events.
+          </p>
+          <p>
+            It is built for operations where one crane complaint, weak stop, abnormal lift, or repeated fault can become
+            downtime, near-miss exposure, and plant-wide consequence faster than ordinary equipment problems.
+          </p>
+          <p>
+            That matters because suspended-load truth deserves its own specialist vocabulary instead of being flattened
+            into generic alarm history, maintenance notes, or operator folklore.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/crane-doctor">
+              See Crane Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
 
       <TextIntroBlock
         title="The relationship to Fortune Teller™"
