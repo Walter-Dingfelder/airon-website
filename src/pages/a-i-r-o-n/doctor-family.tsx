@@ -86,6 +86,12 @@ const relatedPages = [
       "See the suspended-load specialist built to connect motion, braking, interlocks, load behavior, and operator reality.",
   },
   {
+    title: "Press Doctor™",
+    href: "/a-i-r-o-n/press-doctor",
+    description:
+      "See the press-domain specialist built to connect force, timing, tooling, feed behavior, stopping truth, and operator reality.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
@@ -328,6 +334,29 @@ export default function DoctorFamilyPage(): JSX.Element {
           <div className="cta-row">
             <a className="btn btn-secondary" href="/a-i-r-o-n/crane-doctor">
               See Crane Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container narrow">
+          <SectionHeading title="Press Doctor™ as the high-force production specialist" />
+          <p>
+            Press Doctor™ proves the family can sit tightly on one of the plant's most consequential repeat-event systems
+            where the real pain lives in motion truth, tonnage behavior, tooling consequence, feed timing, and stop confidence.
+          </p>
+          <p>
+            It is built for operations where one abnormal cycle, misfeed, jam, die strike, or weak stop can become
+            downtime, tooling damage, quality loss, and human exposure faster than ordinary equipment problems.
+          </p>
+          <p>
+            That matters because press truth deserves its own specialist vocabulary instead of being flattened
+            into generic downtime history, maintenance notes, or finger-pointing between departments.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/press-doctor">
+              See Press Doctor™
             </a>
           </div>
         </div>

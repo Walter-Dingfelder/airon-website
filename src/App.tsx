@@ -3,6 +3,12 @@ import HomePage from "./pages/a-i-r-o-n/index";
 import ContactPage from "./pages/a-i-r-o-n/contact";
 import ModulesPage from "./pages/a-i-r-o-n/modules";
 import FurnaceDoctorPage from "./pages/a-i-r-o-n/furnace-doctor";
+import FoundryDoctorPage from "./pages/a-i-r-o-n/foundry-doctor";
+import MotorDoctorPage from "./pages/a-i-r-o-n/motor-doctor";
+import VFDDoctorPage from "./pages/a-i-r-o-n/vfd-doctor";
+import ServoDoctorPage from "./pages/a-i-r-o-n/servo-doctor";
+import CraneDoctorPage from "./pages/a-i-r-o-n/crane-doctor";
+import PressDoctorPage from "./pages/a-i-r-o-n/press-doctor";
 import FortuneTellerPage from "./pages/a-i-r-o-n/fortune-teller";
 import VaultPage from "./pages/a-i-r-o-n/vault";
 import OneTouchStartupPage from "./pages/a-i-r-o-n/one-touch-startup";
@@ -58,6 +64,18 @@ export default function App(): JSX.Element {
       return <ModulesPage />;
     case "/a-i-r-o-n/furnace-doctor":
       return <FurnaceDoctorPage />;
+    case "/a-i-r-o-n/foundry-doctor":
+      return <FoundryDoctorPage />;
+    case "/a-i-r-o-n/motor-doctor":
+      return <MotorDoctorPage />;
+    case "/a-i-r-o-n/vfd-doctor":
+      return <VFDDoctorPage />;
+    case "/a-i-r-o-n/servo-doctor":
+      return <ServoDoctorPage />;
+    case "/a-i-r-o-n/crane-doctor":
+      return <CraneDoctorPage />;
+    case "/a-i-r-o-n/press-doctor":
+      return <PressDoctorPage />;
     case "/a-i-r-o-n/fortune-teller":
       return <FortuneTellerPage />;
     case "/a-i-r-o-n/vault":
@@ -69,6 +87,7 @@ export default function App(): JSX.Element {
     case "/a-i-r-o-n/industrial-campus":
       return <IndustrialCampusPage />;
     case "/a-i-r-o-n/play-your-work":
+    case "/a-i-r-o-n/play-your-work-work-your-play":
       return <PlayYourWorkPage />;
     case "/a-i-r-o-n/industry-period":
       return <IndustryPeriodPage />;
