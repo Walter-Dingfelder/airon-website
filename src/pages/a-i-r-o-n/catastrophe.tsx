@@ -180,11 +180,11 @@ export default function AIRONCatastrophePage(): JSX.Element {
       </HeroBlock>
 
       <TextIntroBlock
-        title="What exists now"
+        title="Why C.A.T.A.S.T.R.O.P.H.E. matters"
         paragraphs={[
-          "C.A.T.A.S.T.R.O.P.H.E. already exists as a core doctrine page inside the active A.I.R.O.N. build surface, but it was still underrepresenting the full system described in the white paper: Savior-On-Site, mobile continuity, machine-event guidance, dual-incident behavior, remote communications discipline, and rooted incident memory.",
-          "What we are building now is a fuller presentation of that doctrine so the reader understands they are looking at something far broader than an emergency screen or a safety checklist.",
-          "What stays untouched is the rest of the site structure and the old live/demo domain while this page is elevated in place.",
+          "When normal automation degrades, communications break down, or the event outruns the screen the crew expected to rely on, C.A.T.A.S.T.R.O.P.H.E. becomes the disciplined human guidance layer inside A.I.R.O.N.",
+          "It helps protect life, preserve truth, coordinate communications, and guide safe recovery without forcing people to juggle disconnected radios, procedures, documentation, phone trees, and memory under stress.",
+          "The doctrine is built into every A.I.R.O.N. system. Tablets are optional endpoints that can extend visibility, mobility, and communication, but they are not the system itself.",
         ]}
       />
 
