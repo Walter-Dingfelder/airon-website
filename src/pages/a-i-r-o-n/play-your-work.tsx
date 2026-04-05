@@ -7,7 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
-import playYourWorkHero from "../../assets/play-your-work-work-your-play-hero.png";
+import playYourWorkHero from "../../assets/play-your-work-work-your-play-hero.webp";
 
 /**
  * A.I.R.O.N. PLAY YOUR WORK source file — refactored

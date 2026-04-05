@@ -7,7 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
-import furnaceDoctorHero from "../../assets/furnace-doctor-hero.png";
+import furnaceDoctorHero from "../../assets/furnace-doctor-hero.webp";
 
 const watchedSignals = [
   "Command vs actual",

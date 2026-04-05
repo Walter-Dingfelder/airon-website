@@ -29,12 +29,12 @@ const navItems: NavItem[] = [
   { label: "Modules", href: "/a-i-r-o-n/modules" },
   { label: "Campus", href: "/a-i-r-o-n/industrial-campus" },
   {
-    label: "Training",
+    label: "Free OSHA & Safety Training",
     href: "https://training.dingfelder.co/",
     external: true,
-    infoTitle: "Live Training Environment",
+    infoTitle: "Free OSHA & Safety Training",
     infoBody:
-      "Launch the ready-to-use Dingfelder training site for structured industrial learning, role-fit pathways, and serious workforce readiness.",
+      "Launch the Dingfelder training site for free OSHA-focused learning today, with broader safety and workforce training expansion planned.",
     infoNote: "Opens training.dingfelder.co in a new tab.",
   },
   { label: "Industry", href: "/a-i-r-o-n/industry-period" },
@@ -69,7 +69,7 @@ export default function Header({
                 >
                   <a
                     href={item.href}
-                    className={`nav-link${isActive ? " active" : ""}${item.label === "Training" ? " nav-link-training" : ""}`}
+                    className={`nav-link${isActive ? " active" : ""}${item.href === "https://training.dingfelder.co/" ? " nav-link-training" : ""}`}
                     aria-current={isActive ? "page" : undefined}
                     target={item.external ? "_blank" : undefined}
                     rel={item.external ? "noreferrer noopener" : undefined}

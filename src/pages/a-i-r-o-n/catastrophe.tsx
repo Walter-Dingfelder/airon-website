@@ -7,7 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 import treeOfKnowledgeImage from "../../assets/catastrophe-tree-of-knowledge.png";
-import emtSosBadgeImage from "../../assets/catastrophe-emt-sos-badge.png";
+import emtSosBadgeImage from "../../assets/catastrophe-emt-sos-badge.webp";
 import catastropheTabletImage from "../../assets/catastrophe-tablet.jpg";
 import machineModeImage from "../../assets/catastrophe-machine-mode.png";
 import emtSosModeImage from "../../assets/catastrophe-emt-sos-mode.png";

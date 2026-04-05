@@ -1,5 +1,5 @@
 import React from "react";
-import popupArtwork from "../../assets/workforce-skill-boost-popup.png";
+import popupArtwork from "../../assets/workforce-skill-boost-popup.webp";
 
 const INTRO_POPUP_STORAGE_KEY = "airon-home-intro-dismissed-at";
 const INTRO_POPUP_DISMISS_HOURS = 24;
