@@ -92,6 +92,12 @@ const relatedPages = [
       "See the press-domain specialist built to connect force, timing, tooling, feed behavior, stopping truth, and operator reality.",
   },
   {
+    title: "Baghouse Doctor™",
+    href: "/a-i-r-o-n/baghouse-doctor",
+    description:
+      "See the dust-collection specialist built to connect airflow, cleaning, filter condition, hopper continuity, fan behavior, and operator reality.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
@@ -357,6 +363,30 @@ export default function DoctorFamilyPage(): JSX.Element {
           <div className="cta-row">
             <a className="btn btn-secondary" href="/a-i-r-o-n/press-doctor">
               See Press Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="section section-alt">
+        <div className="container narrow">
+          <SectionHeading title="Baghouse Doctor™ as the dust-collection specialist" />
+          <p>
+            Baghouse Doctor™ proves the family can sit tightly on one of the plant&apos;s most overlooked but most consequential utility systems
+            where the real pain lives in airflow truth, filter condition, cleaning effectiveness, hopper continuity, fan stability, and containment confidence.
+          </p>
+          <p>
+            It is built for operations where one weak baghouse can become production loss, housekeeping pain, fire exposure, emissions concern,
+            and repeated troubleshooting drift faster than ordinary support-system problems.
+          </p>
+          <p>
+            That matters because dust-collection truth deserves its own specialist vocabulary instead of being flattened
+            into generic utility alarms, dirty gauges, or reactive maintenance folklore.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/baghouse-doctor">
+              See Baghouse Doctor™
             </a>
           </div>
         </div>

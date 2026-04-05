@@ -9,6 +9,7 @@ import VFDDoctorPage from "./pages/a-i-r-o-n/vfd-doctor";
 import ServoDoctorPage from "./pages/a-i-r-o-n/servo-doctor";
 import CraneDoctorPage from "./pages/a-i-r-o-n/crane-doctor";
 import PressDoctorPage from "./pages/a-i-r-o-n/press-doctor";
+import BaghouseDoctorPage from "./pages/a-i-r-o-n/baghouse-doctor";
 import FortuneTellerPage from "./pages/a-i-r-o-n/fortune-teller";
 import VaultPage from "./pages/a-i-r-o-n/vault";
 import OneTouchStartupPage from "./pages/a-i-r-o-n/one-touch-startup";
@@ -76,6 +77,8 @@ export default function App(): JSX.Element {
       return <CraneDoctorPage />;
     case "/a-i-r-o-n/press-doctor":
       return <PressDoctorPage />;
+    case "/a-i-r-o-n/baghouse-doctor":
+      return <BaghouseDoctorPage />;
     case "/a-i-r-o-n/fortune-teller":
       return <FortuneTellerPage />;
     case "/a-i-r-o-n/vault":
