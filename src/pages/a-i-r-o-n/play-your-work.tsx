@@ -7,6 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
+import playYourWorkHero from "../../assets/play-your-work-work-your-play-hero.png";
 
 /**
  * A.I.R.O.N. PLAY YOUR WORK source file — refactored
@@ -119,8 +120,13 @@ export default function AIRONPlayYourWorkPageRefactored(): JSX.Element {
           href: "/a-i-r-o-n/industrial-campus",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved workforce bridge / industrial campus image goes here</span>
+        <div className="hero-demo-visual">
+          <img
+            src={playYourWorkHero}
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
         </div>
       </HeroBlock>
 

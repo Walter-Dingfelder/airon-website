@@ -7,6 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
+import furnaceDoctorHero from "../../assets/furnace-doctor-hero.png";
 
 const watchedSignals = [
   "Command vs actual",
@@ -108,8 +109,13 @@ export default function FurnaceDoctorPage(): JSX.Element {
           href: "#related-modules",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved hot industrial / molten / thermal-process image goes here</span>
+        <div className="hero-demo-visual">
+          <img
+            src={furnaceDoctorHero}
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
         </div>
       </HeroBlock>
 

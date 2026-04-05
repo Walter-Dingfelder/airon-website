@@ -7,6 +7,7 @@ import CapabilityGrid from "../../components/core/CapabilityGrid";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 import SystemPlayerBlock from "../../components/doctrine/SystemPlayerBlock";
+import industrialCampusHero from "../../assets/industrial-campus-hero.png";
 
 /**
  * A.I.R.O.N. Dingfelder Industrial Campus source file — refactored
@@ -114,8 +115,13 @@ export default function AIRONIndustrialCampusPageRefactored(): JSX.Element {
           href: "/a-i-r-o-n/play-your-work-work-your-play",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved industrial campus / workforce bridge image goes here</span>
+        <div className="hero-demo-visual">
+          <img
+            src={industrialCampusHero}
+            alt=""
+            loading="eager"
+            decoding="async"
+          />
         </div>
       </HeroBlock>
 
