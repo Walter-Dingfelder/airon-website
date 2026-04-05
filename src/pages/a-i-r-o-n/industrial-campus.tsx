@@ -4,128 +4,104 @@ import HeroBlock from "../../components/core/HeroBlock";
 import TextIntroBlock from "../../components/core/TextIntroBlock";
 import SectionHeading from "../../components/core/SectionHeading";
 import CapabilityGrid from "../../components/core/CapabilityGrid";
-import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 import SystemPlayerBlock from "../../components/doctrine/SystemPlayerBlock";
 
+/**
+ * A.I.R.O.N. Dingfelder Industrial Campus source file — refactored
+ *
+ * Intended path:
+ *   src/pages/a-i-r-o-n/industrial-campus.tsx
+ *
+ * Notes:
+ * - Example page using shared layout and shared core components.
+ * - Import paths should be adjusted to match your final repo structure.
+ */
+
 const campusWhatItIs = [
-  "A governed industrial familiarization environment",
-  "A serious readiness and repetition platform",
-  "A workforce activation and skill-transfer system",
-  "A place to rehearse startup, operations, and abnormal events before live consequence",
-  "A bridge between preserved system truth and human development",
-  "A Continuous Improvement environment where learning can be practiced instead of discussed",
+  "A professional simulation environment",
+  "A workforce activation platform",
+  "A guided familiarization campus",
+  "A skill-transfer engine",
+  "A Continuous Improvement development space",
+  "A governed industrial learning system",
 ];
 
-const campusWhatItSolves = [
-  "Slow onboarding that depends too heavily on whoever happens to be nearby",
-  "Weak familiarization before real equipment, real pressure, and real consequence",
-  "Knowledge loss when experienced people leave or role coverage gets thin",
-  "Fill-in operators being forced to learn too late under live operating pressure",
-  "Procedures that are read one way, remembered another way, and performed a third way",
-  "Improvement ideas that never become repeated human behavior",
+const workforceSkills = [
+  "Reading changing conditions",
+  "Learning through repetition",
+  "Scanning live status",
+  "Reacting to dynamic events",
+  "Improving through feedback",
+  "Coordinating across systems and roles",
 ];
 
-const campusExperiences = [
-  "Role-based guided learning tied to real operating context",
-  "Startup, shutdown, and transition rehearsal before live consequence arrives",
-  "Safety, abnormal-event, and consequence-aware scenario exposure",
-  "Guided process familiarization across system flow, zones, and dependencies",
-  "Cross-training and handoff strengthening across departments and responsibilities",
-  "Practical repetition that builds confidence without teaching recklessness",
-  "System memory and preserved lessons made visible to the people who need them",
-  "A place where the next worker can inherit more than a binder and a warning",
+const campusSupports = [
+  "Build comfort with industrial systems",
+  "Learn process flow before live exposure",
+  "Rehearse startup, shutdown, and abnormal-event logic",
+  "Understand role responsibilities",
+  "Sharpen observation, judgment, and response",
+  "Carry system memory into live work instead of starting cold every time",
 ];
 
-const campusDomains = [
-  "Foundry and melt operations",
-  "Process manufacturing and utilities",
-  "Oil and gas operations",
-  "Storage, transfer, and distribution systems",
-  "Maintenance familiarization and troubleshooting flow",
-  "Continuous Improvement rehearsal and workforce development",
-  "Safety and abnormal-event scenario training",
-  "Any environment where readiness matters before live consequence arrives",
-];
-
-const withoutCampus = [
-  "Readiness starts too late",
-  "Confidence depends too much on individual luck and tribal coverage",
-  "Turnover strips away familiarity faster than plants can rebuild it",
-  "People encounter consequence before they encounter enough repetition",
-];
-
-const withCampus = [
-  "Familiarity starts earlier",
-  "Repetition becomes governed and more repeatable",
-  "Human growth stays connected to system truth and preserved memory",
-  "Plants can build confidence before the shift turns expensive or unsafe",
-];
-
-const leadershipValue = [
-  "Reduce the cost of weak familiarization",
-  "Shorten the path from curiosity to competence",
-  "Preserve knowledge across shifts, turnover, and role changes",
-  "Support workforce development without waiting for the next live problem to teach the lesson",
-  "Create a more durable pipeline between training, operations, maintenance, and improvement",
-  "Treat readiness as infrastructure instead of hoping it appears on its own",
+const environments = [
+  "Foundry operations",
+  "Melt systems",
+  "Oil and gas",
+  "Propane storage and transfer",
+  "Research and development",
+  "Manufacturing",
+  "Process operations",
+  "Utility systems",
+  "Environmental and nature study",
+  "Guided safety and abnormal-event rehearsal",
+  "Continuous Improvement development and rehearsal",
 ];
 
 const relatedPages = [
   {
-    title: "Training Philosophy",
-    href: "/a-i-r-o-n/training-philosophy",
-    description:
-      "See how PLAYER-LIVE, preserved memory, governed readiness, and proof-oriented development fit together.",
-  },
-  {
-    title: "PLAY YOUR WORK — WORK YOUR PLAY",
-    href: "/a-i-r-o-n/play-your-work",
-    description:
-      "See the workforce activation layer that connects modern interactive skill to real industrial performance.",
+    title: "PLAY YOUR WORK - WORK YOUR PLAY",
+    href: "/a-i-r-o-n/play-your-work-work-your-play",
+    description: "Professional workforce activation and skill transfer.",
   },
   {
     title: "One-Touch Startup™",
     href: "/a-i-r-o-n/one-touch-startup",
-    description:
-      "See how governed startup, proof-before-progression, and human permissives fit into campus rehearsal.",
+    description: "Startup rehearsal, structure, and proof logic.",
   },
   {
-    title: "Safety",
-    href: "/a-i-r-o-n/safety",
-    description:
-      "See how experience, truth, and preserved memory protect people before and during abnormal conditions.",
+    title: "C.A.T.A.S.T.R.O.P.H.E.™",
+    href: "/a-i-r-o-n/catastrophe",
+    description: "Abnormal-event readiness and human protection.",
+  },
+  {
+    title: "A.I.R.O.N. Home",
+    href: "/a-i-r-o-n",
+    description: "See the full system overview.",
   },
   {
     title: "Contact / Discovery",
     href: "/a-i-r-o-n/contact",
-    description: "Start the conversation around your environment, workforce, and readiness priorities.",
+    description: "Start the next conversation.",
   },
 ];
 
-export default function IndustrialCampusPage(): JSX.Element {
+export default function AIRONIndustrialCampusPageRefactored(): JSX.Element {
   return (
-    <SiteLayout
-      currentPath="/a-i-r-o-n/industrial-campus"
-      mainClassName="airon-branch-page industrial-campus-page"
-    >
+    <SiteLayout currentPath="/a-i-r-o-n/industrial-campus" mainClassName="airon-branch-page industrial-campus-page">
       <HeroBlock
-        eyebrow="Readiness should not begin at the moment of consequence."
-        title="Industrial Campus"
-        supportingLine="Governed industrial familiarization. Live skill transfer. Real readiness."
-        subhead="Industrial Campus is where A.I.R.O.N. connects workforce development, guided repetition, system truth, and preserved memory before the live environment becomes the teacher."
+        eyebrow="Industry. Period."
+        title="A.I.R.O.N. – Dingfelder Industrial Campus"
+        subhead="A professional industrial campus for readiness, skill activation, simulation, and Continuous Improvement."
         body={
           <>
+            <p>Dingfelder Industrial Campus is not a game world.</p>
             <p>
-              Industrial Campus is not a game world and it is not digital theater.
-              It is a governed industrial environment built to help people learn
-              faster, prepare better, and enter live work with more familiarity,
-              more confidence, and less guesswork.
-            </p>
-            <p>
-              The goal is simple: reduce the cost of weak unfamiliarity before
-              weak unfamiliarity shows up as delay, error, damage, or exposed people.
+              It is a professional industrial environment built under A.I.R.O.N.
+              governance to help people learn faster, prepare better, and
+              perform with more confidence before real consequence arrives.
             </p>
           </>
         }
@@ -134,152 +110,112 @@ export default function IndustrialCampusPage(): JSX.Element {
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See Training Philosophy",
-          href: "/a-i-r-o-n/training-philosophy",
+          label: "See the Workforce Vision",
+          href: "/a-i-r-o-n/play-your-work-work-your-play",
         }}
       >
-        <div className="comparison-grid">
-          <div className="comparison-card">
-            <h3>Before the field</h3>
-            <p>
-              Build familiarity, repetition, and governed confidence before the
-              real environment is forced to absorb every first lesson.
-            </p>
-          </div>
-          <div className="comparison-card">
-            <h3>Connected to reality</h3>
-            <p>
-              Keep human development tied to process flow, operating structure,
-              startup logic, safety boundaries, and preserved plant memory.
-            </p>
-          </div>
+        <div className="hero-image-placeholder">
+          <span>Approved industrial campus / workforce bridge image goes here</span>
         </div>
       </HeroBlock>
 
+      <section className="section">
+        <div className="container">
+          <SectionHeading title="Built for serious industrial use" />
+          <CapabilityGrid items={campusWhatItIs} />
+          <div className="contrast-card top-gap">
+            <h3>It is not:</h3>
+            <ul>
+              <li>Childish entertainment</li>
+              <li>Shallow gamification</li>
+              <li>Decorative virtual fluff</li>
+              <li>A replacement for real operations</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <TextIntroBlock
-        title="What Industrial Campus is"
+        title="Build readiness before consequence"
         paragraphs={[
-          "Industrial Campus is the readiness layer for human development inside the broader A.I.R.O.N. system.",
-          "It gives plants a governed place to transfer skill, rehearse consequence-aware work, preserve hard-won familiarity, and help the next worker inherit more than a warning and a binder.",
-          "This is where PLAYER-LIVE becomes practical: human understanding, judgment, engagement, and governed participation can improve before the shift turns expensive.",
+          "Plants still lose too much time and money because expertise is trapped in people, onboarding is too slow, fill-in operators are under-supported, process familiarity comes too late, and startup or abnormal-event logic is learned under pressure instead of before it.",
+          "Dingfelder Industrial Campus exists to reduce that gap by giving people a place to build readiness before they pay for weak familiarity in the field.",
         ]}
         sectionClassName="section section-alt"
       />
 
       <section className="section">
         <div className="container">
-          <SectionHeading
-            title="What Industrial Campus is built to do"
-            subtitle="Make readiness more deliberate, more repeatable, and less dependent on luck."
-            align="center"
-          />
-          <CapabilityGrid items={campusWhatItIs} compact />
-          <div className="contrast-card top-gap">
-            <h3>It is not:</h3>
-            <ul>
-              <li>Childish entertainment</li>
-              <li>Decorative virtual fluff</li>
-              <li>Shallow gamification with no operational spine</li>
-              <li>A replacement for the real plant</li>
-            </ul>
-          </div>
+          <SectionHeading title="The gamer is already in your plant. The opportunity is to activate their skill." />
+          <p className="center narrow-text">
+            The modern workforce already carries valuable interactive skills.
+            Those abilities do not disappear when people enter industry. Most
+            operations simply never learned how to activate their skill
+            professionally.
+          </p>
+          <CapabilityGrid items={workforceSkills} />
+          <p className="support-line center">
+            This is not about making work childish. It is about making readiness real.
+          </p>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading
-            title="What problem it solves"
-            subtitle="Most plants still ask the live environment to teach too much, too late."
-            align="center"
-          />
-          <CapabilityGrid items={campusWhatItSolves} compact />
+          <SectionHeading title="What people can do inside the campus" />
+          <CapabilityGrid items={campusSupports} />
+          <p className="support-line center">
+            This is where workforce familiarization, role-based guided learning,
+            startup rehearsal, abnormal-event readiness, and expert knowledge
+            transfer begin working together.
+          </p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <SectionHeading
-            title="What people can do inside the campus"
-            subtitle="Guided repetition, role clarity, and consequence-aware familiarity."
-            align="center"
-          />
-          <CapabilityGrid items={campusExperiences} compact />
+          <SectionHeading title="One governed campus. Many industrial environments." />
+          <CapabilityGrid items={environments} />
           <p className="support-line center">
-            The point is not novelty. The point is governed repetition that helps
-            the right habits arrive before the live system demands them.
+            The point is not novelty. The point is governed, repeatable
+            exposure to reality-shaped systems.
           </p>
-        </div>
-      </section>
-
-      <ContrastBlock
-        title="Why it matters"
-        leftTitle="Without Industrial Campus"
-        leftItems={withoutCampus}
-        rightTitle="With Industrial Campus"
-        rightItems={withCampus}
-      />
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading
-            title="One campus. Many industrial environments."
-            subtitle="The model scales across the environments where familiarity matters."
-            align="center"
-          />
-          <CapabilityGrid items={campusDomains} compact />
         </div>
       </section>
 
       <SystemPlayerBlock
         title="Governed by A.I.R.O.N."
-        systemText="holds structure, flow, preserved memory, operating logic, and repeatable exposure so readiness does not depend on improvisation alone."
-        playerText="retains judgment, awareness, ethics, teachability, and the human authority to interpret, improve, and lead."
+        systemText="SYSTEM enforces structure."
+        playerText="PLAYER retains judgment."
       />
 
       <TextIntroBlock
-        title="Continuous Improvement should be practiced, not just announced"
+        title="Continuous Improvement should be practiced, not just discussed."
         paragraphs={[
-          "Continuous Improvement is not just one more part of A.I.R.O.N. It is the reason A.I.R.O.N. exists.",
-          "That means improvement should not live only in reports, postmortems, meetings, or slogans. It should be rehearsed, learned, tested, and carried forward in human behavior.",
-          "Industrial Campus gives improvement a place to become repeatable human practice instead of one more idea that fades after the meeting ends.",
+          "Continuous Improvement should not live only in meetings, reports, after-the-fact analysis, or executive summaries.",
+          "It should be rehearsed, learned, tested, and strengthened in an environment that helps people build better habits before they pay for weak ones in the field.",
+          "That is why Dingfelder Industrial Campus belongs inside the broader A.I.R.O.N. vision.",
         ]}
         sectionClassName="section"
       />
 
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Why leadership should care"
-            subtitle="Readiness is infrastructure. Weak familiarization is a cost center."
-            align="center"
-          />
-          <CapabilityGrid items={leadershipValue} compact />
-          <p className="support-line center">
-            Industrial Campus helps plants build a better handoff between training,
-            operations, maintenance, and improvement instead of forcing each group
-            to relearn the same lessons alone.
-          </p>
-        </div>
-      </section>
-
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Start with human readiness where consequence begins. Then move deeper into training doctrine, workforce activation, startup structure, and safety architecture."
+        supportingLine="Start with readiness where the human and system meet. Expand into startup, safety, and system architecture when the path is clear."
       />
 
       <CTAFooterBand
-        headline="Build readiness before the live environment sends the invoice."
+        headline="Build real readiness before consequence arrives."
         primaryCTA={{
           label: "Start a Campus Conversation",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See Training Philosophy",
-          href: "/a-i-r-o-n/training-philosophy",
+          label: "See the Workforce Vision",
+          href: "/a-i-r-o-n/play-your-work-work-your-play",
         }}
-        supportingLine="Governed industrial familiarization for the modern workforce."
+        supportingLine="Modern workforce. Real industry. Live skill transfer."
       />
     </SiteLayout>
   );

@@ -35,7 +35,7 @@ export default function Footer(): JSX.Element {
             <h2 className="footer-heading">Workforce / Safety</h2>
             <ul className="footer-links">
               <li><a href="/a-i-r-o-n/industrial-campus">Dingfelder Industrial Campus</a></li>
-              <li><a href="/a-i-r-o-n/play-your-work">PLAY YOUR WORK</a></li>
+              <li><a href="/a-i-r-o-n/play-your-work-work-your-play">PLAY YOUR WORK - WORK YOUR PLAY</a></li>
               <li><a href="/a-i-r-o-n/safety">Safety / Tree of Knowledge</a></li>
               <li><a href="/a-i-r-o-n/catastrophe">C.A.T.A.S.T.R.O.P.H.E.</a></li>
             </ul>
