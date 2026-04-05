@@ -4,121 +4,93 @@ import HeroBlock from "../../components/core/HeroBlock";
 import TextIntroBlock from "../../components/core/TextIntroBlock";
 import SectionHeading from "../../components/core/SectionHeading";
 import CapabilityGrid from "../../components/core/CapabilityGrid";
-import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
-import HardPositionLines from "../../components/doctrine/HardPositionLines";
 
 const protectedItems = [
-  "Human life and responder safety",
-  "Scene clarity under pressure",
-  "Truth continuity when systems degrade",
-  "Structured handoff between crews and responders",
-  "Decision discipline during abnormal events",
-  "Usable memory after the event instead of panic reconstruction",
+  "Human life and on-scene judgment",
+  "Scene clarity under abnormal conditions",
+  "Repair safety during breakdown recovery",
+  "Continuity of truth from failure into repair",
+  "Responder and technician handoff",
+  "Usable institutional memory after the event",
 ];
 
-const preservedTruthItems = [
-  "Last Known Snapshot machine and process state",
-  "Recent operating conditions leading into the event",
-  "Relevant alarms, trips, and state transitions",
-  "Hazard context and surviving live visibility where available",
-  "Responder notes, checkpoints, and handoff context",
-  "The event trail needed for memory, learning, and improvement afterward",
+const twoRoles = [
+  "Protect people and preserve truth during abnormal events",
+  "Guide safe, correct, and expeditious repairs during machine and process breakdowns",
 ];
 
-const capabilityItems = [
-  "Preserve and surface bounded truth before and during an abnormal event",
-  "Guide humans through structured action paths when normal control assumptions fail",
-  "Separate urgent action from reckless action",
-  "Support hold, withdraw, isolate, escalate, and communicate decisions",
-  "Help continuity survive crew change, responder arrival, and degraded communications",
-  "Create memory that can strengthen safety and doctrine after the event is over",
+const capabilities = [
+  "Preserve and surface Last Known Snapshot truth",
+  "Guide humans through abnormal-event decision paths when normal automation can no longer be trusted",
+  "Surface relevant SOPs, documentation, CMMS records, and historical data from V.A.U.L.T.®",
+  "Lead operators and technicians through structured recovery and repair steps",
+  "Support safe, correct, and expeditious repair execution instead of improvised scrambling",
+  "Document the instance and the repair process for later review and continuous improvement",
+  "Help turn repeated troubleshooting into stronger sequential repair knowledge over time",
+  "Protect people first while still helping the plant recover with discipline",
 ];
 
-const supportItems = [
-  "Notify customer-designated contacts when an abnormal condition demands escalation",
-  "Support customer IT, engineering, maintenance, and leadership from the same preserved truth trail",
-  "Work with existing vendors and manufacturers when their equipment is involved",
-  "Enable remote support where authorized, while keeping scene command with the people on site",
-  "Build fast local support paths where possible so the customer is not left waiting on confusion",
-  "Keep the purpose where it belongs: protect people first and help keep the customer operating",
+const repairWorkflow = [
+  "Identify the abnormal condition and preserve bounded truth immediately",
+  "Stabilize the scene and confirm human safety before repair activity begins",
+  "Surface the correct procedures, history, and asset-specific documents from V.A.U.L.T.®",
+  "Guide operators and technicians through the safest correct repair path available",
+  "Record what was found, what was done, what changed, and what actually restored operation",
+  "Use that record to improve future troubleshooting and repair sequencing",
 ];
 
-const withoutCatastrophe = [
-  "Abnormal events fragment into calls, guesses, and partial memory",
-  "The scene loses continuity as people arrive, leave, or inherit incomplete context",
-  "Speed is confused with clarity",
-  "The event must be reconstructed later from panic, politics, and missing truth",
-];
-
-const withCatastrophe = [
-  "Human command stays centered while truth continuity stays intact",
-  "Protected action paths help people move without blind improvisation",
-  "Responder handoff improves because the event already has context",
-  "The operation can learn from the event instead of only surviving it",
-];
-
-const hardLines = [
-  "A tablet may show the system. It is not the system.",
-  "Human life is the first priority and on-site command remains with the people at the scene.",
-  "Knowledge Before Action. Truth Before Movement. People Before Everything.",
+const humanPriorityItems = [
+  "Human safety is the first priority",
+  "On-site command remains with the people at the scene",
+  "Remote participation is supportive only",
+  "Speed matters, but not at the expense of safe and correct action",
 ];
 
 const relatedPages = [
   {
     title: "Safety / Tree of Knowledge",
     href: "/a-i-r-o-n/safety",
-    description:
-      "See the Experience / Truth / Memory doctrine that strengthens protection before, during, and after consequence.",
+    description: "See the Experience / Truth / Memory doctrine behind safer action under pressure.",
   },
   {
     title: "V.A.U.L.T.®",
     href: "/a-i-r-o-n/vault",
-    description:
-      "See how custody, context, recall, and IMP™ memory packets preserve usable truth.",
+    description: "See how custody, context, recall, and institutional memory strengthen repair and recovery.",
   },
   {
-    title: "One-Touch Startup™",
-    href: "/a-i-r-o-n/one-touch-startup",
-    description:
-      "See how governed progression and proof-before-movement reduce risk before abnormal events begin.",
+    title: "Better Days",
+    href: "/a-i-r-o-n/better-days",
+    description: "See how captured reality becomes routed improvement instead of another forgotten problem.",
   },
   {
     title: "Contact / Discovery",
     href: "/a-i-r-o-n/contact",
-    description:
-      "Start the next conversation about high-consequence protection and response continuity.",
+    description: "Start a discovery conversation about abnormal-event protection and guided recovery.",
   },
 ];
 
-export default function CatastrophePage(): JSX.Element {
+export default function AIRONCatastrophePage(): JSX.Element {
   return (
-    <SiteLayout
-      currentPath="/a-i-r-o-n/catastrophe"
-      mainClassName="airon-module-page catastrophe-page"
-    >
+    <SiteLayout currentPath="/a-i-r-o-n/catastrophe" mainClassName="airon-module-page catastrophe-page">
       <HeroBlock
-        eyebrow="When normal control is no longer normal."
+        eyebrow="Abnormal-event protection and guided recovery"
         title="C.A.T.A.S.T.R.O.P.H.E.™"
-        supportingLine="Conditional Action Tree for Adapting Safe, Tactical, Responsible, Operational, Physical Human Engagement"
-        subhead="Built for the abnormal event — when automation degrades, visibility collapses, consequence stays live, and human beings still have to act."
+        supportingLine="Conditional Action Tree — Adapting Safe, Tactical, Responsible, Operational, Physical Human Engagement"
+        subhead="A.I.R.O.N. redefines the word C.A.T.A.S.T.R.O.P.H.E. — from abnormal-event protection to disciplined repair guidance when the plant is down and the truth still matters."
         body={
           <>
             <p>
-              C.A.T.A.S.T.R.O.P.H.E.™ is the abnormal-event human protection layer inside
-              A.I.R.O.N.
+              C.A.T.A.S.T.R.O.P.H.E. is the abnormal-event protection and guided-recovery doctrine inside A.I.R.O.N.
             </p>
             <p>
-              It is not built for normal production comfort. It is built for the hard
-              moment when communications fail, assumptions break, automation can no
-              longer be trusted, and people are still standing in the middle of
-              consequence.
+              It protects people when systems degrade, communications fail, or automation can no longer be trusted. It also leads operators and technicians through safe, correct, and expeditious repairs using the preserved truth of the event and the stored knowledge already held inside V.A.U.L.T.®.
             </p>
           </>
         }
         primaryCTA={{
-          label: "Start a Safety / Discovery Conversation",
+          label: "Start a Safety / Recovery Conversation",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
@@ -128,159 +100,209 @@ export default function CatastrophePage(): JSX.Element {
       >
         <div className="comparison-grid">
           <div className="comparison-card">
-            <h3>First priority</h3>
+            <h3>When the event is live</h3>
             <p>
-              Protect people, preserve scene clarity, and keep action governed when the
-              normal operating model breaks.
+              Protect human beings, preserve truth, structure decision-making,
+              and support the scene without pretending normal systems are still trustworthy.
             </p>
           </div>
           <div className="comparison-card">
-            <h3>What survives</h3>
+            <h3>When repair begins</h3>
             <p>
-              Truth continuity, responder handoff, and usable memory after the event —
-              not just alarm noise and hindsight.
+              Guide safe, correct, and expeditious recovery using SOPs, documentation,
+              CMMS history, and what the system already knows about this machine and this failure.
             </p>
           </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
-        title="A decision doctrine, not an alarm"
+        title="Two roles. One doctrine."
         paragraphs={[
-          "C.A.T.A.S.T.R.O.P.H.E.™ is for the moment normal control assumptions have become unsafe or incomplete, but consequence is still active.",
-          "Its first job is not productivity. Its first job is protection — structured human protection under abnormal conditions.",
-          "That is why it belongs inside A.I.R.O.N. itself rather than as a disconnected afterthought.",
-        ]}
-      />
-
-      <ContrastBlock
-        title="Not another emergency gadget"
-        leftTitle="C.A.T.A.S.T.R.O.P.H.E.™ is not"
-        leftItems={[
-          "A generic safety app",
-          "A replacement for trained responders",
-          "A command system that overrules the people on site",
-          "An excuse to remove human judgment",
-        ]}
-        rightTitle="C.A.T.A.S.T.R.O.P.H.E.™ is"
-        rightItems={[
-          "A native abnormal-event doctrine inside A.I.R.O.N.",
-          "A structure for protected human action under pressure",
-          "A continuity layer for truth, handoff, and memory",
-          "A serious response system for moments when normal automation cannot be trusted",
+          "C.A.T.A.S.T.R.O.P.H.E. is not only for the human-safety side of a high-consequence event. It also serves during breakdown recovery, when people need safe guidance, accurate history, and structured repair logic instead of panic and guesswork.",
+          "That matters because a plant can be shut down by something as small as a three-dollar bearing. In that moment, the word catastrophe is not only about flames and sirens. It is also about whether the operation can recover safely, correctly, and fast enough to matter.",
+          "A.I.R.O.N. redefines the word C.A.T.A.S.T.R.O.P.H.E. by treating abnormal events and repair recovery as part of the same truth-continuity problem.",
         ]}
       />
 
       <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="What C.A.T.A.S.T.R.O.P.H.E.™ protects"
-            subtitle="Before the event is over, after the plant goes dark, and during the handoff in between."
-            align="center"
-          />
-          <CapabilityGrid items={protectedItems} compact />
-        </div>
-      </section>
-
-      <TextIntroBlock
-        title="Native to the system, not bolted onto the scene"
-        paragraphs={[
-          "C.A.T.A.S.T.R.O.P.H.E.™ is not defined by the device displaying it. A rugged tablet may show the doctrine, but the tablet is not the doctrine.",
-          "Because it lives inside A.I.R.O.N., event recognition, escalation, preserved truth, and continuity can stay tied to the same operational nervous system instead of scattering across separate tools and partial memories.",
-          "That matters most when people need structure immediately and cannot afford to invent it in the middle of consequence.",
-        ]}
-        sectionClassName="section section-alt"
-      />
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="What must still be preserved when visibility collapses"
-            subtitle="If the plant goes dark, truth still matters."
-            align="center"
-          />
-          <CapabilityGrid items={preservedTruthItems} compact />
-          <p className="support-line center">
-            Last Known Snapshot logic helps preserve the bounded truth leading into and
-            through the abnormal event so people are not forced to rebuild reality from
-            panic after the fact.
-          </p>
+        <div className="container narrow">
+          <div className="contrast-card">
+            <h3>C.A.T.A.S.T.R.O.P.H.E. is not:</h3>
+            <ul>
+              <li>A detached tablet product</li>
+              <li>A replacement for human judgment</li>
+              <li>A replacement for emergency services</li>
+              <li>Paperwork that starts only after the damage is done</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="What it can do"
-            subtitle="Protect action quality when uncertainty and consequence arrive together."
+            title="What C.A.T.A.S.T.R.O.P.H.E. protects"
+            subtitle="People first, but not people only."
             align="center"
           />
-          <CapabilityGrid items={capabilityItems} compact />
+          <CapabilityGrid items={protectedItems} compact />
+
+          <SectionHeading
+            title="Its two operating roles"
+            subtitle="Protection during the event. Structured guidance during the recovery."
+            align="center"
+          />
+          <CapabilityGrid items={twoRoles} compact />
         </div>
       </section>
-
-      <TextIntroBlock
-        eyebrow="Human life first. Always."
-        title="Human sovereignty remains at the scene"
-        paragraphs={[
-          "During abnormal events, on-site command remains with the people at the scene. C.A.T.A.S.T.R.O.P.H.E.™ exists to support judgment under pressure, not replace it.",
-          "Remote participation is supportive only. It can strengthen clarity, continuity, and coordination where authorized, but it must never erase human sovereignty from the event.",
-          "The point is not speed without understanding. The point is protected action with enough truth to move responsibly.",
-        ]}
-        sectionClassName="section"
-      />
-
-      <ContrastBlock
-        title="Abnormal-event difference"
-        leftTitle="Without structured abnormal-event doctrine"
-        leftItems={withoutCatastrophe}
-        rightTitle="With C.A.T.A.S.T.R.O.P.H.E.™"
-        rightItems={withCatastrophe}
-      />
 
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="How support stays responsible"
-            subtitle="Serious support without stealing the scene."
+            title="What it can do"
+            subtitle="Not just hold the line during consequence, but help restore the operation with discipline."
             align="center"
           />
-          <CapabilityGrid items={supportItems} compact />
+          <CapabilityGrid items={capabilities} />
+        </div>
+      </section>
+
+      <TextIntroBlock
+        title="Not an add-on. A native doctrine."
+        paragraphs={[
+          "C.A.T.A.S.T.R.O.P.H.E. is native to A.I.R.O.N. That means abnormal-event recognition, record creation, recovery guidance, and continuity all belong to the system itself.",
+          "It does not begin after the event. It begins when the truth begins to break loose, and it remains useful until the repair is complete and the learning has been captured.",
+          "Endpoints may display the doctrine. They do not define its authority.",
+        ]}
+        sectionClassName="section section-alt"
+      />
+
+      <section className="section">
+        <div className="container narrow">
+          <div className="doctrine-block">
+            <p>
+              <strong>A tablet may show the system. It is not the system.</strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <TextIntroBlock
+        title="When live visibility collapses, truth still matters"
+        paragraphs={[
+          "C.A.T.A.S.T.R.O.P.H.E. uses Last Known Snapshot logic to preserve the rolling bounded truth leading up to and through an abnormal event.",
+          "That includes equipment state, recent operating history, hazard context, surviving live state where available, and the conditions leading into the breakdown.",
+          "If the plant goes dark, humans still need structured truth — and if the plant is down for repair, technicians still need that same truth carried forward into the work.",
+        ]}
+        sectionClassName="section"
+      />
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Guided repair with access to V.A.U.L.T.®"
+            subtitle="The system should not ask people to recover blind."
+            align="center"
+          />
+          <div className="doctrine-block">
+            <p>
+              During a breakdown, C.A.T.A.S.T.R.O.P.H.E. can reach into V.A.U.L.T.® for stored SOPs,
+              documentation, CMMS records, historical data, prior troubleshooting outcomes, and other
+              machine-specific knowledge needed to support safe and correct repair.
+            </p>
+            <p>
+              That means the operator or technician is not starting from memory fragments, old printouts,
+              or hallway folklore. They are starting from preserved system truth and governed institutional memory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="From breakdown to better repair"
+            subtitle="The instance should not disappear the moment the machine runs again."
+            align="center"
+          />
+          <CapabilityGrid items={repairWorkflow} compact />
+          <p className="support-line center">
+            A.I.R.O.N. can document the breakdown and the repair process for review, so proper sequential
+            instructions keep improving instead of forcing the next technician to rediscover the same path.
+          </p>
         </div>
       </section>
 
       <TextIntroBlock
         eyebrow="Experience. Truth. Memory."
-        title="The Tree of Knowledge strengthens what comes after"
+        title="The Tree of Knowledge is the growth doctrine behind the system"
         paragraphs={[
-          "C.A.T.A.S.T.R.O.P.H.E.™ does not end when the scene stabilizes. The event still has to be remembered, rooted, learned from, and converted into stronger future protection.",
-          "That is where the Tree of Knowledge matters. Experience, Truth, and Memory turn consequence into preserved learning instead of one more story that fades with turnover.",
-          "When the system can remember clearly, safety doctrine becomes stronger, startup becomes safer, and abnormal events stop teaching the same lesson over and over again.",
+          "The Tree of Knowledge helps the system preserve real event history, root real-world failures permanently, improve through structured memory, and grow safer and smarter through lived consequence instead of repeating it.",
+          "That same doctrine is what allows C.A.T.A.S.T.R.O.P.H.E. to improve repairs and troubleshooting over time rather than merely record damage after the fact.",
         ]}
         sectionClassName="section section-alt"
       />
 
-      <HardPositionLines title="Hard position lines" lines={hardLines} sectionClassName="section" />
+      <section className="section">
+        <div className="container narrow">
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/safety">
+              See the Safety Doctrine
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading title="Human life first. Always." align="center" />
+          <CapabilityGrid items={humanPriorityItems} compact />
+          <p className="center narrow-text">
+            C.A.T.A.S.T.R.O.P.H.E. exists to protect judgment under pressure and guide recovery under consequence,
+            not replace the people responsible for the scene.
+          </p>
+
+          <div className="two-col top-gap">
+            <div className="contrast-card">
+              <h3>It does not:</h3>
+              <ul>
+                <li>Command the scene autonomously</li>
+                <li>Replace trained responders</li>
+                <li>Replace emergency services</li>
+                <li>Remove human sovereignty from the event or the repair</li>
+              </ul>
+            </div>
+
+            <div className="callout-card">
+              <p>
+                During abnormal events and during repair recovery, on-site human beings remain the authority.
+                The system exists to strengthen truth, structure, and judgment around them.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div id="related-pages">
         <RelatedLinksBlock
           title="Related A.I.R.O.N. pages"
           items={relatedPages}
-          supportingLine="Start with the protection layer where consequence is highest. Then move into doctrine, memory, and governed operating structure."
+          supportingLine="Start with protection where consequence is highest. Expand into memory, institutional knowledge, and routed improvement as the system matures."
         />
       </div>
 
       <CTAFooterBand
-        headline="Protect the people before the system has to explain itself later."
+        headline="Protect the people. Preserve the truth. Recover the plant the right way."
         primaryCTA={{
-          label: "Start a Safety / Discovery Conversation",
+          label: "Start a Safety / Recovery Conversation",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See the Safety Doctrine",
-          href: "/a-i-r-o-n/safety",
+          label: "See V.A.U.L.T.®",
+          href: "/a-i-r-o-n/vault",
         }}
-        supportingLine="Knowledge Before Action. Truth Before Movement. People Before Everything."
+        supportingLine="Knowledge before action. Truth before movement. People before everything."
       />
     </SiteLayout>
   );
