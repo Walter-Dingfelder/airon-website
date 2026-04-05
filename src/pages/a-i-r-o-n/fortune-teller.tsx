@@ -8,94 +8,118 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-/**
- * A.I.R.O.N. Fortune Teller source file — refactored
- *
- * Intended path:
- *   src/pages/a-i-r-o-n/fortune-teller.tsx
- *
- * Notes:
- * - Example page using shared layout and shared core components.
- * - Import paths should be adjusted to match your final repo structure.
- */
-
 const signalSources = [
-  "Power factor",
-  "Current",
-  "Voltage",
-  "Vibration",
-  "Acoustics",
-  "Environment",
-  "Materials",
-  "Command vs actual behavior",
-  "Operator and panel inputs",
-  "Learned event history",
-  "Historical pattern similarity",
+  "Outputs from every relevant Doctor module",
+  "Command versus actual machine behavior",
+  "Current, voltage, and power-factor change",
+  "Vibration, resonance, and acoustic drift",
+  "Environmental and material-condition change",
+  "Operator inputs and panel behavior",
+  "Maintenance findings and historical event memory",
+  "Recurring signatures tied to prior near-misses, faults, and recoveries",
 ];
 
-const capabilities = [
-  "Recognize early warning signs before damage is done",
-  "Compare current conditions to past breakdowns and near-misses",
-  "Convert predictive storylines into repair-timing windows",
-  "Classify action windows by cost, risk, and urgency",
-  "Show not just when a breakpoint may arrive, but why the timing matters",
-  "Help operators, maintenance, scheduling, and leadership act from the same truth",
-  "Support proactive decisions instead of reactive scrambling",
+const architecturePoints = [
+  "Doctor modules tell the truth now in their specialist domain",
+  "Ghost Busting preserves the intermittent event that would otherwise disappear",
+  "Fortune Teller™ sits above the Doctor family as the predictive layer",
+  "Fortune Teller™ receives information from every relevant Doctor module",
+  "Prediction strengthens when machine evidence, human context, and history converge",
+  "A.I.R.O.N. is not guessing from one alarm. It is weighing the whole pattern",
+];
+
+const breakpointPoints = [
+  "A Predictive Breakpoint® is a meaningful future threshold, not a decorative warning",
+  "It forms where converging evidence indicates increasing instability, risk, or operating consequence",
+  "It can point to maintenance need, control degradation, quality loss, energy inefficiency, or safety-boundary approach",
+  "It matters because it creates timing while good options still exist",
+  "It should explain why the timing matters, not only that something might happen",
+  "It should orient the right role to the right action window before the breakdown arrives",
+];
+
+const capabilityPoints = [
+  "Recognize weak predictive patterns before visible failure",
+  "Compare current drift to prior faults, recoveries, and near-misses",
+  "Convert converging signals into usable action timing",
+  "Classify action windows by urgency, consequence, and cost of delay",
+  "Reduce false-alarm fatigue by weighing the pattern instead of one isolated signal",
+  "Give operations, maintenance, engineering, and leadership the same predictive story",
+  "Show when to watch, when to intervene, and when to escalate",
+  "Turn prediction into earlier clarity instead of reactive scrambling",
+];
+
+const actionWindowPoints = [
+  "Notify customer-designated contacts when a meaningful predictive condition is forming",
+  "Support customer IT, engineering, maintenance, and existing vendors from the same evidence trail",
+  "Build fast local support paths where possible so action does not stall",
+  "Equip trained customer hands with the software and access needed to work with us remotely",
+  "Where authorized, initiate remote support and notify vendors or manufacturers when their equipment is involved",
+  "Keep the goal where it belongs: keep the customer operating, not profit from their pain",
 ];
 
 const withoutFortuneTeller = [
   "Timing stays reactive",
-  "Drift stays fragmented",
-  "Action windows shrink",
-  "Maintenance and operations align later than they should",
+  "Drift stays fragmented across people and screens",
+  "Action windows shrink before anyone agrees on what is happening",
+  "Maintenance, operations, and leadership align later than they should",
 ];
 
 const withFortuneTeller = [
   "Converging patterns become visible earlier",
-  "Timing becomes clearer",
-  "Action windows become easier to plan",
-  "Decisions can start before consequence arrives",
+  "Future timing becomes clearer and more defensible",
+  "Good options remain available longer",
+  "People can coordinate from the same predictive truth before consequence arrives",
 ];
 
 const relatedPages = [
   {
-    title: "Furnace Doctor™",
-    href: "/a-i-r-o-n/furnace-doctor",
-    description: "Hot-end truth and advisory visibility.",
+    title: "Predictive & Diagnostics",
+    href: "/a-i-r-o-n/predictive-diagnostics",
+    description:
+      "See the full family relationship between Doctor modules, Ghost Busting, Fortune Teller™, and Predictive Breakpoint® logic.",
+  },
+  {
+    title: "Doctor Family™",
+    href: "/a-i-r-o-n/doctor-family",
+    description:
+      "See how specialist Doctor modules generate the domain truth that Fortune Teller™ weighs above them.",
   },
   {
     title: "V.A.U.L.T.®",
     href: "/a-i-r-o-n/vault",
-    description: "Truth, memory, and recoverable lessons.",
+    description:
+      "See how custody, context, recall, and IMP™ memory strengthen prediction over time.",
   },
   {
     title: "One-Touch Startup™",
     href: "/a-i-r-o-n/one-touch-startup",
-    description: "Structured startup and proof logic.",
-  },
-  {
-    title: "Doctor Family",
-    href: "/a-i-r-o-n/doctor-family",
-    description: "Specialist architecture overview.",
+    description:
+      "See how predictive timing and governed startup structure fit together when consequence begins before full production.",
   },
 ];
 
-export default function AIRONFortuneTellerPageRefactored(): JSX.Element {
+export default function FortuneTellerPage(): JSX.Element {
   return (
-    <SiteLayout currentPath="/a-i-r-o-n/fortune-teller" mainClassName="airon-module-page fortune-teller-page">
+    <SiteLayout
+      currentPath="/a-i-r-o-n/fortune-teller"
+      mainClassName="airon-module-page fortune-teller-page"
+    >
       <HeroBlock
         eyebrow="Not one signal. The whole pattern."
         title="Fortune Teller™"
-        subhead="See the breakpoint before the breakdown."
+        supportingLine="See the breakpoint before the breakdown."
+        subhead="Fortune Teller™ is the predictive layer above the Doctor family — built to turn converging machine truth into earlier clarity, better timing, and usable action windows."
         body={
           <>
-            <p>Fortune Teller is A.I.R.O.N.’s predictive layer.</p>
             <p>
-              It does not predict from one alarm, one tag, or one sensor crossing
-              a limit. It builds predictive confidence by analyzing converging
-              patterns across a process, asset, or operating state and turning
-              those patterns into <strong>Predictive Breakpoints®</strong> and live{" "}
-              <strong>Windows of Opportunity™</strong> for action.
+              Fortune Teller™ does not predict from one alarm, one sensor crossing,
+              or one isolated event. It weighs converging evidence across a process,
+              asset, or operating state and turns that pattern into a Predictive Breakpoint®.
+            </p>
+            <p>
+              The Doctors tell the truth now. Ghost Busting captures the intermittent
+              event. Fortune Teller™ helps answer what that truth means next, when it
+              will matter, and how much useful time still remains before consequence arrives.
             </p>
           </>
         }
@@ -108,23 +132,38 @@ export default function AIRONFortuneTellerPageRefactored(): JSX.Element {
           href: "#related-modules",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved predictive / process / signal image goes here</span>
+        <div className="comparison-grid">
+          <div className="comparison-card">
+            <h3>Truth now</h3>
+            <p>
+              Doctor modules tell the truth now in the exact machine, component,
+              subsystem, or process slice that needs specialist care.
+            </p>
+          </div>
+          <div className="comparison-card">
+            <h3>What comes next</h3>
+            <p>
+              Fortune Teller™ weighs those truths together and turns drift into
+              future timing, action windows, and earlier decision clarity.
+            </p>
+          </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
-        title="Prediction grounded in operating truth"
+        title="Where Fortune Teller™ sits"
         paragraphs={[
-          "Fortune Teller is the A.I.R.O.N. layer that converts drift into future-action timing.",
-          "It is built to identify when a meaningful future breakpoint is forming and to show where the useful action window still exists.",
+          "Fortune Teller™ is not a replacement for the Doctor family. It sits above the Doctor family as the predictive layer that receives information from every relevant Doctor module.",
+          "That architecture matters because prediction gets stronger when specialist truth, intermittent evidence, historical memory, and human context are kept connected instead of flattened into one generic dashboard.",
+          "The result is disciplined industrial foresight — not theater, not mysticism, and not prediction without evidence.",
         ]}
+        sectionClassName="section section-alt"
       />
 
       <section className="section">
         <div className="container narrow">
           <div className="contrast-card">
-            <h3>Fortune Teller is not:</h3>
+            <h3>Fortune Teller™ is not:</h3>
             <ul>
               <li>A crystal ball</li>
               <li>A single-threshold alarm</li>
@@ -137,80 +176,89 @@ export default function AIRONFortuneTellerPageRefactored(): JSX.Element {
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="What Fortune Teller weighs" />
-          <CapabilityGrid items={signalSources} />
+          <SectionHeading
+            title="What Fortune Teller™ weighs"
+            subtitle="Prediction starts where isolated signals stop."
+            align="center"
+          />
+          <CapabilityGrid items={signalSources} compact />
           <p className="support-line center">
             It does not trust one signal by itself, and it does not ignore human
-            signaling just because it is not a conventional sensor stream.
+            signaling simply because it is not a conventional sensor stream.
           </p>
         </div>
       </section>
 
-      <TextIntroBlock
-        title="What a Predictive Breakpoint really is"
-        paragraphs={[
-          "A Predictive Breakpoint is not one number crossing one line.",
-          "It is the point where converging evidence indicates that a process, asset, or operating state is moving toward instability, control degradation, maintenance need, quality risk, or operational consequence.",
-        ]}
-        sectionClassName="section"
-      />
-
       <section className="section">
-        <div className="container narrow">
-          <div className="doctrine-block">
-            <p>
-              Predictive Breakpoints are generated by analyzing converging
-              patterns across multiple feedback sources tied to a single process,
-              asset, or operating state.
-            </p>
-            <p>
-              A.I.R.O.N. weighs electrical, mechanical, acoustic,
-              environmental, material, command-response, human, and historical
-              signals together to determine when a meaningful future breakpoint
-              is forming.
-            </p>
-          </div>
-          <p className="support-line">The goal is not magic. The goal is earlier clarity.</p>
+        <div className="container">
+          <SectionHeading
+            title="The predictive stack"
+            subtitle="Diagnosis, intermittent capture, and future timing should stay distinct but connected."
+            align="center"
+          />
+          <CapabilityGrid items={architecturePoints} compact />
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="What Fortune Teller can do" />
-          <CapabilityGrid items={capabilities} />
+          <SectionHeading
+            title="What a Predictive Breakpoint® really is"
+            subtitle="Not one number crossing one line. A usable future threshold."
+            align="center"
+          />
+          <CapabilityGrid items={breakpointPoints} compact />
+          <div className="doctrine-block top-gap">
+            <p>The goal is not magic. The goal is earlier clarity.</p>
+            <p>
+              Prediction becomes valuable when it creates time for the right people
+              to act before the breakdown, quality loss, or forced decision is already on top of them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="What Fortune Teller™ can do"
+            subtitle="Turn converging patterns into practical timing and stronger decisions."
+            align="center"
+          />
+          <CapabilityGrid items={capabilityPoints} compact />
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="How prediction becomes action"
+            subtitle="A useful predictive layer helps the right people move at the right time."
+            align="center"
+          />
+          <CapabilityGrid items={actionWindowPoints} compact />
+          <p className="support-line center">
+            The point is not to create another screen full of anxiety. The point is to keep the customer operating.
+          </p>
         </div>
       </section>
 
       <ContrastBlock
         title="Earlier clarity. Better timing. Fewer surprises."
-        leftTitle="Without Fortune Teller"
+        leftTitle="Without Fortune Teller™"
         leftItems={withoutFortuneTeller}
-        rightTitle="With Fortune Teller"
+        rightTitle="With Fortune Teller™"
         rightItems={withFortuneTeller}
       />
-
-      <section className="section">
-        <div className="container narrow">
-          <p className="center narrow-text">
-            Most systems wait for something obvious to fail. Fortune Teller is
-            designed to surface meaningful future breakpoints while there are
-            still good options.
-          </p>
-          <p className="center narrow-text">
-            Its value is not perfect prophecy. Its value is earlier clarity,
-            better timing, fewer surprises, stronger decision windows, and
-            better coordination between operations, maintenance, and leadership.
-          </p>
-        </div>
-      </section>
 
       <TextIntroBlock
         title="Predictive, not theatrical"
         paragraphs={[
-          "Fortune Teller does not force action, pretend certainty where there is none, or replace human judgment.",
-          "It produces predictive timing, confidence, and action windows so humans can decide what smart move to make before consequence arrives.",
+          "Fortune Teller™ does not force action, pretend certainty where there is none, or replace human judgment.",
+          "It produces predictive timing, confidence, and action windows so human beings can make the smart move before consequence arrives.",
+          "The value is not perfect prophecy. The value is earlier clarity, better timing, stronger coordination, and fewer surprises.",
         ]}
-        sectionClassName="section section-alt"
+        sectionClassName="section"
       />
 
       <section className="section">
@@ -227,7 +275,7 @@ export default function AIRONFortuneTellerPageRefactored(): JSX.Element {
         <RelatedLinksBlock
           title="Related A.I.R.O.N. modules"
           items={relatedPages}
-          supportingLine="Start with prediction where timing matters most. Expand into advisory, memory, and startup structure when the system is ready."
+          supportingLine="Start with predictive timing where consequence matters most. Expand into specialist truth, memory, and governed startup structure as the system grows."
         />
       </div>
 
@@ -241,7 +289,7 @@ export default function AIRONFortuneTellerPageRefactored(): JSX.Element {
           label: "Start a Discovery Conversation",
           href: "/a-i-r-o-n/contact",
         }}
-        supportingLine="One process. One asset. One pattern. Or the full operation."
+        supportingLine="One process. One asset. One family of Doctors. Or the full operation."
       />
     </SiteLayout>
   );
