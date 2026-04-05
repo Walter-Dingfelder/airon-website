@@ -3,6 +3,7 @@ import HomePage from "./pages/a-i-r-o-n/index";
 import ContactPage from "./pages/a-i-r-o-n/contact";
 import ModulesPage from "./pages/a-i-r-o-n/modules";
 import FurnaceDoctorPage from "./pages/a-i-r-o-n/furnace-doctor";
+import FoundryDoctorPage from "./pages/a-i-r-o-n/foundry-doctor";
 import FortuneTellerPage from "./pages/a-i-r-o-n/fortune-teller";
 import VaultPage from "./pages/a-i-r-o-n/vault";
 import OneTouchStartupPage from "./pages/a-i-r-o-n/one-touch-startup";
@@ -17,6 +18,7 @@ import ControlsAutomationPage from "./pages/a-i-r-o-n/controls-automation";
 import ContinuousImprovementPage from "./pages/a-i-r-o-n/continuous-improvement";
 import BetterDaysPage from "./pages/a-i-r-o-n/better-days";
 import PredictiveDiagnosticsPage from "./pages/a-i-r-o-n/predictive-diagnostics";
+import TrainingPhilosophyPage from "./pages/a-i-r-o-n/training-philosophy";
 
 function normalizePath(pathname: string): string {
   if (!pathname) return "/";
@@ -57,6 +59,8 @@ export default function App(): JSX.Element {
       return <ModulesPage />;
     case "/a-i-r-o-n/furnace-doctor":
       return <FurnaceDoctorPage />;
+    case "/a-i-r-o-n/foundry-doctor":
+      return <FoundryDoctorPage />;
     case "/a-i-r-o-n/fortune-teller":
       return <FortuneTellerPage />;
     case "/a-i-r-o-n/vault":
@@ -85,6 +89,8 @@ export default function App(): JSX.Element {
       return <BetterDaysPage />;
     case "/a-i-r-o-n/predictive-diagnostics":
       return <PredictiveDiagnosticsPage />;
+    case "/a-i-r-o-n/training-philosophy":
+      return <TrainingPhilosophyPage />;
     default:
       return <NotFoundPage />;
   }

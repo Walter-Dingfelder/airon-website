@@ -49,22 +49,22 @@ const familyBenefitPoints = [
 
 const relatedPages = [
   {
+    title: "Furnace Doctor™",
+    href: "/a-i-r-o-n/furnace-doctor",
+    description:
+      "See the homepage-facing hot-end specialist already active inside the Doctor Family™.",
+  },
+  {
+    title: "Foundry Doctor™",
+    href: "/a-i-r-o-n/foundry-doctor",
+    description:
+      "See the wider foundry-organism example that proves a Doctor can sit above one machine when the truth lives at the operational level.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
       "See how Doctor modules, Ghost Busting, Fortune Teller™, and the Predictive Breakpoint® fit together.",
-  },
-  {
-    title: "Controls & Automation",
-    href: "/a-i-r-o-n/controls-automation",
-    description:
-      "See how specialist truth connects to governed machine behavior, startup logic, and real control structure.",
-  },
-  {
-    title: "Continuous Improvement",
-    href: "/a-i-r-o-n/continuous-improvement",
-    description:
-      "See why specialist modules matter inside the larger A.I.R.O.N. operating spine.",
   },
   {
     title: "Contact / Discovery",
@@ -190,14 +190,28 @@ export default function DoctorFamilyPage(): JSX.Element {
         sectionClassName="section section-alt"
       />
 
-      <TextIntroBlock
-        title="Foundry Doctor™ as the wider example"
-        paragraphs={[
-          "Foundry Doctor™ proves that some Doctors need to sit wider than one cabinet, one burner, or one drive.",
-          "It is built for foundry-wide operational continuity and is meant to see the foundry as one living organism instead of a collection of separate machines.",
-          "That matters because it shows the family can scale narrowly, broadly, by asset, by line, by process, or by whole operational battlefield.",
-        ]}
-      />
+      <section className="section">
+        <div className="container narrow">
+          <SectionHeading title="Foundry Doctor™ as the wider example" />
+          <p>
+            Foundry Doctor™ proves that some Doctors need to sit wider than one cabinet,
+            one burner, or one drive.
+          </p>
+          <p>
+            It is built for foundry-wide operational continuity and is meant to see the
+            foundry as one living organism instead of a collection of separate machines.
+          </p>
+          <p>
+            That matters because it shows the family can scale narrowly, broadly, by asset,
+            by line, by process, or by whole operational battlefield.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/foundry-doctor">
+              See Foundry Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
 
       <TextIntroBlock
         title="The relationship to Fortune Teller™"
