@@ -5,6 +5,7 @@ import ModulesPage from "./pages/a-i-r-o-n/modules";
 import FurnaceDoctorPage from "./pages/a-i-r-o-n/furnace-doctor";
 import FoundryDoctorPage from "./pages/a-i-r-o-n/foundry-doctor";
 import MotorDoctorPage from "./pages/a-i-r-o-n/motor-doctor";
+import VFDDoctorPage from "./pages/a-i-r-o-n/vfd-doctor";
 import ServoDoctorPage from "./pages/a-i-r-o-n/servo-doctor";
 import FortuneTellerPage from "./pages/a-i-r-o-n/fortune-teller";
 import VaultPage from "./pages/a-i-r-o-n/vault";
@@ -65,6 +66,8 @@ export default function App(): JSX.Element {
       return <FoundryDoctorPage />;
     case "/a-i-r-o-n/motor-doctor":
       return <MotorDoctorPage />;
+    case "/a-i-r-o-n/vfd-doctor":
+      return <VFDDoctorPage />;
     case "/a-i-r-o-n/servo-doctor":
       return <ServoDoctorPage />;
     case "/a-i-r-o-n/fortune-teller":

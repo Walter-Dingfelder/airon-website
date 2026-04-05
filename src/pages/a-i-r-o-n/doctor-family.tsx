@@ -30,7 +30,6 @@ const doctorExamplePoints = [
   "Foundry Doctor™",
   "Servo Doctor™",
   "Motor Doctor™",
-  "Servo Doctor™",
   "VFD Doctor™",
   "Crane Doctor™",
   "Press Doctor™",
@@ -67,6 +66,12 @@ const relatedPages = [
     href: "/a-i-r-o-n/motor-doctor",
     description:
       "See the rotating-equipment specialist built to connect electrical behavior, mechanical strain, heat, starts, and driven-load consequence.",
+  },
+  {
+    title: "VFD Doctor™",
+    href: "/a-i-r-o-n/vfd-doctor",
+    description:
+      "See the variable-speed specialist built to connect drive behavior, parameter integrity, motor consequence, and driven-process response.",
   },
   {
     title: "Servo Doctor™",
@@ -271,6 +276,28 @@ export default function DoctorFamilyPage(): JSX.Element {
           <div className="cta-row">
             <a className="btn btn-secondary" href="/a-i-r-o-n/servo-doctor">
               See Servo Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container narrow">
+          <SectionHeading title="VFD Doctor™ as the variable-speed specialist" />
+          <p>
+            VFD Doctor™ proves the family can sit tightly on variable-speed control where the real pain lives
+            in nuisance trips, weak ramps, hot cabinets, unstable restarts, parameter drift, or hidden overload.
+          </p>
+          <p>
+            It is built for systems where the truth may live in the drive, the motor, the supply, or the process
+            loading them — and where one repeating fault can quietly throttle a whole line.
+          </p>
+          <p>
+            That matters because drive truth deserves its own specialist vocabulary instead of being reduced to one fault code and one reset button.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/vfd-doctor">
+              See VFD Doctor™
             </a>
           </div>
         </div>
