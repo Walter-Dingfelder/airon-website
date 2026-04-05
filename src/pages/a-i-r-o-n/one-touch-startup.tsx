@@ -8,99 +8,120 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-/**
- * A.I.R.O.N. One-Touch Startup source file — refactored
- *
- * Intended path:
- *   src/pages/a-i-r-o-n/one-touch-startup.tsx
- *
- * Notes:
- * - Example page using shared layout and shared core components.
- * - Import paths should be adjusted to match your final repo structure.
- */
-
 const requirements = [
-  "Verified prerequisites",
-  "Approved recipe logic",
-  "Command vs actual proof",
-  "Hold / retry / abort logic",
-  "Annunciation where needed",
-  "Human permissives where risk or visual acceptance matters",
-  "Startup truth capture for future learning",
+  "Authorized startup recipe selection",
+  "Verified prerequisites before first release",
+  "Command-versus-actual proof at each critical step",
+  "Annunciation where people need time to respond",
+  "Human permissives where visual judgment or risk matters",
+  "Hold, retry, and abort logic with visible reason",
+  "Truth capture for future startup learning",
 ];
 
 const proofSources = [
-  "Current",
-  "Motion",
-  "Position",
-  "Flow",
-  "Temperature",
-  "Vibration",
-  "Acoustic feedback",
-  "Operator acceptance",
+  "Current and power response",
+  "Motion and position proof",
+  "Flow and pressure confirmation",
+  "Temperature and thermal readiness",
+  "Vibration and mechanical stability",
+  "Acoustic confirmation where sound matters",
+  "Panel state and control acknowledgement",
+  "Operator visual acceptance when the system should not guess",
 ];
 
-const capabilities = [
+const architecturePoints = [
+  "One-Touch Startup™ is not one-button chaos; it is governed release logic",
+  "A start command should not be enough by itself to release the next step",
+  "Each critical step should prove that the process actually responded acceptably",
+  "If proof is missing, the system should hold, retry, or abort for a visible reason",
+  "Where the process needs human judgment, the human stays in the loop",
+  "Startup truth should be captured so the next startup is smarter than the last one",
+];
+
+const capabilityPoints = [
   "Launch approved startup recipes from authorized panels",
-  "Issue plantwide or zone-based startup warning",
-  "Verify prerequisites before first motion",
-  "Require proof from current, motion, position, flow, temperature, vibration, acoustic, or operator acceptance",
-  "Hold, retry, or abort safely when expected proof is missing",
+  "Warn the affected area before motion, heat, flow, or transfer begins",
+  "Verify prerequisites before the first release",
+  "Require proof before progression instead of trusting timers alone",
   "Support restart, runout, clear, test, and controlled stop recipes",
-  "Capture startup truth, signatures, delays, and quality for future learning",
+  "Expose weak starts, repeated holds, nuisance retries, and fragile steps",
+  "Capture startup timing, delays, proofs, and exceptions for review",
+  "Turn tribal startup knowledge into governed, teachable structure",
+];
+
+const operationalResults = [
+  "Fewer rushed handoffs and fewer assumed confirmations",
+  "Clearer visibility into why startup slowed, held, or failed",
+  "Less equipment stress from weak or premature release",
+  "Stronger quality at the beginning of production",
+  "Better training because startup logic becomes visible and reviewable",
+  "Reusable proof for maintenance, controls, operations, and leadership",
 ];
 
 const withoutOTS = [
-  "Startup varies by person and shift",
-  "Proof may be assumed instead of verified",
-  "Delays and weak starts are harder to diagnose",
-  "Startup knowledge stays trapped in individuals",
+  "Startup varies by person, shift, and memory",
+  "Proof is assumed more often than it is verified",
+  "Weak starts hide until they become downtime, damage, or quality loss",
+  "The lesson stays trapped in whoever happened to be there",
 ];
 
 const withOTS = [
   "The sequence is governed",
-  "Proof is visible",
-  "Holds are easier to understand",
-  "Startup truth becomes reusable",
+  "Proof is visible before progression",
+  "Holds and retries are easier to understand",
+  "Startup truth becomes reusable instead of disposable",
 ];
 
 const relatedPages = [
   {
-    title: "Furnace Doctor™",
-    href: "/a-i-r-o-n/furnace-doctor",
-    description: "Hot-end truth and startup visibility.",
-  },
-  {
     title: "Fortune Teller™",
     href: "/a-i-r-o-n/fortune-teller",
-    description: "Predictive timing and startup degradation trends.",
+    description:
+      "See how startup drift, repeated delays, and weak starts become predictive timing instead of recurring surprise.",
   },
   {
     title: "V.A.U.L.T.®",
     href: "/a-i-r-o-n/vault",
-    description: "Startup truth, history, and recoverable lessons.",
+    description:
+      "See how startup truth, exception history, and recoverable lessons are retained instead of lost.",
   },
   {
-    title: "Dingfelder Industrial Campus",
+    title: "Safety",
+    href: "/a-i-r-o-n/safety",
+    description:
+      "See why proof, annunciation, and human permissives matter most when consequence can begin at startup.",
+  },
+  {
+    title: "Industrial Campus",
     href: "/a-i-r-o-n/industrial-campus",
-    description: "Startup rehearsal and skill activation.",
+    description:
+      "See how governed startup structure supports rehearsal, workforce development, and operational confidence.",
   },
 ];
 
-export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
+export default function OneTouchStartupPage(): JSX.Element {
   return (
-    <SiteLayout currentPath="/a-i-r-o-n/one-touch-startup" mainClassName="airon-module-page one-touch-startup-page">
+    <SiteLayout
+      currentPath="/a-i-r-o-n/one-touch-startup"
+      mainClassName="airon-module-page one-touch-startup-page"
+    >
       <HeroBlock
         eyebrow="One authorized start. Many verified steps. Zero guesswork."
         title="One-Touch Startup™"
-        subhead="Startup should be controlled, provable, and repeatable."
+        supportingLine="Governed startup before motion, heat, flow, and risk outrun understanding."
+        subhead="One-Touch Startup™ turns startup from tribal memory and hopeful sequencing into structured release, visible proof, and captured truth."
         body={
           <>
-            <p>One-Touch Startup turns tribal startup into governed startup.</p>
             <p>
-              It replaces remembered, improvised, rushed startup behavior with
-              structured sequencing, proof-based progression, annunciation, human
-              permissives, and captured truth.
+              Startup is where small assumptions become equipment stress, quality loss,
+              rushed decisions, and unsafe handoffs. It is also where weak habits can
+              become normal if nobody structures the sequence.
+            </p>
+            <p>
+              One-Touch Startup™ replaces improvised startup behavior with governed
+              startup logic: prerequisite checks, annunciation, human permissives,
+              command-versus-actual proof, and hold/retry/abort decisions that stay
+              visible instead of hidden inside timing and guesswork.
             </p>
           </>
         }
@@ -113,28 +134,43 @@ export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
           href: "#related-modules",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved HMI / control-room / startup-sequence image goes here</span>
+        <div className="comparison-grid">
+          <div className="comparison-card">
+            <h3>Command issued</h3>
+            <p>
+              The system knows the requested step, the approved recipe, and the
+              prerequisites that must exist before anything moves forward.
+            </p>
+          </div>
+          <div className="comparison-card">
+            <h3>Response proven</h3>
+            <p>
+              The next step releases only when the process actually responds in an
+              acceptable way, or the system holds with a visible reason.
+            </p>
+          </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
         title="Governed startup, not blind automation"
         paragraphs={[
-          "One-Touch Startup begins with prerequisite checks, operator authorization, startup annunciation, step-by-step release logic, proof-of-operation before progression, and human permissives where visual judgment or risk requires them.",
-          "Every step advances because the process actually did what it was supposed to do — not because a timer expired, and not because someone hoped it was fine.",
+          "One-Touch Startup™ is not about making startup reckless, automatic, or detached from the people who understand the process. It is about giving startup structure before speed creates confusion.",
+          "A disciplined startup sequence should know what must already be true, what proof must arrive next, what warnings must be issued, when the human must confirm, and what should happen when proof does not show up.",
+          "That is how startup becomes repeatable without becoming careless.",
         ]}
+        sectionClassName="section section-alt"
       />
 
       <section className="section">
         <div className="container narrow">
           <div className="contrast-card">
-            <h3>One-Touch Startup is not:</h3>
+            <h3>One-Touch Startup™ is not:</h3>
             <ul>
               <li>One-button chaos</li>
               <li>Blind automation</li>
-              <li>Startup by memory alone</li>
               <li>Timer-only sequencing</li>
+              <li>Startup by memory alone</li>
             </ul>
           </div>
         </div>
@@ -142,28 +178,52 @@ export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="What disciplined startup requires" />
-          <CapabilityGrid items={requirements} />
+          <SectionHeading
+            title="What disciplined startup requires"
+            subtitle="The start should be authorized once. The proof should be earned step by step."
+            align="center"
+          />
+          <CapabilityGrid items={requirements} compact />
 
-          <SectionHeading title="Typical proof sources" />
+          <SectionHeading
+            title="Typical proof sources"
+            subtitle="The process should advance because it actually responded, not because time simply passed."
+            align="center"
+          />
           <CapabilityGrid items={proofSources} compact />
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <SectionHeading title="What One-Touch Startup can do" />
-          <CapabilityGrid items={capabilities} />
+          <SectionHeading
+            title="The startup doctrine"
+            subtitle="Structure from the system. Judgment from the people."
+            align="center"
+          />
+          <CapabilityGrid items={architecturePoints} compact />
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="What One-Touch Startup™ can do"
+            subtitle="Govern the release, prove the response, and keep the lesson."
+            align="center"
+          />
+          <CapabilityGrid items={capabilityPoints} compact />
         </div>
       </section>
 
       <TextIntroBlock
         title="If startup matters, proof matters"
         paragraphs={[
-          "Weak startup behavior hides too much: uncertainty, tribal workarounds, fragile handoffs, missing confirmations, and rushed decisions.",
-          "One-Touch Startup makes the sequence visible, teachable, and repeatable by requiring proof before progression.",
+          "Weak startup behavior hides too much: uncertainty, tribal workarounds, missing confirmations, delayed feedback, rushed release, and fragile handoffs.",
+          "One-Touch Startup™ makes startup visible, teachable, and reviewable by requiring proof before progression and by preserving the truth of what actually happened during the sequence.",
+          "That truth becomes useful later for training, troubleshooting, controls refinement, maintenance planning, and predictive timing.",
         ]}
-        sectionClassName="section section-alt"
+        sectionClassName="section"
       />
 
       <section className="section">
@@ -171,39 +231,44 @@ export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
           <div className="doctrine-block">
             <p>The startup sequence should always answer:</p>
             <ul>
-              <li>Was the command issued?</li>
+              <li>Was the command issued by an authorized path?</li>
               <li>Did the device or process actually respond?</li>
               <li>Was the response acceptable?</li>
-              <li>Is the next step safe to release?</li>
+              <li>Is the next release safe and justified?</li>
             </ul>
           </div>
         </div>
       </section>
 
-      <ContrastBlock
-        title="Bad startups cost more than time"
-        leftTitle="Without One-Touch Startup"
-        leftItems={withoutOTS}
-        rightTitle="With One-Touch Startup"
-        rightItems={withOTS}
-      />
-
-      <section className="section">
-        <div className="container narrow">
-          <p className="center narrow-text">
-            Weak startup behavior creates equipment stress, operator uncertainty,
-            nuisance downtime, weak product starts, hidden workarounds, and
-            safety risk during handoffs and rushed decisions.
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Why this matters operationally"
+            subtitle="Bad startups cost more than time."
+            align="center"
+          />
+          <CapabilityGrid items={operationalResults} compact />
+          <p className="support-line center">
+            Startup discipline protects equipment, strengthens confidence, improves
+            quality, and keeps the operation from normalizing weak habits.
           </p>
         </div>
       </section>
 
+      <ContrastBlock
+        title="Startup can be governed without becoming rigid"
+        leftTitle="Without One-Touch Startup™"
+        leftItems={withoutOTS}
+        rightTitle="With One-Touch Startup™"
+        rightItems={withOTS}
+      />
+
       <TextIntroBlock
-        title="Structure from the system. Judgment from the people."
+        title="Captured startup truth makes the next startup stronger"
         paragraphs={[
-          "This is not blind automation.",
-          "Humans still approve, confirm, judge, intervene, and govern the risky moments.",
-          "The system provides structure. People provide judgment.",
+          "The sequence should not disappear once the line is running. Startup truth should feed memory, review, training, and future improvement.",
+          "Repeated holds, weak responses, nuisance retries, and fragile step transitions are not noise. They are evidence.",
+          "When that evidence is preserved, A.I.R.O.N. can help the operation move from repeated startup pain to governed startup confidence.",
         ]}
         sectionClassName="section section-alt"
       />
@@ -222,12 +287,12 @@ export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
         <RelatedLinksBlock
           title="Related A.I.R.O.N. modules"
           items={relatedPages}
-          supportingLine="Start with startup discipline where the process begins. Expand into advisory, prediction, memory, and training when the system is ready."
+          supportingLine="Start where the process begins. Expand into prediction, memory, safety, and training as the system matures."
         />
       </div>
 
       <CTAFooterBand
-        headline="Make startup repeatable before the weak habits become normal."
+        headline="Make startup repeatable before weak habits become normal."
         primaryCTA={{
           label: "Request a Startup Review",
           href: "/a-i-r-o-n/contact",
@@ -236,7 +301,7 @@ export default function AIRONOneTouchStartupPageRefactored(): JSX.Element {
           label: "Start a Discovery Conversation",
           href: "/a-i-r-o-n/contact",
         }}
-        supportingLine="One startup sequence. One line. One process. Or the full operation."
+        supportingLine="One line. One machine family. One process. Or the full operation."
       />
     </SiteLayout>
   );
