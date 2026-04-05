@@ -8,105 +8,102 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-/**
- * A.I.R.O.N. PLAY YOUR WORK source file — refactored
- *
- * Intended path:
- *   src/pages/a-i-r-o-n/play-your-work.tsx
- *
- * Notes:
- * - Example page using shared layout and shared core components.
- * - Import paths should be adjusted to match your final repo structure.
- */
-
-const whatItIs = [
-  "Professional simulation",
-  "Industrial familiarization",
-  "Live skill activation",
-  "Guided role development",
-  "Serious consequence training",
-  "Faster confidence without unsafe improvisation",
+const whatThisReallyMeans = [
+  "Professional simulation tied to real industrial consequence",
+  "Guided repetition that turns exposure into usable readiness",
+  "Role-based learning instead of generic one-size-fits-all training",
+  "Interactive familiarization before live field pressure arrives",
+  "Structured feedback that helps good habits form earlier",
+  "Skill transfer from modern interactive cognition into disciplined plant performance",
 ];
 
-const workforceSkills = [
-  "Scanning changing conditions",
-  "Reading live status",
-  "Reacting to dynamic events",
-  "Learning by iteration",
-  "Understanding maps, systems, and zones",
-  "Coordinating under pressure",
-  "Improving through immediate feedback",
+const existingHumanStrengths = [
+  "Reading changing conditions in real time",
+  "Tracking multiple signals at once",
+  "Learning by iteration instead of one-pass exposure",
+  "Navigating maps, systems, zones, and objectives",
+  "Coordinating under pressure with defined roles",
+  "Recognizing patterns, timing, and consequence quickly",
+  "Improving through immediate feedback loops",
+  "Staying engaged when the environment responds to good judgment",
 ];
 
-const supportAreas = [
-  "Workforce familiarization before field exposure",
-  "Faster onboarding",
-  "Role-based guided learning",
-  "Startup and shutdown rehearsal",
-  "Abnormal-event readiness",
-  "Expert knowledge transfer",
-  "Stronger confidence under real operating pressure",
+const activationMethods = [
+  "Role-based guided practice",
+  "System familiarization before field exposure",
+  "Startup, shutdown, and handoff rehearsal",
+  "Abnormal-event readiness with controlled consequence",
+  "Progression tied to demonstrated judgment, not only attendance",
+  "Preserved memory that helps training stay connected to real plant truth",
+  "Faster onboarding without unsafe improvisation",
+  "Confidence growth before live consequence arrives",
 ];
 
-const withoutActivation = [
-  "Learning stays slower and less sticky",
-  "Readiness often starts too late",
-  "Weaker habits survive longer",
-  "Onboarding depends too much on who happens to be nearby",
+const withoutTranslation = [
+  "Potential stays disconnected from industrial reality",
+  "Training feels separate from the way people actually learn",
+  "Knowledge transfer depends too much on whoever happens to be nearby",
+  "Readiness often arrives late, unevenly, or not at all",
 ];
 
-const withActivation = [
-  "Readiness builds earlier",
-  "Guided learning becomes more repeatable",
-  "Confidence rises before live consequence arrives",
-  "System memory supports human growth instead of replacing it",
+const withTranslation = [
+  "Modern learning instincts get translated into disciplined plant behavior",
+  "Readiness begins earlier and progresses more consistently",
+  "People rehearse judgment before the real consequence shows up",
+  "System memory and guided structure help good performance stick",
 ];
 
 const relatedPages = [
   {
-    title: "Dingfelder Industrial Campus",
+    title: "Industrial Campus",
     href: "/a-i-r-o-n/industrial-campus",
-    description: "Professional industrial readiness infrastructure.",
+    description:
+      "See the governed environment where industrial familiarization, repetition, and readiness can develop before live consequence arrives.",
+  },
+  {
+    title: "Training Philosophy",
+    href: "/a-i-r-o-n/training-philosophy",
+    description:
+      "See how PLAYER-LIVE, proof-based progression, and preserved memory shape A.I.R.O.N. training doctrine.",
   },
   {
     title: "One-Touch Startup™",
     href: "/a-i-r-o-n/one-touch-startup",
-    description: "Startup rehearsal, structure, and proof logic.",
+    description:
+      "See how governed startup, annunciation, and proof-before-progression reinforce real-world readiness.",
   },
   {
     title: "C.A.T.A.S.T.R.O.P.H.E.™",
     href: "/a-i-r-o-n/catastrophe",
-    description: "Abnormal-event readiness and human protection.",
-  },
-  {
-    title: "A.I.R.O.N. Home",
-    href: "/a-i-r-o-n",
-    description: "See the full system overview.",
-  },
-  {
-    title: "Contact / Discovery",
-    href: "/a-i-r-o-n/contact",
-    description: "Start the next conversation.",
+    description:
+      "See how abnormal-event readiness and human protection connect to serious consequence training.",
   },
 ];
 
-export default function AIRONPlayYourWorkPageRefactored(): JSX.Element {
+export default function PlayYourWorkPage(): JSX.Element {
   return (
-    <SiteLayout currentPath="/a-i-r-o-n/play-your-work" mainClassName="airon-branch-page play-your-work-page">
+    <SiteLayout
+      currentPath="/a-i-r-o-n/play-your-work"
+      mainClassName="airon-branch-page play-your-work-page"
+    >
       <HeroBlock
-        eyebrow="Modern workforce. Real industry. Live skill transfer."
+        eyebrow="A modern workforce already knows how to learn. Industry needs to translate the skill."
         title="PLAY YOUR WORK — WORK YOUR PLAY"
-        subhead="The gamer is already in your plant. The opportunity is to activate their skill."
+        supportingLine="Professional skill activation for the generation already trained by interactivity."
+        subhead="This is not play replacing work. It is guided industrial familiarization, repetition, and consequence-aware training built in a form modern people already know how to engage."
         body={
           <>
             <p>
-              PLAY YOUR WORK — WORK YOUR PLAY is the bridge between modern
-              interactive cognition and real industrial performance.
+              PLAY YOUR WORK — WORK YOUR PLAY begins with a simple reality: many
+              people entering industry already know how to read changing conditions,
+              learn by iteration, react under pressure, and stay engaged inside
+              interactive systems.
             </p>
             <p>
-              It connects serious simulation, guided repetition, live feedback,
-              procedural discipline, and governed operational truth to the way
-              modern people already learn.
+              The opportunity is not to trivialize work. The opportunity is to
+              translate those existing human strengths into disciplined industrial
+              readiness, governed practice, and better performance before live
+              consequence arrives.
             </p>
           </>
         }
@@ -115,103 +112,114 @@ export default function AIRONPlayYourWorkPageRefactored(): JSX.Element {
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See the Campus Vision",
+          label: "See the Industrial Campus",
           href: "/a-i-r-o-n/industrial-campus",
         }}
       >
-        <div className="hero-image-placeholder">
-          <span>Approved workforce bridge / industrial campus image goes here</span>
+        <div className="comparison-grid">
+          <div className="comparison-card">
+            <h3>Not childish gamification</h3>
+            <p>
+              This is not entertainment layered on top of industry. It is serious
+              professional skill activation built around guided repetition,
+              system response, and real consequence logic.
+            </p>
+          </div>
+          <div className="comparison-card">
+            <h3>Human-to-machine engagement</h3>
+            <p>
+              This is PLAYER-LIVE in practice: the continuous improvement of human
+              understanding, judgment, engagement, and governed participation.
+            </p>
+          </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
-        title="Not games at work. Professional skill activation."
+        title="The workforce is not starting from zero"
         paragraphs={[
-          "PLAY YOUR WORK — WORK YOUR PLAY is not childish entertainment, shallow gamification, or novelty for novelty’s sake.",
-          "It is professional simulation, industrial familiarization, live skill activation, guided role development, serious consequence training, and faster confidence without unsafe improvisation.",
-          "The point is not entertainment. The point is transfer.",
-        ]}
-      />
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading title="What this approach is" />
-          <CapabilityGrid items={whatItIs} />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading title="The workforce is already here" />
-          <p className="center narrow-text">
-            Modern workers often already know how to read changing conditions,
-            react to live status, learn by iteration, and coordinate across
-            systems. Those abilities do not disappear when they enter industry.
-          </p>
-          <CapabilityGrid items={workforceSkills} />
-          <p className="support-line center">
-            The problem is often not missing potential. It is missing translation.
-          </p>
-        </div>
-      </section>
-
-      <TextIntroBlock
-        title="What skill activation looks like"
-        paragraphs={[
-          "This approach helps translate existing human ability into industrial readiness through guided repetition, safe rehearsal, operational familiarization, role-based learning, consequence-aware simulation, structured feedback, and preserved system memory.",
+          "Too much industrial training still assumes people arrive as blank slates who must first be taught how to think inside dynamic systems. That assumption is increasingly wrong.",
+          "Many already understand timing, response, progression, scanning, coordination, and feedback because interactive systems trained those habits long before the plant ever did.",
+          "The real failure is not that the workforce lacks capacity. The real failure is that industry too often fails to translate that capacity into disciplined plant performance.",
         ]}
         sectionClassName="section section-alt"
       />
 
       <section className="section">
-        <div className="container narrow">
-          <div className="doctrine-block">
-            <p>The goal is to help people move from:</p>
-            <ul>
-              <li>Curiosity to familiarity</li>
-              <li>Familiarity to confidence</li>
-              <li>Confidence to competent action</li>
-              <li>Competent action to repeatable performance</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <ContrastBlock
-        title="Industry still loses too much knowledge too quickly"
-        leftTitle="Without skill activation"
-        leftItems={withoutActivation}
-        rightTitle="With skill activation"
-        rightItems={withActivation}
-      />
-
-      <section className="section">
-        <div className="container narrow">
-          <p className="center narrow-text">
-            Plants lose time and money because expertise is trapped in people,
-            onboarding is too slow, fill-in operators are under-supported,
-            procedures are remembered differently than they are performed, and
-            training happens before the shift while reality happens during it.
-          </p>
+        <div className="container">
+          <SectionHeading
+            title="What this approach really is"
+            subtitle="A serious industrial doctrine, not a novelty layer."
+            align="center"
+          />
+          <CapabilityGrid items={whatThisReallyMeans} compact />
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
-          <SectionHeading title="What this approach supports" />
-          <CapabilityGrid items={supportAreas} />
+          <SectionHeading
+            title="Human strengths that already exist"
+            subtitle="The gamer is already in the plant. The question is whether industry knows what to do with that reality."
+            align="center"
+          />
+          <CapabilityGrid items={existingHumanStrengths} compact />
           <p className="support-line center">
-            This is where human skill, system memory, and guided structure begin
-            working together.
+            These strengths do not replace trade skill, plant knowledge, or experience.
+            They make earlier readiness more reachable when the training environment is built correctly.
           </p>
         </div>
       </section>
 
       <TextIntroBlock
-        title="Not to play. To perform."
+        title="From interaction to industrial readiness"
         paragraphs={[
-          "A.I.R.O.N. does not remove the human. It removes the burden of carrying everything alone.",
-          "When the system remembers, guides, and protects, people are free to do what only people can do: think, judge, improve, teach, and lead.",
+          "A.I.R.O.N. does not assume that engagement is the enemy of seriousness. It assumes the opposite: attention, response, repetition, and visible system consequence are some of the strongest vehicles for serious learning.",
+          "When guided correctly, interactive environments help people move from curiosity to familiarity, from familiarity to judgment, and from judgment to repeatable performance.",
+          "That is why PLAY YOUR WORK — WORK YOUR PLAY belongs inside the broader A.I.R.O.N. doctrine instead of living as a detached culture slogan.",
+        ]}
+        sectionClassName="section"
+      />
+
+      <section className="section">
+        <div className="container narrow">
+          <div className="doctrine-block">
+            <p>The progression is intentional:</p>
+            <ul>
+              <li>Exposure becomes familiarity</li>
+              <li>Familiarity becomes confidence</li>
+              <li>Confidence becomes better judgment</li>
+              <li>Better judgment becomes repeatable performance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="How the activation works"
+            subtitle="A good environment does more than present information. It responds, guides, and proves readiness over time."
+            align="center"
+          />
+          <CapabilityGrid items={activationMethods} compact />
+        </div>
+      </section>
+
+      <ContrastBlock
+        title="Translation changes the outcome"
+        leftTitle="Without translation"
+        leftItems={withoutTranslation}
+        rightTitle="With translation"
+        rightItems={withTranslation}
+      />
+
+      <TextIntroBlock
+        title="Why this matters to industry"
+        paragraphs={[
+          "Plants lose time, money, and confidence when onboarding is too slow, knowledge stays trapped in individuals, and readiness only begins when the real shift pressure is already present.",
+          "PLAY YOUR WORK — WORK YOUR PLAY helps close that gap by putting serious familiarization, structured repetition, and governed response where they belong: before the live consequence, not after it.",
+          "This is not about making work look like a game. It is about accepting that modern people already know how to learn through interaction, and using that truth responsibly.",
         ]}
         sectionClassName="section"
       />
@@ -220,7 +228,9 @@ export default function AIRONPlayYourWorkPageRefactored(): JSX.Element {
         <div className="container narrow">
           <div className="doctrine-block">
             <p>
-              <strong>Gaming did not weaken the workforce. Industry failed to translate the skill.</strong>
+              <strong>
+                Gaming did not weaken the workforce. Industry failed to translate the skill.
+              </strong>
             </p>
           </div>
         </div>
@@ -229,20 +239,20 @@ export default function AIRONPlayYourWorkPageRefactored(): JSX.Element {
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Start with the human side of readiness. Expand into campus, startup, safety, and system architecture when the path is clear."
+        supportingLine="Start with the human side of readiness. Expand into campus, training doctrine, startup structure, and abnormal-event preparation as the system matures."
       />
 
       <CTAFooterBand
-        headline="Build readiness around the people already in the system."
+        headline="Build readiness around the people already entering the system."
         primaryCTA={{
           label: "Start a Workforce Activation Conversation",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See the Campus Vision",
+          label: "See the Industrial Campus",
           href: "/a-i-r-o-n/industrial-campus",
         }}
-        supportingLine="Be Safe. Level Up. Play Your Work. Work Your Play."
+        supportingLine="Be safe. Level up. Play your work. Work your play."
       />
     </SiteLayout>
   );
