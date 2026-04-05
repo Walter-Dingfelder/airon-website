@@ -30,6 +30,8 @@ const doctorExamplePoints = [
   "Foundry Doctor™",
   "Servo Doctor™",
   "Motor Doctor™",
+  "Servo Doctor™",
+  "VFD Doctor™",
   "Crane Doctor™",
   "Press Doctor™",
   "Baghouse Doctor™",
@@ -65,6 +67,12 @@ const relatedPages = [
     href: "/a-i-r-o-n/motor-doctor",
     description:
       "See the rotating-equipment specialist built to connect electrical behavior, mechanical strain, heat, starts, and driven-load consequence.",
+  },
+  {
+    title: "Servo Doctor™",
+    href: "/a-i-r-o-n/servo-doctor",
+    description:
+      "See the motion-control specialist built to connect commanded position, actual motion, feedback truth, and mechanical reality.",
   },
   {
     title: "Predictive & Diagnostics",
@@ -242,6 +250,32 @@ export default function DoctorFamilyPage(): JSX.Element {
           </div>
         </div>
       </section>
+
+
+
+      <section className="section">
+        <div className="container narrow">
+          <SectionHeading title="Servo Doctor™ as the motion-control example" />
+          <p>
+            Servo Doctor™ proves the family can sit tightly on commanded motion where the real pain lives
+            in following error, feedback quality, homing trust, tuning drift, or machine mechanics.
+          </p>
+          <p>
+            It is built for machines where position and repeatability matter enough that one weak axis can
+            become scrap, jams, mistrust, or repeated downtime.
+          </p>
+          <p>
+            That matters because motion truth deserves its own specialist vocabulary instead of being flattened
+            into one generic alarm history.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/servo-doctor">
+              See Servo Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
 
       <TextIntroBlock
         title="The relationship to Fortune Teller™"
