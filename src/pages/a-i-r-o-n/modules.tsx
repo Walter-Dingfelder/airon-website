@@ -48,9 +48,9 @@ const moduleFamilies: ModuleFamily[] = [
     name: "Training",
     eyebrow: "Readiness / role-fit development",
     description:
-      "Structured industrial learning, serious workforce readiness, and progression-based capability building.",
-    href: "https://training.dingfelder.co/",
-    linkLabel: "Open training →",
+      "Structured industrial learning, governed readiness, progression-based capability building, and the internal doctrine behind the live training environment.",
+    href: "/a-i-r-o-n/training-philosophy",
+    linkLabel: "See training philosophy →",
   },
   {
     name: "V.A.U.L.T. / Memory",
@@ -140,7 +140,8 @@ const startingPoints = [
     title: "Need workforce readiness or training?",
     links: [
       { label: "Industrial Campus", href: "/a-i-r-o-n/industrial-campus" },
-      { label: "Training", href: "https://training.dingfelder.co/" },
+      { label: "Training Philosophy", href: "/a-i-r-o-n/training-philosophy" },
+      { label: "Open Live Training", href: "https://training.dingfelder.co/" },
     ],
   },
   {
@@ -153,6 +154,11 @@ const startingPoints = [
 ];
 
 const relatedPages = [
+  {
+    title: "Training Philosophy",
+    href: "/a-i-r-o-n/training-philosophy",
+    description: "See the internal doctrine page for governed readiness, preserved memory, and proof-based workforce development.",
+  },
   {
     title: "Continuous Improvement",
     href: "/a-i-r-o-n/continuous-improvement",
