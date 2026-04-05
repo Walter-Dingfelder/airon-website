@@ -4,6 +4,7 @@ import ContactPage from "./pages/a-i-r-o-n/contact";
 import ModulesPage from "./pages/a-i-r-o-n/modules";
 import FurnaceDoctorPage from "./pages/a-i-r-o-n/furnace-doctor";
 import FoundryDoctorPage from "./pages/a-i-r-o-n/foundry-doctor";
+import MotorDoctorPage from "./pages/a-i-r-o-n/motor-doctor";
 import FortuneTellerPage from "./pages/a-i-r-o-n/fortune-teller";
 import VaultPage from "./pages/a-i-r-o-n/vault";
 import OneTouchStartupPage from "./pages/a-i-r-o-n/one-touch-startup";
@@ -61,6 +62,8 @@ export default function App(): JSX.Element {
       return <FurnaceDoctorPage />;
     case "/a-i-r-o-n/foundry-doctor":
       return <FoundryDoctorPage />;
+    case "/a-i-r-o-n/motor-doctor":
+      return <MotorDoctorPage />;
     case "/a-i-r-o-n/fortune-teller":
       return <FortuneTellerPage />;
     case "/a-i-r-o-n/vault":

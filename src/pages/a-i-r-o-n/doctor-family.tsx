@@ -61,6 +61,12 @@ const relatedPages = [
       "See the wider foundry-organism example that proves a Doctor can sit above one machine when the truth lives at the operational level.",
   },
   {
+    title: "Motor Doctor™",
+    href: "/a-i-r-o-n/motor-doctor",
+    description:
+      "See the rotating-equipment specialist built to connect electrical behavior, mechanical strain, heat, starts, and driven-load consequence.",
+  },
+  {
     title: "Predictive & Diagnostics",
     href: "/a-i-r-o-n/predictive-diagnostics",
     description:
@@ -208,6 +214,30 @@ export default function DoctorFamilyPage(): JSX.Element {
           <div className="cta-row">
             <a className="btn btn-secondary" href="/a-i-r-o-n/foundry-doctor">
               See Foundry Doctor™
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container narrow">
+          <SectionHeading title="Motor Doctor™ as the next specialist example" />
+          <p>
+            Motor Doctor™ proves the family can also sit tightly on one of industry's most common
+            and most repeated failure stories: rotating equipment under real electrical and process load.
+          </p>
+          <p>
+            It is built to read heat, current, starts, trip history, drive behavior, mounted condition,
+            and driven-load strain together so the site can see whether the real problem lives in the motor,
+            the control, or the process being asked of it.
+          </p>
+          <p>
+            That matters because one ordinary-looking motor can still become a plant-level consequence
+            when its truth stays fragmented.
+          </p>
+          <div className="cta-row">
+            <a className="btn btn-secondary" href="/a-i-r-o-n/motor-doctor">
+              See Motor Doctor™
             </a>
           </div>
         </div>
