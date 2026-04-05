@@ -8,6 +8,7 @@ import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 import SystemPlayerBlock from "../../components/doctrine/SystemPlayerBlock";
 import industrialCampusHero from "../../assets/industrial-campus-hero.png";
+import industrialCampusIrisGasMeter from "../../assets/industrial-campus-iris-gas-meter.png";
 
 /**
  * A.I.R.O.N. Dingfelder Industrial Campus source file — refactored
@@ -60,6 +61,36 @@ const environments = [
   "Guided safety and abnormal-event rehearsal",
   "Continuous Improvement development and rehearsal",
 ];
+
+
+const irisVisualCardStyle: React.CSSProperties = {
+  background: "linear-gradient(180deg, rgba(7,18,35,0.94), rgba(5,13,26,0.98))",
+  border: "1px solid rgba(120,150,190,0.22)",
+  borderRadius: "24px",
+  padding: "1rem",
+  boxShadow: "0 18px 40px rgba(0,0,0,0.28)",
+};
+
+const irisVisualImageStyle: React.CSSProperties = {
+  width: "100%",
+  display: "block",
+  borderRadius: "18px",
+  border: "1px solid rgba(120,150,190,0.16)",
+};
+
+const irisCaptionTitleStyle: React.CSSProperties = {
+  margin: "0.95rem 0 0.35rem",
+  fontSize: "1.05rem",
+  fontWeight: 700,
+  color: "#f4f7fb",
+};
+
+const irisCaptionTextStyle: React.CSSProperties = {
+  margin: 0,
+  color: "rgba(226,234,245,0.82)",
+  lineHeight: 1.6,
+  fontSize: "0.98rem",
+};
 
 const relatedPages = [
   {
@@ -186,6 +217,34 @@ export default function AIRONIndustrialCampusPageRefactored(): JSX.Element {
             The point is not novelty. The point is governed, repeatable
             exposure to reality-shaped systems.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="What guided operation actually looks like"
+            subtitle="IRIS HUD familiarization at the Natural Gas Metering Station"
+            align="center"
+          />
+          <div className="center narrow-text" style={{ marginBottom: "1.5rem" }}>
+            Industrial Campus should not feel like a detached map. It should let the learner stand inside the system, read live context, see station status, and build confidence with the same governed interface logic that matters in the field.
+          </div>
+          <figure style={irisVisualCardStyle}>
+            <img
+              src={industrialCampusIrisGasMeter}
+              alt="IRIS HUD view at the Natural Gas Metering Station inside the Dingfelder Industrial Campus"
+              loading="lazy"
+              decoding="async"
+              style={irisVisualImageStyle}
+            />
+            <figcaption>
+              <h3 style={irisCaptionTitleStyle}>IRIS HUD — Natural Gas Metering Station</h3>
+              <p style={irisCaptionTextStyle}>
+                This is the operator view inside the campus: IRIS mode active, role-aware interface visible, live directional and environmental context available, and a station-level interaction point placed directly in front of the learner. It shows how A.I.R.O.N. turns the campus from a broad overview into guided operational familiarity.
+              </p>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
