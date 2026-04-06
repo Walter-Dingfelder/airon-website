@@ -4,132 +4,138 @@ import HeroBlock from "../../components/core/HeroBlock";
 import TextIntroBlock from "../../components/core/TextIntroBlock";
 import SectionHeading from "../../components/core/SectionHeading";
 import CapabilityGrid from "../../components/core/CapabilityGrid";
+import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-const plcPoints = [
-  "Interface with virtually any industrial PLC environment",
-  "Work beside legacy logic, modern PLCs, and hybrid inherited systems",
-  "Support distributed I/O, remote expansion, and plant-specific structures",
-  "Interpret, support, extend, and where appropriate govern existing controls",
-  "Build around the real machine, real process, and real people depending on it",
-  "Respect the plant instead of forcing one rigid controls ideology onto it",
+const sensoryRealityPoints = [
+  "Listen to PLCs, drives, VFDs, control loops, sensors, switches, encoders, counters, and operator acknowledgements as they happen",
+  "Treat power, current, voltage, motion, pressure, temperature, flow, vibration, and energy signatures as operating reality rather than paperwork about reality",
+  "Use continuous reality capture instead of waiting for reports, audits, meetings, or alarms to describe what already happened",
+  "Correlate machine behavior, operator action, environmental influence, and process response at machine speed",
+  "Keep acoustic layers advisory and proof-supportive so microphones strengthen visibility without pretending to replace primary instrumentation",
+  "Turn every cycle, state change, deviation, recovery, override, and stabilization event into usable operational truth",
 ];
 
-const foundationPoints = [
-  "Built on Unitronics All-In-One HMI/PLC foundations",
-  "Flexible around customer-preferred PLC environments where required",
-  "Expandable from one machine to broader facility coverage",
-  "One truth layer that can grow without starting over",
-  "Machine, process, and workforce support in one governed structure",
-  "Industrial footing first — not decorative software second",
+const deploymentBoundaryPoints = [
+  "Deploy with no rip-and-replace mentality and no demand that the plant reorganize itself around software",
+  "Work beside legacy controls, inherited logic, hybrid environments, and customer-preferred PLC structures where appropriate",
+  "Read data without steering equipment when the correct answer is visibility first and control authority stays local",
+  "Use V.A.U.L.T.® as the protected edge memory and buffer layer for structured visibility, retention, and support continuity",
+  "Use one Starlink per facility as the communications backbone for off-site support, messaging, corporate data pulls, and C.A.T.A.S.T.R.O.P.H.E.™ support behavior",
+  "Operate without tying A.I.R.O.N. into corporate networks while preserving secure visibility and local control authority",
+  "Require battery backup / UPS so the system remains supported when plant power is unstable or lost",
+  "Scale from one machine to broader facility coverage without starting over every time another system comes online",
 ];
 
-const retrofitPoints = [
-  "Retrofit automation for legacy or inherited equipment",
-  "Greenfield automation for new machine and process systems",
-  "Control system redesign and HMI modernization",
-  "Remote expansion, sequencing upgrades, and recipe logic",
-  "Private-label custom software and governed autonomy where appropriate",
-  "Parallel deployment when the plant is not ready for full replacement",
+const truthCapturePoints = [
+  "Use A.S.S.U.R.E.™ to create system-authored truth at the point of work instead of relying on reconstructive reporting later",
+  "Bind pre-event conditions to the record so drift, escalation, and consequence stay connected as one truthful timeline",
+  "Write confirmations, timestamps, notable conditions, and progression steps directly into the active operating record when procedures demand it",
+  "Preserve notification traceability: who was notified, how, when, and whether acknowledgment occurred",
+  "Keep records useful for operations, handoff, review, recovery, and improvement instead of treating them as after-the-fact blame material",
+  "Sharpen future detection and guidance using the same truth stream that documented the event in the first place",
 ];
 
-const processPoints = [
-  "Single-machine sequencing and machine-center control",
-  "Plant utility and support process control",
-  "Batching systems and governed recipe execution",
-  "Metal recipe management and structured process timing",
-  "Food and liquid process automation",
-  "Machine synchronization, exception handling, and operator station design",
+const causal4MAPoints = [
+  "Treat performance shifts as physics events, not committee topics",
+  "Interrogate Man, Method, Material, Machine, and Atmosphere whenever performance changes",
+  "Use Predictive Breakpoint® logic to escalate early, while control is still calm, safe, and achievable",
+  "Classify whether the shift belongs to the human domain, the sequence, the input, the asset, or the environment — then act accordingly",
+  "Elevate atmosphere as a first-class operating force because temperature, humidity, dust, pressure, and air quality reshape the entire system",
+  "Preserve the lesson as a living standard so the next disruption is managed earlier and more intelligently",
 ];
 
-const startupPoints = [
-  "Authorized startup release with governed progression",
-  "Proof-based advancement instead of timer-only progression",
-  "Controlled shutdown, clear / purge / runout, and empty-down logic",
-  "Maintenance / test modes and restricted / degraded startup paths",
-  "Startup treated as a safety event and a communication event",
-  "Real transition control where trust is built or lost",
+const startupGovernancePoints = [
+  "Treat startup, shutdown, purge, runout, empty-down, and restart as governed events instead of memory-based rituals",
+  "Use proof-based advancement instead of timer-only faith",
+  "Enforce annunciation, local awareness, and clear communication before motion begins",
+  "Keep local command authority clear while allowing structured remote support and messaging where authorized",
+  "Narrow the operating window automatically when experience thins, risk rises, or abnormal conditions form",
+  "Preserve machine behavior, human behavior, and system truth through degraded, restricted, and recovery paths",
 ];
 
-const safetyCommPoints = [
-  "Plantwide or zone-specific startup warning",
-  "Visual and verbal annunciation before motion begins",
-  "Maintenance-directed fault announcements",
-  "Distributed panel awareness with local-only control authority",
-  "Remote messaging and support without stealing local command",
-  "Clear communication about what is moving, where, and why",
+const trainingContinuityPoints = [
+  "Keep training truth and operating truth identical so the plant never teaches one reality and enforces another",
+  "Use exact OEM-style control replicas and SOP-driven sequences in offline preparation without consequence",
+  "Use the same prompts, sequences, safety envelopes, and Predictive Breakpoints online when the machine is live",
+  "Treat identity substitution as an operating condition, not background noise",
+  "Capture expert actions, timings, interventions, and outcomes so the best operator can be projected into the machine in real time",
+  "Preserve skill through handoffs, absences, fill-ins, and disruption so expertise stays available when it is needed most",
 ];
 
-const acousticPoints = [
-  "Zone-aware acoustic monitoring as an advisory and proof-support layer",
-  "Support abnormal-condition detection around belts, conveyors, blowers, and valves",
-  "Use microphone and audio layers to strengthen startup and maintenance insight",
-  "Help localize abnormal sound sources in real operating zones",
-  "Correlate sound with process state, not just raw noise",
-  "Keep acoustic advisory — not as a replacement for primary safety instrumentation",
+const governancePoints = [
+  "Human safety",
+  "Machine safety",
+  "Quality",
+  "Waste reduction",
+  "Continuous Improvement",
+  "Preservation of the Continuous Improvement itself",
 ];
 
-const autonomyPoints = [
-  "Free operators from repetitive, low-value manual sequences",
-  "Create more time for inspections and verification",
-  "Support better housekeeping and situational awareness",
-  "Return attention to safety, judgment, and exception handling",
-  "Give experienced people more space to coach and lead",
-  "Use automation to reduce burden, not erase human value",
+const motionAutonomyPoints = [
+  "Support robotics, multi-axis motion, material handling, governed recipes, and complex machine sequencing where the work demands it",
+  "Free people from repetitive burden so inspections, awareness, housekeeping, coaching, and judgment get more room instead of less",
+  "Use automation to remove uncertainty and wasted motion, not human value",
+  "Treat autonomy as governed industrial trust, not novelty",
+  "Build controls that remember what works, what failed safely, and what should never be repeated",
+  "Create a controls layer that helps industry hold the baseline, hunt drift, and raise the baseline safely over time",
 ];
 
-const motionPoints = [
-  "Robotic machinery centers and multi-axis motion systems",
-  "Autonomous crane logic and governed material handling",
-  "Automated recipe transfer and execution",
-  "Structured exception handling and recovery logic",
-  "Machine-to-machine operational flow",
-  "Governed industrial autonomy built around trust, boundaries, and interlocks",
+const notThisPoints = [
+  "A rip-and-replace software religion",
+  "A dashboard pretending to be control",
+  "A black box inside the customer’s network",
+  "A one-signal alarm philosophy",
+  "A training room truth that differs from floor truth",
+  "A system that asks people to carry continuous improvement by memory alone",
 ];
 
-const securePoints = [
-  "No invasive dependence on customer business systems",
-  "Outbound-only structure where project architecture calls for it",
-  "Keep PLCs and core control layers isolated from external traffic",
-  "Support secure messaging, remote dashboards, and structured visibility",
-  "Work in parallel with the original environment when needed",
-  "Build the right relationship between local authority and remote support",
-];
-
-const memoryPoints = [
-  "Controls should remember, not just execute",
-  "Preserve lessons instead of trapping them in one person’s memory",
-  "Connect machine behavior to fault history and proven fixes",
-  "Support structured handoff across shifts and roles",
-  "Help new people learn without repeating old failures",
-  "Turn controls into part of a living industrial memory structure",
+const thisIsPoints = [
+  "A living controls, sensing, guidance, and truth layer at the point of work",
+  "A non-intrusive industrial nervous system that respects existing plant rhythm and local authority",
+  "A structure that records, guides, teaches, and improves while the operation is still moving",
+  "A machine-speed discipline for baseline, drift, and proof",
+  "An industrial culture, not a version number",
+  "A.I.R.O.N. at the point where machine behavior becomes real",
 ];
 
 const relatedPages = [
   {
-    title: "SYSTEM-LIVE / PLAYER-LIVE",
-    href: "/a-i-r-o-n/system-live-player-live",
+    title: "Modules",
+    href: "/a-i-r-o-n/modules",
     description:
-      "See how machine truth and human engagement meet on common ground.",
+      "See the architecture map, base hardware stack, OT / IT boundary, expansion logic, and where the control layer fits inside the larger system.",
   },
   {
     title: "Continuous Improvement",
     href: "/a-i-r-o-n/continuous-improvement",
     description:
-      "See why Controls & Automation is Continuous Improvement applied to machine behavior.",
+      "See why Continuous Improvement is the operating spine of A.I.R.O.N. and how controls become stewardship of baseline, drift, and proof.",
   },
   {
-    title: "One-Touch Startup",
+    title: "One-Touch Startup™",
     href: "/a-i-r-o-n/one-touch-startup",
     description:
-      "See governed startup, sequencing, annunciation, and proof-based advancement in context.",
+      "See startup, shutdown, proof-based progression, annunciation, and governed transitions in a dedicated page.",
+  },
+  {
+    title: "Safety",
+    href: "/a-i-r-o-n/safety",
+    description:
+      "See why uncertainty, handoffs, and live change are safety events — and why A.I.R.O.N. treats them that way before harm appears.",
+  },
+  {
+    title: "Training Philosophy",
+    href: "/a-i-r-o-n/training-philosophy",
+    description:
+      "See how offline truth and online truth stay aligned so skill survives disruption, substitution, and real-world pressure.",
   },
   {
     title: "Contact / Discovery",
     href: "/a-i-r-o-n/contact",
     description:
-      "Start a conversation around controls, automation, startup, retrofit, or full machine architecture.",
+      "Start a conversation around controls architecture, guided deployment, truth capture, startup governance, or broader facility rollout.",
   },
 ];
 
@@ -140,22 +146,23 @@ export default function ControlsAutomationPage(): JSX.Element {
       mainClassName="airon-controls-automation-page"
     >
       <HeroBlock
-        eyebrow="Machine logic. Process logic. Human logic."
+        eyebrow="Industrial culture, not a version number."
         title="CONTROLS & AUTOMATION"
-        supportingLine="A.I.R.O.N. at the point of control."
-        subhead="A.I.R.O.N. does not only watch machines. It can also help control them."
+        supportingLine="Where A.I.R.O.N. becomes living machine behavior."
+        subhead="A.I.R.O.N. is not a dashboard laid on top of industry. It is a disciplined controls, sensing, memory, guidance, and governance layer built to work beside real machines, real people, and real risk."
         body={
           <>
             <p>
-              This is where A.I.R.O.N. meets the actual machine brain of
-              industry: PLCs, HMIs, remote expansion, sequencing, interlocks,
-              startup logic, shutdown logic, batching, recipes, robotics, and
+              This is where A.I.R.O.N. meets the actual machine brain of industry:
+              PLCs, HMIs, drives, VFDs, remote expansion, interlocks, startup logic,
+              shutdown logic, recipes, robotics, proof-supportive sensors, and
               governed autonomous operations.
             </p>
             <p>
-              From retrofit work on legacy equipment to greenfield systems built
-              from the ground up, A.I.R.O.N. can be developed to interface with
-              existing controls or stand up the full control environment itself.
+              A.I.R.O.N. is an industrial culture, not a number. It exists to make
+              controls more truthful, safer, more teachable, and more capable of
+              holding the baseline, hunting drift, and raising the baseline safely
+              over time.
             </p>
           </>
         }
@@ -170,19 +177,19 @@ export default function ControlsAutomationPage(): JSX.Element {
       >
         <div className="comparison-grid">
           <div className="comparison-card">
-            <h3>Retrofit</h3>
+            <h3>Observe</h3>
             <p>
-              Strengthen, modernize, and make usable what already exists without
-              destroying the machine, the process, or the operating knowledge
-              built around it.
+              Continuous reality capture across machine, process, environment,
+              identity, and operator interaction so the system knows what is really
+              forming before a meeting is ever called.
             </p>
           </div>
           <div className="comparison-card">
-            <h3>Greenfield</h3>
+            <h3>Guide</h3>
             <p>
-              Build the machine brain correctly from the start with disciplined
-              automation, governed interfaces, and operator-facing logic that
-              can be trusted in the real world.
+              Governed startup, skill projection, safe envelopes, structured
+              recovery, and truth capture at the point of work so better behavior is
+              available while the operation is still moving.
             </p>
           </div>
         </div>
@@ -192,34 +199,32 @@ export default function ControlsAutomationPage(): JSX.Element {
         title="What we mean by controls"
         paragraphs={[
           "Controls are where the machine becomes behavior. They determine what starts, what stops, what waits, what alarms, what interlocks, what sequences, what protects, and what is allowed to happen next.",
-          "A.I.R.O.N. was not built only to observe efficiency, safety, memory, maintenance, and improvement from a distance. It was built to understand the structure underneath them.",
-          "A.I.R.O.N. understands the machine mind, not just the management layer around it.",
+          "Before A.I.R.O.N., Continuous Improvement was often continuous intent applied through intermittent observation. Controls & Automation is where that blind spot ends. The system listens while reality happens.",
+          "A.I.R.O.N. does not only understand reports about the machine. It understands the structure underneath them.",
         ]}
         sectionClassName="section section-alt"
       />
 
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Interface with any PLC"
-            subtitle="A serious controls partner has to be able to meet the machine where it is."
-            align="center"
-          />
-          <CapabilityGrid items={plcPoints} compact />
-        </div>
-      </section>
+      <ContrastBlock
+        title="What this page is really about"
+        subtitle="The difference between machine control as software theater and machine control as living industrial stewardship."
+        leftTitle="Not this"
+        leftItems={notThisPoints}
+        rightTitle="This is"
+        rightItems={thisIsPoints}
+        sectionClassName="section"
+      />
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Unitronics foundation. Customer-preferred flexibility."
-            subtitle="A.I.R.O.N. is built on Unitronics All-In-One HMI/PLC foundations while remaining flexible around customer-preferred control environments."
+            title="The sensory layer and continuous reality capture"
+            subtitle="A.I.R.O.N. does not wait for reports. It listens while the plant is alive."
             align="center"
           />
-          <CapabilityGrid items={foundationPoints} compact />
+          <CapabilityGrid items={sensoryRealityPoints} compact />
           <p className="support-line center">
-            This is not about forcing the plant to match the software. It is
-            about building software and controls that respect the plant.
+            These signals are not paperwork about reality. They are reality.
           </p>
         </div>
       </section>
@@ -227,47 +232,15 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Retrofit and greenfield automation"
-            subtitle="A.I.R.O.N. belongs in both worlds."
+            title="Deployment boundary, OT discipline, and facility backbone"
+            subtitle="Serious controls work respects local authority, existing infrastructure, and the customer’s security posture."
             align="center"
           />
-          <CapabilityGrid items={retrofitPoints} compact />
+          <CapabilityGrid items={deploymentBoundaryPoints} compact />
           <p className="support-line center">
-            Some projects need A.I.R.O.N. beside the original environment. Some
-            need a full new control layer. Some need both over time. The point
-            is disciplined implementation.
-          </p>
-        </div>
-      </section>
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading
-            title="From single machines to full process control"
-            subtitle="A.I.R.O.N. is built for real machine and process control, not just screens and summaries."
-            align="center"
-          />
-          <CapabilityGrid items={processPoints} compact />
-          <p className="support-line center">
-            From heavy machine control to food batching, from startup logic to
-            process continuity, the controls layer is where the work becomes
-            real.
-          </p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Governed startup, shutdown, runout, and empty-down"
-            subtitle="This is where a controls partner proves whether they understand real operations."
-            align="center"
-          />
-          <CapabilityGrid items={startupPoints} compact />
-          <p className="support-line center">
-            A.I.R.O.N. is not only about big automation. It is also about the
-            small, high-consequence moments where plants usually rely on memory,
-            habit, and luck.
+            The goal is to keep the customer operating — not profit from their pain,
+            not entangle their operation, and not make them dependent on the wrong
+            network boundary.
           </p>
         </div>
       </section>
@@ -275,15 +248,14 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Safety communication, startup annunciation, and local authority"
-            subtitle="Startup is a communication event, not just a control event."
+            title="Automated truth at the point of work"
+            subtitle="A.S.S.U.R.E.™ turns control events, guided procedures, and real operating conditions into usable truth while the work is still happening."
             align="center"
           />
-          <CapabilityGrid items={safetyCommPoints} compact />
+          <CapabilityGrid items={truthCapturePoints} compact />
           <p className="support-line center">
-            People need to know what is about to move, where it is about to
-            move, and why. Remote communication must never be confused with
-            remote command.
+            If the record has to be reconstructed later, too much of the truth is
+            already gone.
           </p>
         </div>
       </section>
@@ -291,15 +263,13 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Acoustic monitoring, microphones, and zone-aware advisory intelligence"
-            subtitle="A.I.R.O.N. can use acoustic monitoring and microphone layers as an advisory and proof-support channel."
+            title="4M + A causality and Predictive Breakpoint® discipline"
+            subtitle="When performance shifts, A.I.R.O.N. does not begin with blame. It begins with classification."
             align="center"
           />
-          <CapabilityGrid items={acousticPoints} compact />
+          <CapabilityGrid items={causal4MAPoints} compact />
           <p className="support-line center">
-            Acoustic is powerful and useful, but it remains an advisory and
-            proof-support layer, not a replacement for primary safety
-            instrumentation or core process control signals.
+            A performance shift is not a discussion topic. It is a physics event.
           </p>
         </div>
       </section>
@@ -307,15 +277,14 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Autonomy that frees people for human work"
-            subtitle="Good automation should remove repetitive burden so people can focus on inspections, awareness, judgment, and the work only humans should do."
+            title="Governed startup, shutdown, annunciation, and local authority"
+            subtitle="Startup is a communication event, a safety event, and a truth event — not just a timer sequence."
             align="center"
           />
-          <CapabilityGrid items={autonomyPoints} compact />
+          <CapabilityGrid items={startupGovernancePoints} compact />
           <p className="support-line center">
-            Through governed autonomous control, A.I.R.O.N. can free operators
-            from mundane repetitive tasks and return time to the human work that
-            keeps plants safer, cleaner, more aware, and more reliable.
+            People need to know what is about to move, where it is about to move,
+            and why. Remote support must never be confused with remote command.
           </p>
         </div>
       </section>
@@ -323,15 +292,14 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Robotics, motion, and governed autonomous operations"
-            subtitle="Some machines do not only sequence. They move."
+            title="Training truth, identity, and live skill projection"
+            subtitle="The plant should never teach one truth in training and enforce another on the floor."
             align="center"
           />
-          <CapabilityGrid items={motionPoints} compact />
+          <CapabilityGrid items={trainingContinuityPoints} compact />
           <p className="support-line center">
-            This is not autonomy for novelty’s sake. This is governed industrial
-            autonomy built around trust, boundaries, interlocks, and human
-            authority.
+            Training authorizes operation. Experience stabilizes it. A.I.R.O.N.
+            exists so experience does not disappear every time a person steps away.
           </p>
         </div>
       </section>
@@ -339,16 +307,14 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Secure by structure"
-            subtitle="A.I.R.O.N. does not need invasive access to a customer’s sensitive systems to be useful."
+            title="The constitutional engine behind the controls layer"
+            subtitle="A.I.R.O.N. does not improvise its priorities. It enforces them."
             align="center"
           />
-          <CapabilityGrid items={securePoints} compact />
+          <CapabilityGrid items={governancePoints} compact />
           <p className="support-line center">
-            The controls story is not “give us your whole plant and hope for the
-            best.” It is “let us build the right relationship between local
-            authority, secure messaging, structured visibility, and disciplined
-            controls integration.”
+            These are not preferences. They are the incentives that govern every
+            alert, prompt, restriction, escalation, and recommended action.
           </p>
         </div>
       </section>
@@ -356,14 +322,14 @@ export default function ControlsAutomationPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Controls that remember"
-            subtitle="One of the biggest failures in industrial controls is that too much wisdom lives only in people."
+            title="Motion, autonomy, and the human work that remains"
+            subtitle="A.I.R.O.N. frees people from repetitive burden so human judgment, leadership, and care have room to matter more."
             align="center"
           />
-          <CapabilityGrid items={memoryPoints} compact />
+          <CapabilityGrid items={motionAutonomyPoints} compact />
           <p className="support-line center">
-            Controls are no longer just an electrical and logic layer. They
-            become part of a living industrial memory structure.
+            Automation without memory is still blind. Automation without human
+            value is still incomplete.
           </p>
         </div>
       </section>
@@ -371,11 +337,11 @@ export default function ControlsAutomationPage(): JSX.Element {
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Machine behavior. Startup logic. Human authority. Structured memory. Safer automation."
+        supportingLine="Controls architecture. Startup discipline. Automated truth. Skill continuity. Safer machine behavior. Better industry."
       />
 
       <CTAFooterBand
-        headline="We are Industry. Period."
+        headline="A.I.R.O.N. makes control honest."
         primaryCTA={{
           label: "Start Discovery",
           href: "/a-i-r-o-n/contact",
@@ -384,7 +350,7 @@ export default function ControlsAutomationPage(): JSX.Element {
           label: "Explore Modules",
           href: "/a-i-r-o-n/modules",
         }}
-        supportingLine="A.I.R.O.N. can help industry not only understand what is happening, but shape what happens next."
+        supportingLine="The point is not more software. The point is stronger industrial behavior under real conditions."
       />
     </SiteLayout>
   );
