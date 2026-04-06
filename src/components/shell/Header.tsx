@@ -57,26 +57,17 @@ const quickJumpGroups: QuickJumpGroup[] = [
       {
         label: "Safety",
         href: "/a-i-r-o-n/safety",
-        description:
-          "See the Tree of Knowledge™ safety architecture and how experience, truth, and memory stay connected.",
+        description: "See the Tree of Knowledge™ safety architecture and how experience, truth, and memory stay connected.",
       },
       {
         label: "C.A.T.A.S.T.R.O.P.H.E.™",
         href: "/a-i-r-o-n/catastrophe",
-        description:
-          "Protect life, carry truth, and guide recovery when automation is degraded or gone.",
-      },
-      {
-        label: "S.W.A.T.",
-        href: "/a-i-r-o-n/swat",
-        description:
-          "See the high-speed CI response that happens live at the machine when the normal CI cycle cannot wait.",
+        description: "Protect life, carry truth, and guide recovery when automation is degraded or gone.",
       },
       {
         label: "Better Days",
         href: "/a-i-r-o-n/better-days",
-        description:
-          "Route ideas, concerns, and accountability so issues are seen, tracked, and answered.",
+        description: "Route ideas, concerns, and accountability so issues are seen, tracked, and answered.",
       },
       {
         label: "Contact / Discovery",
@@ -93,32 +84,27 @@ const quickJumpGroups: QuickJumpGroup[] = [
       {
         label: "Predictive & Diagnostics",
         href: "/a-i-r-o-n/predictive-diagnostics",
-        description:
-          "See how Doctor modules, Ghost Busting, and predictive timing work together.",
+        description: "See how Doctor modules, Ghost Busting, and predictive timing work together.",
       },
       {
         label: "Fortune Teller™",
         href: "/a-i-r-o-n/fortune-teller",
-        description:
-          "See the breakpoint before the breakdown and act while good options still exist.",
+        description: "See the breakpoint before the breakdown and act while good options still exist.",
       },
       {
         label: "One-Touch Startup™",
         href: "/a-i-r-o-n/one-touch-startup",
-        description:
-          "Govern startup with proof before progression, clear holds, and restart discipline.",
+        description: "Govern startup with proof before progression, clear holds, and restart discipline.",
       },
       {
         label: "Controls & Automation",
         href: "/a-i-r-o-n/controls-automation",
-        description:
-          "Understand how A.I.R.O.N. connects to controls, operators, and machine truth.",
+        description: "Understand how A.I.R.O.N. connects to controls, operators, and machine truth.",
       },
       {
         label: "Furnace Doctor™",
         href: "/a-i-r-o-n/furnace-doctor",
-        description:
-          "See the homepage-facing example of a Doctor built around one critical machine domain.",
+        description: "See the homepage-facing example of a Doctor built around one critical machine domain.",
       },
     ],
   },
@@ -130,26 +116,22 @@ const quickJumpGroups: QuickJumpGroup[] = [
       {
         label: "Modules",
         href: "/a-i-r-o-n/modules",
-        description:
-          "Browse the architecture map and understand how the major families fit together.",
+        description: "Browse the architecture map and understand how the major families fit together.",
       },
       {
         label: "SYSTEM-LIVE / PLAYER-LIVE",
         href: "/a-i-r-o-n/system-live-player-live",
-        description:
-          "See how machine truth and human engagement stay structurally connected.",
+        description: "See how machine truth and human engagement stay structurally connected.",
       },
       {
         label: "Continuous Improvement",
         href: "/a-i-r-o-n/continuous-improvement",
-        description:
-          "Understand the operating spine behind drift, proof, and governed improvement.",
+        description: "Understand the operating spine behind drift, proof, and governed improvement.",
       },
       {
         label: "V.A.U.L.T.®",
         href: "/a-i-r-o-n/vault",
-        description:
-          "See custody, context, recall, and institutional memory working as one system.",
+        description: "See custody, context, recall, and institutional memory working as one system.",
       },
       {
         label: "Industry. Period.",
@@ -166,27 +148,23 @@ const quickJumpGroups: QuickJumpGroup[] = [
       {
         label: "Industrial Campus",
         href: "/a-i-r-o-n/industrial-campus",
-        description:
-          "See the live industrial environment where people learn systems before live consequence.",
+        description: "See the live industrial environment where people learn systems before live consequence.",
       },
       {
         label: "Play Your Work - Work Your Play",
         href: "/a-i-r-o-n/play-your-work-work-your-play",
-        description:
-          "See how existing human skill can be recognized, activated, and redirected into industry.",
+        description: "See how existing human skill can be recognized, activated, and redirected into industry.",
       },
       {
         label: "Training Philosophy",
         href: "/a-i-r-o-n/training-philosophy",
-        description:
-          "Understand the doctrine behind governed readiness, proof, and preserved learning.",
+        description: "Understand the doctrine behind governed readiness, proof, and preserved learning.",
       },
       {
         label: "Free OSHA & Safety Training",
         href: "https://training.dingfelder.co/",
         external: true,
-        description:
-          "Launch the external training portal for free OSHA-focused learning and broader safety growth.",
+        description: "Launch the external training portal for free OSHA-focused learning and broader safety growth.",
       },
     ],
   },
@@ -198,56 +176,47 @@ const quickJumpGroups: QuickJumpGroup[] = [
       {
         label: "Doctor Family™",
         href: "/a-i-r-o-n/doctor-family",
-        description:
-          "See the larger specialist architecture and choose the right machine-level path.",
+        description: "See the larger specialist architecture and choose the right machine-level path.",
       },
       {
         label: "Foundry Doctor™",
         href: "/a-i-r-o-n/foundry-doctor",
-        description:
-          "Read the foundry as one connected organism instead of isolated machines.",
+        description: "Read the foundry as one connected organism instead of isolated machines.",
       },
       {
         label: "Motor Doctor™",
         href: "/a-i-r-o-n/motor-doctor",
-        description:
-          "Focus on motor truth, drift, loading behavior, and failure development.",
+        description: "Focus on motor truth, drift, loading behavior, and failure development.",
       },
       {
         label: "Servo Doctor™",
         href: "/a-i-r-o-n/servo-doctor",
-        description:
-          "Focus on motion precision, commanded versus actual behavior, and control drift.",
+        description: "Focus on motion precision, commanded versus actual behavior, and control drift.",
       },
       {
         label: "VFD Doctor™",
         href: "/a-i-r-o-n/vfd-doctor",
-        description:
-          "Focus on variable-frequency drive behavior, protection states, and operating stability.",
+        description: "Focus on variable-frequency drive behavior, protection states, and operating stability.",
       },
       {
         label: "Crane Doctor™",
         href: "/a-i-r-o-n/crane-doctor",
-        description:
-          "Focus on lifting, travel, safety margins, and operator-visible crane truth.",
+        description: "Focus on lifting, travel, safety margins, and operator-visible crane truth.",
       },
       {
         label: "Press Doctor™",
         href: "/a-i-r-o-n/press-doctor",
-        description:
-          "Focus on stroke behavior, sequencing, force, and abnormal cycle development.",
+        description: "Focus on stroke behavior, sequencing, force, and abnormal cycle development.",
       },
       {
         label: "Baghouse Doctor™",
         href: "/a-i-r-o-n/baghouse-doctor",
-        description:
-          "Focus on dust collection truth, restriction, differential behavior, and capture integrity.",
+        description: "Focus on dust collection truth, restriction, differential behavior, and capture integrity.",
       },
       {
         label: "Cooling Tower Doctor™",
         href: "/a-i-r-o-n/cooling-tower-doctor",
-        description:
-          "Focus on water-side cooling performance, drift, thermal stability, and system continuity.",
+        description: "Focus on water-side cooling performance, drift, thermal stability, and system continuity.",
       },
     ],
   },
@@ -311,30 +280,26 @@ export default function Header({
     };
   }, []);
 
-  const quickJumpButton = (
-    <button
-      ref={quickJumpButtonRef}
-      type="button"
-      className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
-      aria-expanded={isQuickJumpOpen}
-      aria-controls="quick-jump-panel"
-      onClick={() => setIsQuickJumpOpen((open) => !open)}
-    >
-      Quick Jump
-      <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
-    </button>
-  );
-
   return (
     <header className="site-header" role="banner">
       <div className="container header-inner">
-        <div className="header-brand-cluster">
-          <a className="brand-lockup" href="/a-i-r-o-n" aria-label="A.I.R.O.N. home">
-            <span className="brand-name">A.I.R.O.N.™</span>
-            <span className="brand-support">Pronounced “Iron”</span>
-          </a>
+        <a className="brand-lockup" href="/a-i-r-o-n" aria-label="A.I.R.O.N. home">
+          <span className="brand-name">A.I.R.O.N.™</span>
+          <span className="brand-support">Pronounced “Iron”</span>
+        </a>
 
-          <div className="header-quick-jump-mobile">{quickJumpButton}</div>
+        <div className="header-quick-jump">
+          <button
+            ref={quickJumpButtonRef}
+            type="button"
+            className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
+            aria-expanded={isQuickJumpOpen}
+            aria-controls="quick-jump-panel"
+            onClick={() => setIsQuickJumpOpen((open) => !open)}
+          >
+            Quick Jump
+            <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
+          </button>
         </div>
 
         <nav className="site-nav" aria-label="Primary">
@@ -370,10 +335,6 @@ export default function Header({
                 </li>
               );
             })}
-
-            <li className="nav-item nav-item-quick-jump nav-item-quick-jump-desktop">
-              {quickJumpButton}
-            </li>
           </ul>
         </nav>
 
@@ -456,10 +417,10 @@ export default function Header({
 
             <div className="quick-jump-footer">
               <p className="quick-jump-footer-copy">
-                {quickJumpLinks.length} direct paths. No maze. No guesswork.
+                {quickJumpLinks.length} direct paths, grouped by intent.
               </p>
               <a className="btn btn-secondary quick-jump-footer-cta" href="/a-i-r-o-n/modules">
-                Open Modules Map
+                Open Full Modules Map
               </a>
             </div>
           </div>
