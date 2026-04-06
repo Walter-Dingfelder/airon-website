@@ -326,7 +326,7 @@ export default function Header({
               <button
                 ref={quickJumpButtonRef}
                 type="button"
-                className={`nav-link nav-link-button${isQuickJumpOpen ? " active" : ""}`}
+                className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
                 aria-expanded={isQuickJumpOpen}
                 aria-controls="quick-jump-panel"
                 onClick={() => setIsQuickJumpOpen((open) => !open)}
