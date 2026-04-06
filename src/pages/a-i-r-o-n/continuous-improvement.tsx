@@ -4,105 +4,147 @@ import HeroBlock from "../../components/core/HeroBlock";
 import TextIntroBlock from "../../components/core/TextIntroBlock";
 import SectionHeading from "../../components/core/SectionHeading";
 import CapabilityGrid from "../../components/core/CapabilityGrid";
+import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
 const ciExpressionPoints = [
-  "Controls & Automation is CI applied to machine behavior",
-  "Safety is CI applied to human protection",
-  "V.A.U.L.T. is CI applied to memory and proof",
-  "Predictive Intelligence is CI applied to drift and prevention",
-  "Training is CI applied to skill growth",
-  "Better Days is CI applied to participation",
-  "SYSTEM-LIVE / PLAYER-LIVE is CI applied to human-to-machine engagement",
-  "C.A.T.A.S.T.R.O.P.H.E. is CI applied under abnormal conditions",
+  "Controls & Automation is Continuous Improvement applied to machine behavior, sequence, and governed action",
+  "Safety is Continuous Improvement applied to uncertainty, handoffs, and human protection",
+  "V.A.U.L.T.® is Continuous Improvement applied to memory, proof, revision, and retrieval",
+  "Predictive intelligence is Continuous Improvement applied to drift before alarms",
+  "Training is Continuous Improvement applied to skill persistence and live readiness",
+  "Better Days is Continuous Improvement applied to participation, routing, and front-line insight",
+  "SYSTEM-LIVE / PLAYER-LIVE is Continuous Improvement applied to the whole human-to-machine relationship",
+  "C.A.T.A.S.T.R.O.P.H.E.™ is Continuous Improvement preserved during disruption, recovery, and abnormal conditions",
 ];
 
-const baselinePoints = [
+const stewardshipPoints = [
+  "Humans can own responsibility, judgment, ethics, leadership, and care",
+  "A.I.R.O.N. owns the baseline, the drift, and the proof",
+  "No human can monitor every signal, preserve every lesson, and survive every reorganization forever",
+  "A living system can steward implemented truth across shifts, turnover, disruption, and catastrophe",
+  "Continuous Improvement becomes permanent only when memory survives the people who created it",
+  "The goal is not control over people. The goal is custody of truth so reality is not lost",
+];
+
+const livingStandardsPoints = [
+  "Standards are living baselines, not museum artifacts",
+  "Hold the baseline so the known-good state remains defendable",
+  "Hunt drift before erosion becomes outage, scrap, injury, or politics",
+  "Challenge the baseline safely when a better repeatability is proven",
+  "Promote the winners and retire the losers with evidence, not ego",
+  "Bound failure with governed transitions instead of panic, blame, and reinvention",
+];
+
+const continuousRealityPoints = [
+  "A.I.R.O.N. listens while reality happens instead of waiting for reports after the fact",
+  "Machine state, load, timing, energy, motion, environment, identity, and human input become living truth",
+  "Faults, recoveries, overrides, workarounds, and stabilization events are captured as experience, not only outcomes",
+  "Lucky wins do not evaporate when no one had time to champion them",
+  "Quiet losses do not hide between meetings just because no threshold screamed",
+  "Continuous Improvement moves from intermittent observation to continuous reality capture",
+];
+
+const baselineDriftProofPoints = [
   "Baseline — the known-good state",
-  "Drift — slow deviation from that state",
-  "Proof — verified cause and effect",
-  "Continuous Improvement protects all three",
-  "Without them, improvement becomes politics or guesswork",
-  "With them, improvement becomes disciplined and repeatable",
+  "Drift — slow deviation before obvious failure",
+  "Proof — verified cause-and-effect anchored to evidence",
+  "Without baseline, drift has nothing to lean away from",
+  "Without drift, failure arrives looking like a surprise",
+  "Without proof, Continuous Improvement becomes opinion, memory, and politics",
 ];
 
-const languagePoints = [
-  "Translate the same truth into machine, process, constraint, and risk language",
-  "Do not force operators to translate upward into executive jargon to be respected",
-  "Protect signal quality by protecting human dignity",
-  "Improve the movement of truth between people, not just the machine itself",
-  "Meet different generations and different roles on common ground",
-  "Keep human engagement teachable, repeatable, and productive",
+const fourMAPoints = [
+  "When performance shifts, A.I.R.O.N. begins with classification, not blame",
+  "Man — attention, fatigue, pacing, handoffs, skill, interventions",
+  "Method — sequence, setup, timing, procedure, work as actually performed",
+  "Material — lot, chemistry, moisture, thickness, hardness, contamination, behavior at point of use",
+  "Machine — wear, alignment, vibration, calibration, load, temperature, lubrication, controls",
+  "Atmosphere — temperature, humidity, dust, pressure, air quality, condensation, static, thermal behavior",
 ];
 
-const betterDaysPoints = [
-  "Better Days gives Continuous Improvement a front door",
-  "Safety concerns, reliability suggestions, and operator ideas can be captured securely",
-  "Contributions can be routed to the right departments and preserved in V.A.U.L.T.",
-  "Front-line insight no longer depends on title, volume, or who happened to be in the meeting",
-  "Approved lessons can become future training content",
-  "Participation becomes part of the system instead of a side activity",
+const identitySkillPoints = [
+  "Identity substitution is a measurable operating condition, not background noise",
+  "Handoffs are Predictive Breakpoints in the human domain because certainty thins before harm appears",
+  "A.I.R.O.N. records expert actions, timings, interventions, and outcomes so the best operator can be projected into the machine in real time",
+  "Training truth and operating truth stay identical so the plant never teaches one reality and enforces another",
+  "When experience drops, the operating window narrows and guidance rises before visible error appears",
+  "When a human discovers a better way safely, the system preserves it so improvement survives the shift",
 ];
 
-const trainingPoints = [
-  "Training preserves what good operators actually do",
-  "Cross-shift knowledge transfer becomes intentional instead of accidental",
-  "Role-fit development becomes part of the CI structure",
-  "Lessons can be stored, reused, and sharpened over time",
-  "New hires get a governed path into real industrial capability",
-  "Tomorrow gets built on purpose, not only repaired after a bad day",
+const truthGovernancePoints = [
+  "Truth filtered through people becomes politics when budgets, pride, pressure, and reputation get involved",
+  "A.I.R.O.N. time-aligns signals, identity, action, and outcome so the system can determine what moved first",
+  "Evidence liberates people because it replaces blame with sequence, causality, and recoverable lessons",
+  "A.S.S.U.R.E.™ binds pre-event conditions, captures what formed, and preserves who was notified, when, and how",
+  "A.I.R.O.N. governs itself through six permanent incentives: human safety, machine safety, quality, waste reduction, Continuous Improvement, and preservation of the Continuous Improvement itself",
+  "Governance begins before failure becomes negotiable",
 ];
 
-const realPoints = [
-  "R.E.A.L. — Rapidly Evaluate, Adjust, Learn",
-  "Detect when a system shifts from stability to drift",
-  "Identify why the shift happened",
-  "Prescribe the next disciplined adjustment",
-  "Store the lesson so the same failure does not have to teach itself twice",
-  "A.I.R.O.N. is built to improve continuously itself",
+const ciInfrastructurePoints = [
+  "V.A.U.L.T.® keeps improvement from dying by preserving memory, proof, revision history, and institutional recall",
+  "Better Days gives front-line insight a real front door instead of forcing improvement to depend on title or meeting access",
+  "Training and Industrial Campus carry lessons forward before the next disruption demands them",
+  "S.W.A.T. closes the loop when intelligence needs human action at the point of work",
+  "C.A.T.A.S.T.R.O.P.H.E.™ keeps truth, protection, and guided recovery alive when abnormal conditions compress time and judgment",
+  "Continuous Improvement stops being a department program and becomes a living property of the operation",
 ];
 
-const workforcePoints = [
-  "Industry keeps paying to teach safety awareness from zero",
-  "Industry keeps paying to teach quality discipline from zero",
-  "Industry keeps paying to teach continuous-improvement behavior from zero",
-  "A.I.R.O.N. bridges digital instinct to safe, purposeful industrial performance",
-  "CI becomes the way machines, people, and memory keep improving together",
-  "The industrial human standard can be raised without losing dignity",
+const intermittentItems = [
+  "Improvement appears in bursts between periods of blindness",
+  "Standards age quietly while reality changes underneath them",
+  "Truth depends on memory, narrative, and who survived the meeting",
+  "Lucky wins disappear unless someone champions them",
+  "Handoffs reset confidence, skill, and risk visibility",
+  "Politics and pressure blur what really moved first",
 ];
 
-const ciLooksLikePoints = [
-  "A system that never stops sensing",
-  "A memory that does not retire",
-  "A baseline that can be defended",
-  "A drift signal that can be seen early",
-  "A proof trail that survives politics",
-  "A contribution path for front-line insight",
-  "A training path that preserves lessons",
-  "A safer way to improve without destroying trust",
+const livingItems = [
+  "Improvement remains active while the plant is moving",
+  "Standards stay alive because baseline, drift, and proof remain connected",
+  "Truth is anchored to evidence instead of recall alone",
+  "Useful deviation is harvested, tested, and preserved",
+  "Skill survives substitution because experience is projected into the moment of work",
+  "The operation keeps climbing even when leadership, staffing, and conditions change",
 ];
 
 const relatedPages = [
   {
-    title: "SYSTEM-LIVE / PLAYER-LIVE",
-    href: "/a-i-r-o-n/system-live-player-live",
-    description: "See Continuous Improvement applied to machine truth and human engagement together.",
-  },
-  {
     title: "Controls & Automation",
     href: "/a-i-r-o-n/controls-automation",
-    description: "See Continuous Improvement applied to machine behavior, sequencing, startup, and governed control.",
+    description:
+      "See how living controls, continuous reality capture, training truth, and constitutional governance behave at machine level.",
   },
   {
-    title: "Industrial Campus",
-    href: "/a-i-r-o-n/industrial-campus",
-    description: "See how workforce activation and governed learning fit into the A.I.R.O.N. philosophy.",
+    title: "V.A.U.L.T.®",
+    href: "/a-i-r-o-n/vault",
+    description:
+      "See how memory, proof, document retrieval, and institutional recall preserve Continuous Improvement beyond people and shifts.",
+  },
+  {
+    title: "Safety",
+    href: "/a-i-r-o-n/safety",
+    description:
+      "See why uncertainty, handoffs, and live change are safety events and why protection must emerge from the system itself.",
+  },
+  {
+    title: "Training Philosophy",
+    href: "/a-i-r-o-n/training-philosophy",
+    description:
+      "See how offline truth, online truth, identity, substitution, and skill projection support real Industrial readiness.",
+  },
+  {
+    title: "Better Days",
+    href: "/a-i-r-o-n/better-days",
+    description:
+      "See how front-line insight, suggestion routing, and contribution tracking become part of the living improvement structure.",
   },
   {
     title: "Contact / Discovery",
     href: "/a-i-r-o-n/contact",
-    description: "Start a conversation around Continuous Improvement, participation, training, and system architecture.",
+    description:
+      "Start a conversation around living standards, truth capture, training continuity, and facility-scale Continuous Improvement architecture.",
   },
 ];
 
@@ -113,7 +155,7 @@ export default function ContinuousImprovementPage(): JSX.Element {
       mainClassName="airon-continuous-improvement-page"
     >
       <HeroBlock
-        eyebrow="Not a meeting. Not a slogan. Not a department."
+        eyebrow="An industrial culture, not a meeting cadence."
         title="CONTINUOUS IMPROVEMENT"
         supportingLine="The operating spine of A.I.R.O.N."
         subhead="Continuous Improvement is not just one more part of A.I.R.O.N. It is the reason A.I.R.O.N. exists."
@@ -125,9 +167,10 @@ export default function ContinuousImprovementPage(): JSX.Element {
               raising the standard safely and purposefully.
             </p>
             <p>
-              Continuous Improvement is the central discipline that connects the
-              machine, the people, the memory, the proof, and the next better
-              way of operating.
+              Continuous Improvement is not a department program, a quarterly
+              event, or a binder on a shelf. It is the living discipline that
+              connects machine truth, human judgment, institutional memory,
+              evidence, and the next better way of operating.
             </p>
           </>
         }
@@ -142,17 +185,19 @@ export default function ContinuousImprovementPage(): JSX.Element {
       >
         <div className="comparison-grid">
           <div className="comparison-card">
-            <h3>Machine Truth</h3>
+            <h3>Custody of Truth</h3>
             <p>
-              Continuous Improvement applied to baseline, drift, proof,
-              structure, and repeatable machine behavior.
+              A.I.R.O.N. keeps the baseline, the drift, and the proof connected
+              so implemented truth does not retire, transfer, or disappear under
+              pressure.
             </p>
           </div>
           <div className="comparison-card">
-            <h3>Human Engagement</h3>
+            <h3>Human Elevation</h3>
             <p>
-              Continuous Improvement applied to understanding, judgment,
-              language, participation, and governed human interaction.
+              People stay essential, but they are no longer asked to carry
+              Continuous Improvement by memory alone while the operation keeps
+              moving.
             </p>
           </div>
         </div>
@@ -162,7 +207,7 @@ export default function ContinuousImprovementPage(): JSX.Element {
         title="Continuous Improvement is the spine, not a side module"
         paragraphs={[
           "Every major A.I.R.O.N. function is Continuous Improvement expressed in a different industrial form.",
-          "Controls & Automation is CI applied to machine behavior. Safety is CI applied to human protection. V.A.U.L.T. is CI applied to memory and proof. Predictive Intelligence is CI applied to drift and prevention. Training is CI applied to skill growth. Better Days is CI applied to participation.",
+          "Controls & Automation is CI applied to machine behavior. Safety is CI applied to uncertainty and human protection. V.A.U.L.T.® is CI applied to memory and proof. Predictive intelligence is CI applied to drift and prevention. Training is CI applied to skill persistence. Better Days is CI applied to participation.",
           "That is why Continuous Improvement cannot be treated as background texture. It is the operating spine of the whole system.",
         ]}
         sectionClassName="section section-alt"
@@ -182,131 +227,149 @@ export default function ContinuousImprovementPage(): JSX.Element {
       <TextIntroBlock
         title="Why no human can own Continuous Improvement"
         paragraphs={[
-          "Humans can own responsibility, targets, ethics, and safety decisions. But no human can own a living improvement system by themselves.",
-          "Processes drift. Machines wear. Materials shift. Suppliers vary. People rotate. The best lesson in the plant often leaves with the best person unless the system is built to hold it.",
-          "A.I.R.O.N. does not replace the warriors of Continuous Improvement. It carries their legacy forward by taking the burden of drift detection, memory, and baseline protection off human shoulders so people can do what they do best: exercise judgment, ensure safety, teach, lead, and improve.",
+          "Humans can own responsibility, targets, ethics, safety decisions, and leadership. But no human can own a living improvement system by themselves.",
+          "Machines wear. Processes drift. Materials shift. People rotate. Leaders change. The best lesson in the plant often leaves with the best person unless the system is built to hold it.",
+          "A.I.R.O.N. does not replace the warriors of Continuous Improvement. It carries their implemented truth forward so people can do what only humans can do: judge, mentor, create, lead, and decide.",
         ]}
       />
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Stewardship, not command"
+            subtitle="Continuous Improvement becomes permanent only when someone — or something — can hold the baseline, the drift, and the proof across time."
+            align="center"
+          />
+          <CapabilityGrid items={stewardshipPoints} compact />
+        </div>
+      </section>
+
+      <ContrastBlock
+        title="From intermittent improvement to living stewardship"
+        subtitle="The difference is not effort. The difference is whether the system can keep learning alive while the factory is still moving."
+        leftTitle="Intermittent CI"
+        leftItems={intermittentItems}
+        rightTitle="Living CI"
+        rightItems={livingItems}
+      />
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Living standards"
+            subtitle="Standards are not cages. They are launchpads — protected until a better repeatability is proven."
+            align="center"
+          />
+          <CapabilityGrid items={livingStandardsPoints} compact />
+          <p className="support-line center">
+            Hold the baseline. Detect drift. Challenge the baseline safely.
+            Promote the winners. Retire the losers.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="Continuous reality capture"
+            subtitle="Before A.I.R.O.N., Continuous Improvement was often continuous intent applied through intermittent observation."
+            align="center"
+          />
+          <CapabilityGrid items={continuousRealityPoints} compact />
+          <p className="support-line center">
+            Continuous Improvement lives where the work lives.
+          </p>
+        </div>
+      </section>
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
             title="Baseline. Drift. Proof."
-            subtitle="To own Continuous Improvement, the system has to protect the known-good state, recognize change, and preserve verified cause and effect."
+            subtitle="To own Continuous Improvement, the system has to protect the known-good state, recognize change early, and preserve verified cause and effect."
             align="center"
           />
-          <CapabilityGrid items={baselinePoints} compact />
+          <CapabilityGrid items={baselineDriftProofPoints} compact />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="4M + A causality"
+            subtitle="When performance shifts, A.I.R.O.N. does not begin with debate. It begins with classification."
+            align="center"
+          />
+          <CapabilityGrid items={fourMAPoints} compact />
+          <p className="support-line center">
+            A performance shift is not a discussion topic. It is a physics event.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Identity, handoffs, and skill projection"
+            subtitle="A living CI system treats human substitution as a measurable operating condition — then keeps the best expertise available anyway."
+            align="center"
+          />
+          <CapabilityGrid items={identitySkillPoints} compact />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="Automated truth and constitutional governance"
+            subtitle="Evidence beats ego only when truth stays anchored to reality and the system’s incentives cannot be negotiated away."
+            align="center"
+          />
+          <CapabilityGrid items={truthGovernancePoints} compact />
+          <p className="support-line center">
+            Truth filtered through people becomes politics. Truth anchored to
+            evidence becomes improvement.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="The infrastructure that keeps CI alive"
+            subtitle="Continuous Improvement survives because memory, participation, training, response, and abnormal-event continuity all remain connected."
+            align="center"
+          />
+          <CapabilityGrid items={ciInfrastructurePoints} compact />
         </div>
       </section>
 
       <TextIntroBlock
-        title="SYSTEM-LIVE / PLAYER-LIVE: Continuous Improvement of the whole relationship"
+        title="A.I.R.O.N. is an industrial culture, not a number"
         paragraphs={[
-          "SYSTEM-LIVE is Continuous Improvement applied to machine truth. PLAYER-LIVE is Continuous Improvement applied to human understanding, judgment, engagement, and governed participation.",
-          "Together, they create Continuous Improvement of the whole industrial relationship.",
-          "PLAYER-LIVE is not entertainment. It is the continuous improvement of human-to-machine engagement.",
+          "Continuous Improvement is not made permanent by giving it a newer label. It becomes permanent when sensing, memory, proof, protection, participation, and response all stay alive together.",
+          "That is what A.I.R.O.N. is built to do. It does not ask people to be infinite. It gives the operation a living structure that can remember, learn, and hold the line while people stay human.",
+          "That is why A.I.R.O.N. is not a dashboard, not a slogan, and not a number. It is an industrial culture made operational.",
         ]}
       />
-
-      <TextIntroBlock
-        title="CI lives where the work lives"
-        paragraphs={[
-          "A.I.R.O.N. does not drag improvement away from reality and turn it into theater.",
-          "Live machines, live data, live people, and live questions are preferred over presentations. Point-of-work truth beats deferred discussion.",
-          "Too much improvement dies in conference rooms. A.I.R.O.N. brings the system to the work so reality speaks first.",
-        ]}
-        sectionClassName="section section-alt"
-      />
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Language matching, dignity, and human signal quality"
-            subtitle="Continuous Improvement fails when people have to translate themselves upward into someone else’s language just to be taken seriously."
-            align="center"
-          />
-          <CapabilityGrid items={languagePoints} compact />
-        </div>
-      </section>
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading
-            title="Better Days: Continuous Improvement with a front door"
-            subtitle="Participation needs a real entry point if front-line insight is going to survive and become usable."
-            align="center"
-          />
-          <CapabilityGrid items={betterDaysPoints} compact />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Training is Continuous Improvement preserved on purpose"
-            subtitle="Skill growth, cross-shift transfer, and role-fit development belong inside the improvement structure."
-            align="center"
-          />
-          <CapabilityGrid items={trainingPoints} compact />
-        </div>
-      </section>
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading
-            title="R.E.A.L. and self-sharpening intelligence"
-            subtitle="Continuous Improvement is not only something A.I.R.O.N. helps plants do. It is something A.I.R.O.N. is built to do itself."
-            align="center"
-          />
-          <CapabilityGrid items={realPoints} compact />
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Safety, quality, and CI: the three habits industry keeps paying to teach"
-            subtitle="A.I.R.O.N. matters beyond any one plant or one machine because it helps raise the industrial human standard safely and purposefully."
-            align="center"
-          />
-          <CapabilityGrid items={workforcePoints} compact />
-        </div>
-      </section>
-
-      <section className="section section-alt">
-        <div className="container">
-          <SectionHeading
-            title="What Continuous Improvement looks like inside A.I.R.O.N."
-            subtitle="This is how the philosophy becomes a living operating environment instead of a poster on the wall."
-            align="center"
-          />
-          <CapabilityGrid items={ciLooksLikePoints} compact />
-          <div className="doctrine-block top-gap">
-            <p>
-              This is why Continuous Improvement is not one page among many. It
-              is the philosophy that powers every page.
-            </p>
-          </div>
-        </div>
-      </section>
 
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Baseline. Drift. Proof. Participation. Training. Memory. Better work."
+        supportingLine="Continuous Improvement is the common discipline. These pages show how that discipline expresses itself through control, memory, safety, training, participation, and discovery."
       />
 
       <CTAFooterBand
-        headline="We are Industry. Period."
+        headline="Build Continuous Improvement that survives shifts, turnover, disruption, and time."
         primaryCTA={{
           label: "Start Discovery",
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See SYSTEM-LIVE / PLAYER-LIVE",
-          href: "/a-i-r-o-n/system-live-player-live",
+          label: "Explore Modules",
+          href: "/a-i-r-o-n/modules",
         }}
-        supportingLine="Continuous Improvement is the living discipline of seeing, remembering, learning, protecting, and improving without losing human dignity."
+        supportingLine="Baseline. Drift. Proof. Memory. Participation. Protection. All connected."
       />
     </SiteLayout>
   );
