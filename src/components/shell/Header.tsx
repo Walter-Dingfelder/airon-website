@@ -288,20 +288,6 @@ export default function Header({
           <span className="brand-support">Pronounced “Iron”</span>
         </a>
 
-        <div className="header-quick-jump">
-          <button
-            ref={quickJumpButtonRef}
-            type="button"
-            className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
-            aria-expanded={isQuickJumpOpen}
-            aria-controls="quick-jump-panel"
-            onClick={() => setIsQuickJumpOpen((open) => !open)}
-          >
-            Quick Jump
-            <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
-          </button>
-        </div>
-
         <nav className="site-nav" aria-label="Primary">
           <ul className="nav-list">
             {navItems.map((item) => {
@@ -335,8 +321,23 @@ export default function Header({
                 </li>
               );
             })}
+
           </ul>
         </nav>
+
+        <div className="header-quick-jump">
+          <button
+            ref={quickJumpButtonRef}
+            type="button"
+            className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
+            aria-expanded={isQuickJumpOpen}
+            aria-controls="quick-jump-panel"
+            onClick={() => setIsQuickJumpOpen((open) => !open)}
+          >
+            Quick Jump
+            <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
+          </button>
+        </div>
 
         {showHeaderCTA ? (
           <a className="btn btn-primary header-cta" href="/a-i-r-o-n/contact">
