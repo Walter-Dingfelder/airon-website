@@ -8,104 +8,120 @@ import ContrastBlock from "../../components/core/ContrastBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
-const whatTrainingIs = [
-  "Governed workforce readiness",
-  "Role-fit familiarization before live exposure",
-  "Preserved institutional memory made usable",
-  "Judgment development, not just content delivery",
-  "Proof-oriented progression instead of checkbox completion",
-  "Continuous improvement of human-to-machine engagement",
+const whatTrainingMustBecome = [
+  "Governed readiness tied to real operating truth",
+  "Exact machine and process familiarization before live exposure",
+  "Preserved institutional memory made usable at the moment of need",
+  "Experience transfer that survives handoffs, absence, turnover, and disruption",
+  "Identical training truth and operating truth so the system never teaches one thing and enforces another",
+  "Continuous improvement of human-to-machine engagement, not a disconnected side program",
 ];
 
-const whatTrainingIsNot = [
-  "One-and-done compliance theater",
-  "Memory-free onboarding that starts over with every new person",
-  "A pile of disconnected videos, PDFs, and quizzes",
-  "Training separated from startup, safety, maintenance, and process truth",
-  "A replacement for human judgment",
-  "An excuse to learn under live consequence",
+const whatTraditionalTrainingLoses = [
+  "The expert leaves and the line starts over",
+  "The binder stays perfect while reality changes underneath it",
+  "The fill-in operator is certified, but not ready for live uncertainty",
+  "The classroom truth and the machine truth drift apart",
+  "The lesson is remembered selectively, politically, or not at all",
+  "The most important learning arrives during the worst possible moment",
 ];
 
-const whyItMatters = [
-  "People should not have to learn the most important lessons for the first time during a bad day",
-  "Plants lose too much knowledge when experience leaves without transfer",
-  "Weak familiarization slows startups, weakens handoffs, and increases avoidable exposure",
-  "Training should help people recognize patterns, sequences, limits, and consequences before the moment tightens",
-  "Structured readiness reduces dependence on whoever happens to be nearby when something starts going wrong",
-  "A.I.R.O.N. keeps training tied to the system it is meant to support",
+const offlineOnlineTruth = [
+  "Offline A.I.R.O.N. uses exact OEM-style controls, sequences, prompts, and logic for rehearsal without consequence",
+  "Online A.I.R.O.N. uses the same truth at the machine, under real timing, real conditions, and real consequence",
+  "The operator should never have to choose between what training taught and what the plant now demands",
+  "Training quality rises when muscle memory, judgment, and hazard recognition are formed on the same control truth later used in production",
+  "Authorization and qualification still matter, but they do not equalize experience or erase substitution risk",
+  "The system should preserve the lesson and return it when the shift tightens",
 ];
 
-const philosophyStack = [
-  "SYSTEM-LIVE preserves machine truth, baseline, drift, and proof",
-  "PLAYER-LIVE strengthens human understanding, judgment, engagement, and governed participation",
-  "V.A.U.L.T. preserves custody, context, recall, and IMP™ memory packets",
-  "Better Days turns surfaced lessons into routed improvements instead of lost suggestions",
-  "Industrial Campus creates governed familiarization before live consequence arrives",
-  "PLAY YOUR WORK — WORK YOUR PLAY activates modern human skill in serious industrial form",
+const handoffAndSubstitution = [
+  "Identity is a measurable operating condition, not background noise",
+  "A handoff is a Predictive Breakpoint in the human domain long before an alarm or injury appears",
+  "When an unfamiliar or substitute operator steps in, A.I.R.O.N. can narrow the safe operating envelope, increase guidance, and surface the right warnings earlier",
+  "Skill gaps should trigger support, not blame",
+  "The line should not have to hope the expert is nearby when reality changes",
+  "Training becomes live exactly where uncertainty begins",
 ];
 
-const progressionPoints = [
-  "Observe the system in context",
-  "Rehearse the sequence with guidance",
-  "Demonstrate understanding before broader autonomy",
-  "Retain evidence of what was learned and how it was proven",
-  "Refresh when roles, equipment, or conditions change",
-  "Feed new lessons back into memory and future training",
+const realTimeSkillTransfer = [
+  "Capture expert actions, timings, interventions, and outcomes while real work is happening",
+  "Translate mastery into prompts, pacing, limits, safe-work envelopes, and conditional guidance",
+  "Project the best known operating behavior into the machine when the original expert is absent",
+  "Preserve beneficial operator discoveries instead of losing them to luck, shift change, or politics",
+  "Turn accepted human improvements into future setup truth, future prompts, and earlier Predictive Breakpoints",
+  "Let the next operator inherit a stronger system than the last one had",
 ];
 
-const operationalApplications = [
-  "Startup and shutdown readiness",
-  "Abnormal-event familiarization",
+const trainingEngineApplications = [
+  "Startup, shutdown, and changeover familiarization",
   "Role-based onboarding and cross-training",
-  "Safer handoffs between experienced and newer personnel",
-  "Machine-specific learning supported by Doctor modules and system truth",
-  "Better continuity when staffing, equipment, or operating conditions change",
+  "Machine-specific rehearsal before live exposure",
+  "Abnormal-event familiarization and calmer recovery behavior",
+  "Live support during substitution, fill-ins, and uncertainty",
+  "Continuous improvement feedback into future modules, prompts, and standards",
+];
+
+const whatHumansGain = [
+  "Less burden to remember everything alone",
+  "More capacity for judgment, creativity, mentorship, and leadership",
+  "Safer learning under pressure",
+  "Stronger handoffs and calmer substitutions",
+];
+
+const whatTheSystemPreserves = [
+  "Exact control truth",
+  "Best-known safe procedures",
+  "Successful adaptations worth testing and promoting",
+  "Hard-earned expertise that should never walk out the door",
 ];
 
 const withoutPhilosophy = [
-  "Training becomes fragmented and forgettable",
-  "Institutional knowledge walks out the door too easily",
-  "People are pushed toward improvisation sooner than they should be",
-  "Proof of readiness is weaker and less consistent",
+  "Training remains episodic, fragmented, and easy to outgrow",
+  "Experience leaves with people faster than plants can replace it",
+  "Handoffs and fill-ins become hidden risk multipliers",
+  "Operators are forced to improvise sooner than they should",
+  "The training room and the machine floor teach different truths",
 ];
 
 const withPhilosophy = [
-  "Training stays connected to reality-shaped system truth",
-  "Readiness becomes more governed, repeatable, and defensible",
-  "Lessons survive beyond the person who first learned them",
-  "Human judgment gets stronger before live consequence arrives",
+  "Training becomes part of the operating system",
+  "Expertise remains available during live work, not just before it",
+  "Identity shifts and skill gaps become early visible conditions",
+  "The same truth is taught offline and enforced online",
+  "Every accepted lesson can strengthen the next operator, next shift, and next standard",
 ];
 
 const relatedPages = [
   {
-    title: "SYSTEM-LIVE / PLAYER-LIVE",
-    href: "/a-i-r-o-n/system-live-player-live",
+    title: "Industrial Campus",
+    href: "/a-i-r-o-n/industrial-campus",
     description:
-      "See the operating split between machine truth and governed human growth.",
+      "See the governed environment where familiarization, rehearsal, and machine-specific learning can happen before live consequence arrives.",
   },
   {
-    title: "Better Days",
-    href: "/a-i-r-o-n/better-days",
+    title: "PLAY YOUR WORK — WORK YOUR PLAY",
+    href: "/a-i-r-o-n/play-your-work-work-your-play",
     description:
-      "See how surfaced lessons can be routed, preserved, and turned into future training.",
+      "See how modern human skill can be activated, redirected, and strengthened for serious industrial readiness.",
+  },
+  {
+    title: "Safety / Tree of Knowledge™",
+    href: "/a-i-r-o-n/safety",
+    description:
+      "See why uncertainty, handoffs, and live change are safety events — and why training truth must match operating truth.",
   },
   {
     title: "V.A.U.L.T.®",
     href: "/a-i-r-o-n/vault",
     description:
-      "See how custody, context, recall, and IMP™ memory strengthen human readiness over time.",
+      "See how custody, context, recall, and preserved operational memory keep lessons alive beyond the person who first learned them.",
   },
   {
-    title: "Dingfelder Industrial Campus",
-    href: "/a-i-r-o-n/industrial-campus",
-    description:
-      "See the governed environment where rehearsal, familiarization, and skill transfer can happen before the shift.",
-  },
-  {
-    title: "Live Training Site",
+    title: "Free OSHA & Safety Training",
     href: "https://training.dingfelder.co/",
     description:
-      "Open the active training environment for structured industrial learning and workforce readiness.",
+      "Open the public training portal for OSHA-first safety training today, with broader safety and workforce expansion ahead.",
   },
 ];
 
@@ -118,19 +134,21 @@ export default function TrainingPhilosophyPage(): JSX.Element {
       <HeroBlock
         eyebrow="PLAYER-LIVE is the continuous improvement of human-to-machine engagement."
         title="Training Philosophy"
-        supportingLine="Train judgment before consequence."
-        subhead="A.I.R.O.N. training exists to build governed readiness, preserve institutional memory, and improve human-to-machine engagement before the shift is on top of people."
+        supportingLine="Teach the same truth the plant will enforce."
+        subhead="A.I.R.O.N. training exists to preserve hard-earned expertise, project it into live operation when needed, and build governed readiness before uncertainty turns into injury, loss, or improvisation."
         body={
           <>
             <p>
-              Training should not be a disconnected side activity that lives far
-              away from the machine, the process, the lesson, or the memory.
+              Training should not be a side room full of material that goes stale
+              the moment reality changes. It should be part of the operating
+              system — connected to the actual controls, the actual hazards, the
+              actual handoffs, and the actual memory of what works.
             </p>
             <p>
-              Under A.I.R.O.N., training is part of the operating system. It is
-              where preserved truth, guided rehearsal, role development, and
-              continuous improvement begin strengthening human judgment before
-              live consequence arrives.
+              Under A.I.R.O.N., the goal is not just permission to touch a
+              machine. The goal is readiness, safer substitution, preserved
+              expertise, and stronger judgment when the shift gets loud, tight,
+              and less forgiving.
             </p>
           </>
         }
@@ -145,50 +163,48 @@ export default function TrainingPhilosophyPage(): JSX.Element {
       >
         <div className="comparison-grid">
           <div className="comparison-card">
-            <h3>What training should do</h3>
+            <h3>What training must preserve</h3>
             <p>
-              Build familiarity, judgment, pattern recognition, sequence
-              discipline, and usable confidence before the person is under live
-              pressure.
+              Exact machine truth, safe procedure, expert timing, and the real
+              lessons people learned under live consequence.
             </p>
           </div>
           <div className="comparison-card">
-            <h3>What training should prevent</h3>
+            <h3>What training must prevent</h3>
             <p>
-              Cold starts, accidental relearning, weak handoffs, avoidable
-              improvisation, and the loss of hard-earned knowledge every time
-              people or conditions change.
+              Cold starts, memory resets, weak handoffs, unsafe improvisation,
+              and the quiet loss of expertise every time a role changes hands.
             </p>
           </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
-        title="What A.I.R.O.N. means by training"
+        title="Training is not a classroom artifact"
         paragraphs={[
-          "A.I.R.O.N. training is not just about transferring information. It is about building governed readiness that stays tied to the actual system, the actual role, and the actual consequence profile of the work.",
-          "That means training must preserve memory, respect context, strengthen human judgment, and stay connected to the machine truth the person will eventually have to interpret.",
-          "The point is not just to complete a lesson. The point is to make the person more ready, more aware, and more defensible in real operation.",
+          "A.I.R.O.N. treats training as a live industrial function, not a disconnected compliance exercise. That means the lesson, the machine, the hazard, the memory, and the future standard must stay connected.",
+          "The strongest training systems do not just show material. They preserve what expert operators actually do, compare it to the outcomes it produces, and return that knowledge at the exact moment someone else needs it.",
+          "That is why A.I.R.O.N. training is built to strengthen judgment before consequence, not just check a box before the shift.",
         ]}
       />
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="What this training philosophy is"
-            subtitle="It is part of the operating system, not a detached side program."
+            title="What training must become"
+            subtitle="Governed readiness connected to machine truth, human judgment, and preserved memory."
             align="center"
           />
-          <CapabilityGrid items={whatTrainingIs} compact />
+          <CapabilityGrid items={whatTrainingMustBecome} compact />
         </div>
       </section>
 
       <section className="section">
         <div className="container narrow">
           <div className="contrast-card">
-            <h3>What it is not</h3>
+            <h3>What traditional training keeps losing</h3>
             <ul>
-              {whatTrainingIsNot.map((item) => (
+              {whatTraditionalTrainingLoses.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
@@ -199,14 +215,15 @@ export default function TrainingPhilosophyPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Why this matters operationally"
-            subtitle="Weak training does not stay in the classroom. It shows up in the shift."
+            title="Offline truth and online truth must match"
+            subtitle="If a system teaches one truth and enforces another, it cannot be controlled."
             align="center"
           />
-          <CapabilityGrid items={whyItMatters} compact />
+          <CapabilityGrid items={offlineOnlineTruth} compact />
           <p className="support-line center">
-            Training quality affects startup quality, handoff quality, recovery
-            quality, and the strength of human response when the system becomes less forgiving.
+            Training becomes credible when the controls, prompts, sequences,
+            safe-work logic, and consequence model remain the same from
+            rehearsal to live operation.
           </p>
         </div>
       </section>
@@ -214,58 +231,91 @@ export default function TrainingPhilosophyPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="The philosophy stack"
-            subtitle="Training gets stronger when memory, improvement, rehearsal, and truth stay connected."
+            title="Handoffs and substitutions are training events"
+            subtitle="The most important learning often begins exactly when uncertainty enters the line."
             align="center"
           />
-          <CapabilityGrid items={philosophyStack} compact />
+          <CapabilityGrid items={handoffAndSubstitution} compact />
+          <div className="doctrine-block top-gap">
+            <p>
+              A trained person is still not the same as an experienced person.
+            </p>
+            <p>
+              A.I.R.O.N. treats identity transition as a real operating
+              condition so support can appear before the slowdown, error,
+              injury, or blame spiral fully forms.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Governed progression"
-            subtitle="Readiness should be developed, demonstrated, preserved, and refreshed."
+            title="Real-time skill transfer"
+            subtitle="The best operator should remain available even when they are not standing there."
             align="center"
           />
-          <CapabilityGrid items={progressionPoints} compact />
-          <div className="doctrine-block top-gap">
-            <p>
-              Readiness should not be assumed just because material was shown.
-            </p>
-            <p>
-              It should become more visible through guided exposure, proof,
-              retention, and refresh as the system, role, and operating conditions evolve.
-            </p>
-          </div>
+          <CapabilityGrid items={realTimeSkillTransfer} compact />
+          <p className="support-line center">
+            The expert does not disappear. Their mastery becomes usable system
+            intelligence that can support the next person immediately.
+          </p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Where this philosophy applies"
-            subtitle="Training belongs wherever human judgment and machine consequence meet."
+            title="Where the training engine applies"
+            subtitle="Wherever human judgment, machine behavior, and real consequence meet."
             align="center"
           />
-          <CapabilityGrid items={operationalApplications} compact />
+          <CapabilityGrid items={trainingEngineApplications} compact />
         </div>
       </section>
 
       <ContrastBlock
-        title="Training should strengthen the system, not sit beside it"
-        leftTitle="Without a governed training philosophy"
+        title="Preserve the lesson. Strengthen the person. Protect the shift."
+        leftTitle="Without an A.I.R.O.N. training philosophy"
         leftItems={withoutPhilosophy}
         rightTitle="With an A.I.R.O.N. training philosophy"
         rightItems={withPhilosophy}
       />
 
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="What humans gain when the system carries the weight"
+            subtitle="The human becomes more important, not less."
+            align="center"
+          />
+          <div className="comparison-grid">
+            <div className="comparison-card">
+              <h3>Humans gain</h3>
+              <ul>
+                {whatHumansGain.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="comparison-card">
+              <h3>The system preserves</h3>
+              <ul>
+                {whatTheSystemPreserves.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <TextIntroBlock
-        title="Preserve the lesson. Improve the person. Protect the shift."
+        title="A.I.R.O.N. is an industrial culture, not a number"
         paragraphs={[
-          "Training should absorb hard-earned experience, translate it into usable guidance, and return it to the workforce in a form that people can actually carry into operation.",
-          "That is why A.I.R.O.N. keeps training connected to memory, safety, startup, improvement, and guided human development instead of treating it as a disconnected obligation.",
+          "Training under A.I.R.O.N. is not a pile of modules sitting beside the operation. It is the way a living industrial culture protects hard-earned expertise, multiplies it, and keeps it available when conditions are less than ideal.",
+          "That is why the goal is not only to teach. The goal is to preserve what matters, project it into the next moment of need, and keep tomorrow’s operator from having to bleed to learn what the last one already knew.",
           "We are Industry. Period.",
         ]}
         sectionClassName="section"
@@ -274,11 +324,11 @@ export default function TrainingPhilosophyPage(): JSX.Element {
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Start with the training philosophy. Expand into system truth, preserved memory, improvement routing, and governed rehearsal as the path becomes more specific."
+        supportingLine="Start with training truth. Expand into campus familiarization, live workforce activation, safety logic, preserved memory, and the public training portal."
       />
 
       <CTAFooterBand
-        headline="Train the human side of the system with the same seriousness as the machine side."
+        headline="Build judgment before consequence. Keep expertise alive after the handoff."
         primaryCTA={{
           label: "Open Live Training",
           href: "https://training.dingfelder.co/",
@@ -287,7 +337,7 @@ export default function TrainingPhilosophyPage(): JSX.Element {
           label: "Start a Training Conversation",
           href: "/a-i-r-o-n/contact",
         }}
-        supportingLine="Preserve the lesson. Strengthen the judgment. Improve the engagement."
+        supportingLine="Exact truth. Live guidance. Preserved skill. Stronger humans in a stronger system."
       />
     </SiteLayout>
   );
