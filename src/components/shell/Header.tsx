@@ -65,6 +65,11 @@ const quickJumpGroups: QuickJumpGroup[] = [
         description: "Protect life, carry truth, and guide recovery when automation is degraded or gone.",
       },
       {
+        label: "S.W.A.T.",
+        href: "/a-i-r-o-n/swat",
+        description: "See the human response layer where safety, skill, and intelligence converge to eliminate waste in real time.",
+      },
+      {
         label: "Better Days",
         href: "/a-i-r-o-n/better-days",
         description: "Route ideas, concerns, and accountability so issues are seen, tracked, and answered.",
@@ -132,6 +137,11 @@ const quickJumpGroups: QuickJumpGroup[] = [
         label: "V.A.U.L.T.®",
         href: "/a-i-r-o-n/vault",
         description: "See custody, context, recall, and institutional memory working as one system.",
+      },
+      {
+        label: "SOP Routing & Governance",
+        href: "/a-i-r-o-n/sop-routing-governance",
+        description: "See how procedures are routed, revised, approved, and turned into training truth instead of drift.",
       },
       {
         label: "Industry. Period.",
@@ -322,22 +332,21 @@ export default function Header({
               );
             })}
 
+            <li className="nav-item nav-item-quick-jump">
+              <button
+                ref={quickJumpButtonRef}
+                type="button"
+                className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
+                aria-expanded={isQuickJumpOpen}
+                aria-controls="quick-jump-panel"
+                onClick={() => setIsQuickJumpOpen((open) => !open)}
+              >
+                Quick Jump
+                <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
+              </button>
+            </li>
           </ul>
         </nav>
-
-        <div className="header-quick-jump">
-          <button
-            ref={quickJumpButtonRef}
-            type="button"
-            className={`nav-link nav-link-button nav-link-quick-jump-callout${isQuickJumpOpen ? " active" : ""}`}
-            aria-expanded={isQuickJumpOpen}
-            aria-controls="quick-jump-panel"
-            onClick={() => setIsQuickJumpOpen((open) => !open)}
-          >
-            Quick Jump
-            <span className={`quick-jump-caret${isQuickJumpOpen ? " open" : ""}`}>⌄</span>
-          </button>
-        </div>
 
         {showHeaderCTA ? (
           <a className="btn btn-primary header-cta" href="/a-i-r-o-n/contact">

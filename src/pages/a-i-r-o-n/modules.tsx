@@ -59,6 +59,13 @@ const moduleFamilies: ModuleFamily[] = [
     href: "/a-i-r-o-n/vault",
   },
   {
+    name: "SOP Routing & Governance",
+    eyebrow: "Procedure truth / revision / approval",
+    description:
+      "Governed SOP custody, Draft SOP Packets, department-by-department approval flow, read-only plant visibility, and training built from approved procedure truth.",
+    href: "/a-i-r-o-n/sop-routing-governance",
+  },
+  {
     name: "Predictive & Diagnostics",
     eyebrow: "Drift / advisory / prevention",
     description:
@@ -172,6 +179,7 @@ const startingPoints = [
     title: "Need memory, documentation, drawings, or preserved lessons?",
     links: [
       { label: "V.A.U.L.T.", href: "/a-i-r-o-n/vault" },
+      { label: "SOP Routing & Governance", href: "/a-i-r-o-n/sop-routing-governance" },
       { label: "Continuous Improvement", href: "/a-i-r-o-n/continuous-improvement" },
       { label: "Doctor Family", href: "/a-i-r-o-n/doctor-family" },
     ],
@@ -213,6 +221,11 @@ const relatedPages = [
     title: "V.A.U.L.T.®",
     href: "/a-i-r-o-n/vault",
     description: "See how memory, documents, proof, revision control, and institutional recall stay available at the point of work.",
+  },
+  {
+    title: "SOP Routing & Governance",
+    href: "/a-i-r-o-n/sop-routing-governance",
+    description: "See how SOPs are created when needed, routed through review, surfaced read-only at the work, and turned into training truth.",
   },
   {
     title: "Predictive & Diagnostics",
