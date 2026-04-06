@@ -2,6 +2,7 @@ import React from "react";
 import SiteLayout from "../../layouts/SiteLayout";
 import HeroBlock from "../../components/core/HeroBlock";
 import SectionHeading from "../../components/core/SectionHeading";
+import CapabilityGrid from "../../components/core/CapabilityGrid";
 import DiscoveryForm from "../../components/forms/DiscoveryForm";
 import ContactBlock from "../../components/forms/ContactBlock";
 import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
@@ -38,6 +39,16 @@ const relatedPages = [
     href: "/a-i-r-o-n/industrial-campus",
     description: "Explore workforce activation and readiness.",
   },
+];
+
+
+const enterpriseAccessTruths = [
+  "A.I.R.O.N. does not replace ERP, CMMS, MES, scheduling, or quality systems—it fuels them with structured operational truth",
+  "We provide a secure one-way portal so the customer can pull what they need from us on demand",
+  "Nothing is pushed into business systems, so integrations stay stable instead of becoming brittle dependencies",
+  "Accounting, maintenance, quality, and leadership can retrieve pull-ready outputs when needed without exposing plant control authority",
+  "A.I.R.O.N. does not tie itself into corporate networks as an operating dependency",
+  "The same protected boundary that preserves support, messaging, and C.A.T.A.S.T.R.O.P.H.E. continuity also preserves trust"
 ];
 
 const discoveryIntentOptions = [
@@ -196,6 +207,18 @@ export default function AIRONContactPage(): JSX.Element {
             intelligently, and with the right people connected when it matters
             most.
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading title="ERP, CMMS, finance, and existing systems" />
+          <p className="center narrow-text">
+            A.I.R.O.N. is designed to make the customer’s existing systems more
+            valuable without forcing dangerous write-back paths, corporate-network
+            dependence, or fragile integrations.
+          </p>
+          <CapabilityGrid items={enterpriseAccessTruths} compact />
         </div>
       </section>
 
