@@ -8,33 +8,41 @@ import RelatedLinksBlock from "../../components/core/RelatedLinksBlock";
 import CTAFooterBand from "../../components/core/CTAFooterBand";
 
 const preservePoints = [
-  "Operational truth",
-  "Baseline memory",
-  "Drift signatures",
-  "Root-cause evidence",
-  "Startup and shutdown history",
-  "Learned event patterns",
-  "Operator-confirmed lessons",
-  "Institutional memory packets",
-  "Decision timing and outcomes",
+  "Operational truth captured the way it actually happened",
+  "Baseline memory, drift signatures, and verified outcomes",
+  "Root-cause evidence that survives failure and recovery",
+  "Decision timing, intervention timing, and action history",
+  "Operator-confirmed lessons and technician-confirmed fixes",
+  "Training packets, OEM manuals, drawings, and technical references",
+  "IMP™ institutional memory packets prepared for reuse",
+  "Historical context that can be surfaced again when the plant needs it",
 ];
 
-const memoryWeightPoints = [
-  "Weighted memory",
-  "Baseline memory",
-  "Institutional memory",
-  "Context-based recall",
-  "Good days do not get erased by one bad abnormality",
-  "Useful history appears when it actually matters",
+const boundaryPoints = [
+  "V.A.U.L.T.® is the protected memory and data-management backbone for A.I.R.O.N.",
+  "It can sit as a one-way OT/IT buffer so operational truth can move outward without inbound control returning to the process",
+  "It preserves truth without entangling the plant in corporate-network dependency",
+  "It supports off-site visibility, support, and retrieval while keeping authority where it belongs locally",
+  "It is built for custody, context, and recall — not for surveillance and not for convenience edits after the fact",
+  "It separates who may use information from who may change, retire, or govern official records",
 ];
 
 const retentionPoints = [
-  "Instant Memory for live high-resolution operational data",
-  "Functional Memory for shift-scale patterns and action timing",
-  "Knowledge Memory for reusable signatures, risk history, and validated outcomes",
-  "Institutional Memory for long-term learning and culture retention",
-  "Archive what compounds in value, not just whatever was easy to store",
-  "Separate what is transient from what becomes wisdom",
+  "Tier 1 — Instant Memory for live high-resolution analog, audio, thermal, and harmonic data",
+  "Tier 2 — Functional Memory for shift-scale patterns, alarms, recipe compliance, and operator action timing",
+  "Tier 3 — Knowledge Memory for reusable Predictive Breakpoint® signatures, risk history, and validated outcomes",
+  "Tier 4 — Institutional Memory for long-horizon lifecycle learning, cost reduction attribution, and culture retention",
+  "Archive what compounds in value instead of hoarding whatever was easiest to store",
+  "Keep the memory light enough to be usable and structured enough to become wisdom",
+];
+
+const structuredMemoryPoints = [
+  "Machine memory — converter, coil, hydraulic, power, and equipment behavior",
+  "Human memory — timing, actions, instincts, confirmations, and interventions",
+  "Atmosphere memory — shift rhythm, stress conditions, and operating context where relevant",
+  "Predictive composite memory — cross-domain signatures tied to outcomes",
+  "Decision memory — what was done, when it was done, and what it changed",
+  "These merge into event-based memory capsules that become more useful with reuse instead of less",
 ];
 
 const impPoints = [
@@ -42,44 +50,46 @@ const impPoints = [
   "Verifiable",
   "Machine-readable",
   "Human-teachable",
-  "Permanently accessible through V.A.U.L.T.",
-  "Prepared for reuse instead of trapped in raw history",
+  "Permanently accessible through V.A.U.L.T.®",
+  "Prepared to prevent repetition instead of trapped in raw history",
+  "Built from what one operator heard, what another confirmed, what maintenance fixed, and what A.I.R.O.N. proved",
+  "Returned to operators, technicians, engineers, and leadership through a human retrieval interface",
 ];
 
-const faultLibraryPoints = [
-  "Plain-language repair guidance instead of cryptic fault strings",
-  "Historical documents, engineering notes, and OEM references brought forward when needed",
-  "Context narrowed by confirmed signals and operating patterns",
-  "Live support for technicians when the plant needs help right now",
-  "The most relevant lived history appears when today starts to resemble a known problem",
-  "The system brings memory to the work instead of making people hunt for it",
+const libraryPoints = [
+  "Single revision-controlled search surface for diagrams, OEM manuals, technician notes, and training packets",
+  "Indexed by equipment, discipline, document type, and revision status",
+  "Designed so the current, correct reference can be retrieved on demand at the machine or from authorized terminals",
+  "Useful during normal operation, shift handoff, troubleshooting, abnormal events, and recovery",
+  "Search narrows memory to the relevant asset and context instead of forcing people to hunt across disconnected files",
+  "The right memory is brought to the work instead of asking the work to stop for a records search",
 ];
 
 const trustPoints = [
-  "Protected custody of important records",
-  "History preserved the way it actually happened",
-  "Records available through failure and recovery",
-  "Not surveillance",
-  "Not unchecked control over records",
-  "Not rewriting the story after the fact",
+  "Evidence-grade records with preserved context instead of naked timestamps",
+  "History protected the way it actually happened, not the way someone later wished it had happened",
+  "Continuity of evidence through outages, recovery, and post-event review",
+  "Access control and separation of duties so too much record power does not collapse into one set of hands",
+  "Non-repudiation without surveillance — trustworthy records without treating people like suspects",
+  "Honest review without reconstruction, guesswork, or political cleanup after the fact",
 ];
 
 const loopPoints = [
-  "Better Days captures the signal",
-  "V.A.U.L.T. preserves the truth",
-  "Training teaches the lesson",
-  "Fault Library helps recover from what the system has seen before",
-  "Useful knowledge compounds instead of disappearing with shift change",
-  "The next associate learns it on purpose instead of by accident",
+  "Better Days captures the signal from the people living the work",
+  "A.S.S.U.R.E.™ and operating truth bind events to what was really happening before, during, and after they formed",
+  "V.A.U.L.T.® preserves that truth with custody, context, and recall",
+  "Training and qualification can turn preserved lessons into repeatable understanding",
+  "Fault libraries, IMPs, and retrieval tools bring lived history back when the next similar condition starts to form",
+  "Knowledge compounds instead of resetting with shift change, turnover, retirement, or disruption",
 ];
 
 const capabilityPoints = [
-  "Preserve accurate records through failure and recovery",
-  "Keep history intact for learning and prevention",
-  "Support honest review without reconstruction or guesswork",
-  "Protect evidence-grade records and continuity of context",
-  "Surface the right memory at the right time",
-  "Turn lived experience into reusable operating intelligence",
+  "Protect records from quiet deletion, rewriting, or convenience edits",
+  "Keep critical technical references available during outages, troubleshooting, and recovery",
+  "Preserve truth without turning recordkeeping into surveillance",
+  "Support audits, incident review, and engineering learning without reconstruction",
+  "Surface the right document, packet, or memory at the right moment",
+  "Turn stored history into reusable operating intelligence for tomorrow",
 ];
 
 const relatedPages = [
@@ -90,22 +100,22 @@ const relatedPages = [
       "See why preserved truth and retained learning are part of the A.I.R.O.N. operating spine.",
   },
   {
-    title: "Better Days",
-    href: "/a-i-r-o-n/better-days",
+    title: "Controls & Automation",
+    href: "/a-i-r-o-n/controls-automation",
     description:
-      "See how front-line insight becomes preserved, routed, and reusable instead of disappearing.",
+      "See how continuous reality capture, boundary discipline, and live truth flow into protected memory.",
   },
   {
-    title: "Training",
-    href: "https://training.dingfelder.co/",
+    title: "Training Philosophy",
+    href: "/a-i-r-o-n/training-philosophy",
     description:
-      "See how approved lessons can become structured training instead of accidental relearning.",
+      "See how preserved lessons, identical training truth, and real operating memory stay connected.",
   },
   {
-    title: "Contact / Discovery",
-    href: "/a-i-r-o-n/contact",
+    title: "C.A.T.A.S.T.R.O.P.H.E.™",
+    href: "/a-i-r-o-n/catastrophe",
     description:
-      "Start a conversation about memory architecture, preserved lessons, and fault library structure.",
+      "See how preserved records, live guidance, and trusted recovery memory matter when abnormal events form.",
   },
 ];
 
@@ -113,21 +123,19 @@ export default function VaultPage(): JSX.Element {
   return (
     <SiteLayout currentPath="/a-i-r-o-n/vault" mainClassName="airon-vault-page">
       <HeroBlock
-        eyebrow="Truth stored. Memory preserved. Lessons never lost."
+        eyebrow="Custody. Context. Recall."
         title="V.A.U.L.T.®"
-        supportingLine="If it mattered once, it should still matter later."
-        subhead="V.A.U.L.T. is A.I.R.O.N.'s protected memory layer for truth, history, context, and recoverable lessons."
+        supportingLine="Protected memory for truth that still matters later."
+        subhead="V.A.U.L.T.® is the protected memory and data-management backbone of A.I.R.O.N. — preserving operational truth, searchable technical references, and institutional memory packets so the plant does not lose what it already paid to learn."
         body={
           <>
             <p>
-              It preserves what the process showed, what the system learned, and
-              how humans responded — not as a dead archive, but as usable
-              memory.
+              V.A.U.L.T.® is not a dead archive and it is not endless raw telemetry.
+              It is structured memory with custody, context, and recall.
             </p>
             <p>
-              V.A.U.L.T. is where A.I.R.O.N. stops merely reacting and starts
-              carrying hard-earned truth forward across shifts, years, people,
-              and decisions.
+              It keeps the right history available during normal operation, handoff,
+              troubleshooting, outage, recovery, and review — so truth survives long enough to become useful.
             </p>
           </>
         }
@@ -136,7 +144,7 @@ export default function VaultPage(): JSX.Element {
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "See Related Modules",
+          label: "See the Architecture Map",
           href: "/a-i-r-o-n/modules",
         }}
       >
@@ -144,26 +152,24 @@ export default function VaultPage(): JSX.Element {
           <div className="comparison-card">
             <h3>Custody</h3>
             <p>
-              Protected records, honest preservation, and truth that is not
-              quietly rewritten after the fact.
+              Protected records, evidence-grade continuity, and technical references that are not quietly rewritten after the fact.
             </p>
           </div>
           <div className="comparison-card">
             <h3>Recall</h3>
             <p>
-              The right lesson, signal, and repair history brought back when it
-              actually matters instead of buried in storage.
+              The right packet, drawing, lesson, or operating history surfaced again when the work actually needs it.
             </p>
           </div>
         </div>
       </HeroBlock>
 
       <TextIntroBlock
-        title="What V.A.U.L.T. is"
+        title="What V.A.U.L.T.® is"
         paragraphs={[
-          "V.A.U.L.T. is memory with custody, context, and recall.",
-          "It is not surveillance. It is not a dead archive. It is not endless raw telemetry. It is not memory without structure.",
-          "It is protected, structured memory designed to help plants stop losing what they already paid to learn.",
+          "V.A.U.L.T.® is the place where A.I.R.O.N. stops merely observing and starts preserving what matters.",
+          "It protects truth, preserves technical memory, and returns usable history to operators, technicians, engineers, and leadership when the plant needs clarity.",
+          "It is not surveillance. It is not record clutter. It is not memory without structure. It is protected, structured recall for real industrial life.",
         ]}
         sectionClassName="section section-alt"
       />
@@ -171,8 +177,8 @@ export default function VaultPage(): JSX.Element {
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="What V.A.U.L.T. preserves"
-            subtitle="The kinds of truth plants usually lose first should be the easiest truths to find again."
+            title="What V.A.U.L.T.® preserves"
+            subtitle="The truths plants lose first are usually the ones they most need back later."
             align="center"
           />
           <CapabilityGrid items={preservePoints} compact />
@@ -182,19 +188,19 @@ export default function VaultPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="Not every memory should weigh the same"
-            subtitle="Raw storage becomes clutter when everything is treated as equally important."
+            title="Protected boundary, not loose storage"
+            subtitle="V.A.U.L.T.® is part of how A.I.R.O.N. keeps memory useful without turning the plant into an entangled network problem."
             align="center"
           />
-          <CapabilityGrid items={memoryWeightPoints} compact />
+          <CapabilityGrid items={boundaryPoints} compact />
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="Data retention, archival value, and structured memory"
-            subtitle="V.A.U.L.T. is not built to hoard raw data forever. It is built to keep what grows in value."
+            title="Retention tiers and archival value"
+            subtitle="Raw data expires. Knowledge compounds. V.A.U.L.T.® keeps what grows in value."
             align="center"
           />
           <CapabilityGrid items={retentionPoints} compact />
@@ -204,74 +210,81 @@ export default function VaultPage(): JSX.Element {
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="IMP™: Institutional Memory Packets"
-            subtitle="Not just notes. Not just logs. History prepared for reuse."
+            title="Structured memory, not random history"
+            subtitle="Useful institutional memory joins machine truth, human action, atmosphere, and outcome into something that can be retrieved and reused."
+            align="center"
+          />
+          <CapabilityGrid items={structuredMemoryPoints} compact />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            title="IMP™ — Institutional Memory Packets"
+            subtitle="Not just notes. Not just logs. History prepared to teach, guide, and prevent repetition."
             align="center"
           />
           <CapabilityGrid items={impPoints} compact />
           <div className="doctrine-block top-gap">
             <p>
-              What one operator heard, what another confirmed, what maintenance
-              fixed, what A.I.R.O.N. proved — and what the operation never
-              forgot — can all be preserved as reusable institutional memory.
+              IMP™ packets make lived experience searchable, teachable, and reusable. They preserve what one person heard, what another confirmed, what maintenance fixed, and what A.I.R.O.N. proved.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Fault Library and Institutional Memory Viewer"
-            subtitle="V.A.U.L.T. becomes most valuable when the plant needs help right now, not when someone is leisurely browsing old records."
-            align="center"
-          />
-          <CapabilityGrid items={faultLibraryPoints} compact />
-        </div>
-      </section>
-
-      <TextIntroBlock
-        title="Why V.A.U.L.T. matters"
-        paragraphs={[
-          "Plants do not only lose production. They lose memory.",
-          "When people rotate, retire, transfer, or leave, hard-earned pattern recognition can disappear with them.",
-          "V.A.U.L.T. keeps the lessons that cost too much to relearn and makes them available again when today starts to look like a day the system has seen before.",
-        ]}
-        sectionClassName="section section-alt"
-      />
-
-      <section className="section">
-        <div className="container">
-          <SectionHeading
-            title="Custody, trust, and honest records"
-            subtitle="Truth has to survive long enough to become useful."
-            align="center"
-          />
-          <CapabilityGrid items={trustPoints} compact />
         </div>
       </section>
 
       <section className="section section-alt">
         <div className="container">
           <SectionHeading
-            title="V.A.U.L.T., Better Days, and Training"
-            subtitle="This is where participation turns into durable value."
+            title="Document and drawing library"
+            subtitle="When the plant needs the right reference, it should not have to guess which file name, revision, or folder path holds it."
             align="center"
           />
-          <CapabilityGrid items={loopPoints} compact />
-          <p className="support-line center">
-            Better Days captures the signal. V.A.U.L.T. preserves the truth.
-            Training teaches the lesson. The next associate learns it on
-            purpose instead of by accident on a bad day.
-          </p>
+          <CapabilityGrid items={libraryPoints} compact />
+        </div>
+      </section>
+
+      <TextIntroBlock
+        title="Why V.A.U.L.T.® matters during disruption"
+        paragraphs={[
+          "Plants do not only lose output. They lose memory, context, and confidence when the people who knew the story are absent, overwhelmed, or gone.",
+          "V.A.U.L.T.® keeps that loss from becoming normal. It gives the operation a protected place where truth survives long enough to become guidance.",
+          "When today starts to look like a day the system has seen before, V.A.U.L.T.® helps the plant remember sooner and recover cleaner.",
+        ]}
+        sectionClassName="section"
+      />
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="Custody, trust, and evidence-grade records"
+            subtitle="If the record can be quietly changed, the truth does not last very long."
+            align="center"
+          />
+          <CapabilityGrid items={trustPoints} compact />
         </div>
       </section>
 
       <section className="section">
         <div className="container">
           <SectionHeading
-            title="What V.A.U.L.T. can do"
-            subtitle="Protected, structured memory with custody, context, and recall."
+            title="How V.A.U.L.T.® keeps learning alive"
+            subtitle="This is where signals, truth capture, preserved memory, and teachable recovery stop living as separate systems."
+            align="center"
+          />
+          <CapabilityGrid items={loopPoints} compact />
+          <p className="support-line center">
+            Better Days captures the signal. V.A.U.L.T.® preserves the truth. Training teaches the lesson. Retrieval brings the right memory back to the right person at the right time.
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-alt">
+        <div className="container">
+          <SectionHeading
+            title="What V.A.U.L.T.® can do"
+            subtitle="Protected memory with custody, context, recall, and practical usefulness."
             align="center"
           />
           <CapabilityGrid items={capabilityPoints} compact />
@@ -281,17 +294,17 @@ export default function VaultPage(): JSX.Element {
       <TextIntroBlock
         title="Position statement"
         paragraphs={[
-          "V.A.U.L.T. is not surveillance, and it is not a dead archive.",
-          "It is protected, structured memory with custody, context, and recall — built so truth lasts and useful knowledge compounds.",
+          "V.A.U.L.T.® is not a surveillance tool and it is not passive storage.",
+          "It is protected, structured memory that keeps technical references trustworthy, preserves operating truth, and returns useful history when the work needs it most.",
           "Data remembers. V.A.U.L.T. learns.",
         ]}
-        sectionClassName="section section-alt"
+        sectionClassName="section"
       />
 
       <RelatedLinksBlock
         title="Related A.I.R.O.N. pages"
         items={relatedPages}
-        supportingLine="Truth. Custody. Context. Recall. Better work tomorrow."
+        supportingLine="Truth preserved. Context retained. Memory returned when it matters."
       />
 
       <CTAFooterBand
@@ -301,8 +314,8 @@ export default function VaultPage(): JSX.Element {
           href: "/a-i-r-o-n/contact",
         }}
         secondaryCTA={{
-          label: "Explore Continuous Improvement",
-          href: "/a-i-r-o-n/continuous-improvement",
+          label: "Explore Modules",
+          href: "/a-i-r-o-n/modules",
         }}
         supportingLine="If it mattered once, it should still matter later."
       />
