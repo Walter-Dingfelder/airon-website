@@ -65,6 +65,11 @@ const quickJumpGroups: QuickJumpGroup[] = [
         description: "Protect life, carry truth, and guide recovery when automation is degraded or gone.",
       },
       {
+        label: "S.W.A.T.",
+        href: "/a-i-r-o-n/swat",
+        description: "See the human response layer where safety, skill, and intelligence converge to eliminate waste in real time.",
+      },
+      {
         label: "Better Days",
         href: "/a-i-r-o-n/better-days",
         description: "Route ideas, concerns, and accountability so issues are seen, tracked, and answered.",

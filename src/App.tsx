@@ -26,6 +26,7 @@ import ContinuousImprovementPage from "./pages/a-i-r-o-n/continuous-improvement"
 import BetterDaysPage from "./pages/a-i-r-o-n/better-days";
 import PredictiveDiagnosticsPage from "./pages/a-i-r-o-n/predictive-diagnostics";
 import TrainingPhilosophyPage from "./pages/a-i-r-o-n/training-philosophy";
+import SwatPage from "./pages/a-i-r-o-n/swat";
 
 function normalizePath(pathname: string): string {
   if (!pathname) return "/";
@@ -90,6 +91,8 @@ export default function App(): JSX.Element {
       return <OneTouchStartupPage />;
     case "/a-i-r-o-n/catastrophe":
       return <CatastrophePage />;
+    case "/a-i-r-o-n/swat":
+      return <SwatPage />;
     case "/a-i-r-o-n/industrial-campus":
       return <IndustrialCampusPage />;
     case "/a-i-r-o-n/play-your-work":
