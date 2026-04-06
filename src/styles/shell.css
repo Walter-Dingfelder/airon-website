@@ -17,11 +17,27 @@
   align-items: center;
 }
 
+.header-brand-cluster {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
 .brand-lockup {
   display: inline-flex;
   flex-direction: column;
   gap: 0.15rem;
   min-width: max-content;
+}
+
+.header-quick-jump-mobile {
+  display: none;
+  flex: 0 0 auto;
+}
+
+.nav-item-quick-jump-desktop {
+  display: list-item;
 }
 
 .brand-name {
@@ -593,6 +609,21 @@
   .header-inner {
     grid-template-columns: 1fr;
     padding: var(--space-4) 0;
+  }
+
+  .header-brand-cluster {
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .header-quick-jump-mobile {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-item-quick-jump-desktop {
+    display: none;
   }
 
   .site-nav {
