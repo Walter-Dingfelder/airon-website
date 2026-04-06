@@ -248,10 +248,66 @@
 }
 
 .quick-jump-group {
+  --quick-jump-trace: rgba(115, 169, 255, 0.42);
+  --quick-jump-trace-strong: rgba(115, 169, 255, 0.72);
+  --quick-jump-wash: rgba(115, 169, 255, 0.07);
+  --quick-jump-wash-strong: rgba(115, 169, 255, 0.14);
+  --quick-jump-glow: rgba(115, 169, 255, 0.18);
+  --quick-jump-heading: #d7e6ff;
   padding: 1rem;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02)),
+    linear-gradient(90deg, var(--quick-jump-wash), rgba(255, 255, 255, 0.015) 42%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.025),
+    inset 5px 0 0 var(--quick-jump-trace);
+}
+
+.quick-jump-group-safety {
+  --quick-jump-trace: rgba(255, 179, 71, 0.52);
+  --quick-jump-trace-strong: rgba(255, 179, 71, 0.82);
+  --quick-jump-wash: rgba(255, 179, 71, 0.08);
+  --quick-jump-wash-strong: rgba(255, 179, 71, 0.18);
+  --quick-jump-glow: rgba(255, 179, 71, 0.2);
+  --quick-jump-heading: #ffe1ad;
+}
+
+.quick-jump-group-uptime {
+  --quick-jump-trace: rgba(80, 214, 177, 0.5);
+  --quick-jump-trace-strong: rgba(80, 214, 177, 0.78);
+  --quick-jump-wash: rgba(80, 214, 177, 0.08);
+  --quick-jump-wash-strong: rgba(80, 214, 177, 0.16);
+  --quick-jump-glow: rgba(80, 214, 177, 0.19);
+  --quick-jump-heading: #c8fff0;
+}
+
+.quick-jump-group-system {
+  --quick-jump-trace: rgba(104, 145, 255, 0.54);
+  --quick-jump-trace-strong: rgba(104, 145, 255, 0.82);
+  --quick-jump-wash: rgba(104, 145, 255, 0.08);
+  --quick-jump-wash-strong: rgba(104, 145, 255, 0.17);
+  --quick-jump-glow: rgba(104, 145, 255, 0.2);
+  --quick-jump-heading: #d4e0ff;
+}
+
+.quick-jump-group-training {
+  --quick-jump-trace: rgba(182, 123, 255, 0.5);
+  --quick-jump-trace-strong: rgba(182, 123, 255, 0.8);
+  --quick-jump-wash: rgba(182, 123, 255, 0.08);
+  --quick-jump-wash-strong: rgba(182, 123, 255, 0.16);
+  --quick-jump-glow: rgba(182, 123, 255, 0.2);
+  --quick-jump-heading: #e8d6ff;
+}
+
+.quick-jump-group-doctor {
+  --quick-jump-trace: rgba(255, 134, 82, 0.5);
+  --quick-jump-trace-strong: rgba(255, 134, 82, 0.82);
+  --quick-jump-wash: rgba(255, 134, 82, 0.08);
+  --quick-jump-wash-strong: rgba(255, 134, 82, 0.17);
+  --quick-jump-glow: rgba(255, 134, 82, 0.2);
+  --quick-jump-heading: #ffd7c7;
 }
 
 .quick-jump-group-head {
@@ -260,6 +316,7 @@
 
 .quick-jump-group-title {
   margin: 0;
+  color: var(--quick-jump-heading);
   font-size: 1rem;
 }
 
@@ -277,24 +334,54 @@
 }
 
 .quick-jump-link {
+  position: relative;
   display: grid;
   gap: 0.35rem;
   padding: 0.85rem 0.9rem;
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+    linear-gradient(90deg, var(--quick-jump-wash), rgba(255, 255, 255, 0.015) 40%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+    inset 4px 0 0 var(--quick-jump-trace);
+  overflow: hidden;
   transition:
     transform 0.16s ease,
     border-color 0.16s ease,
-    background 0.16s ease;
+    background 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.quick-jump-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px transparent;
+  transition: box-shadow 0.16s ease;
 }
 
 .quick-jump-link:hover,
 .quick-jump-link:focus-visible,
 .quick-jump-link.active {
   transform: translateY(-1px);
-  border-color: rgba(115, 169, 255, 0.35);
-  background: rgba(115, 169, 255, 0.08);
+  border-color: var(--quick-jump-trace-strong);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.025)),
+    linear-gradient(90deg, var(--quick-jump-wash-strong), rgba(255, 255, 255, 0.02) 46%);
+  box-shadow:
+    0 12px 28px var(--quick-jump-glow),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+    inset 4px 0 0 var(--quick-jump-trace-strong);
+}
+
+.quick-jump-link:hover::after,
+.quick-jump-link:focus-visible::after,
+.quick-jump-link.active::after {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .quick-jump-link-title-row {
@@ -307,6 +394,7 @@
   color: var(--text);
   font-weight: 700;
   font-size: 0.94rem;
+  letter-spacing: 0.01em;
 }
 
 .quick-jump-link-external {

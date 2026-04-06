@@ -16,9 +16,12 @@ type QuickJumpLink = {
   external?: boolean;
 };
 
+type QuickJumpTone = "safety" | "uptime" | "system" | "training" | "doctor";
+
 type QuickJumpGroup = {
   title: string;
   intro: string;
+  tone: QuickJumpTone;
   links: QuickJumpLink[];
 };
 
@@ -48,6 +51,7 @@ const navItems: NavItem[] = [
 const quickJumpGroups: QuickJumpGroup[] = [
   {
     title: "Protect people and respond fast",
+    tone: "safety",
     intro: "Start here when the priority is human safety, abnormal response, or disciplined escalation.",
     links: [
       {
@@ -74,6 +78,7 @@ const quickJumpGroups: QuickJumpGroup[] = [
   },
   {
     title: "Keep equipment running",
+    tone: "uptime",
     intro: "Use these pages when the goal is prediction, startup discipline, controls, and machine continuity.",
     links: [
       {
@@ -105,6 +110,7 @@ const quickJumpGroups: QuickJumpGroup[] = [
   },
   {
     title: "Understand the whole system",
+    tone: "system",
     intro: "Use these pages when you need the architecture, the doctrine, or the reason the system exists.",
     links: [
       {
@@ -136,6 +142,7 @@ const quickJumpGroups: QuickJumpGroup[] = [
   },
   {
     title: "Training and workforce readiness",
+    tone: "training",
     intro: "Use these pages when the goal is readiness, familiarization, guided repetition, and skill activation.",
     links: [
       {
@@ -163,6 +170,7 @@ const quickJumpGroups: QuickJumpGroup[] = [
   },
   {
     title: "Specialist machine help",
+    tone: "doctor",
     intro: "Start here when you know the issue needs a Doctor, even if you do not know which one yet.",
     links: [
       {
@@ -368,7 +376,10 @@ export default function Header({
 
             <div className="quick-jump-scroll">
               {quickJumpGroups.map((group) => (
-                <section key={group.title} className="quick-jump-group">
+                <section
+                  key={group.title}
+                  className={`quick-jump-group quick-jump-group-${group.tone}`}
+                >
                   <div className="quick-jump-group-head">
                     <h3 className="quick-jump-group-title">{group.title}</h3>
                     <p className="quick-jump-group-intro">{group.intro}</p>
@@ -382,7 +393,7 @@ export default function Header({
                         <a
                           key={link.href}
                           href={link.href}
-                          className={`quick-jump-link${isActive ? " active" : ""}`}
+                          className={`quick-jump-link quick-jump-link-${group.tone}${isActive ? " active" : ""}`}
                           target={link.external ? "_blank" : undefined}
                           rel={link.external ? "noreferrer noopener" : undefined}
                           onClick={() => setIsQuickJumpOpen(false)}
