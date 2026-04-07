@@ -31,7 +31,7 @@ type HeaderProps = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "/a-i-r-o-n" },
+  { label: "Home", href: "https://dingfelder.co" },
   { label: "Modules", href: "/a-i-r-o-n/modules" },
   { label: "Campus", href: "/a-i-r-o-n/industrial-campus" },
   {
@@ -291,9 +291,9 @@ export default function Header({
   }, []);
 
   return (
-    <header className="site-header" role="banner">
+    <header className={`site-header${isQuickJumpOpen ? " quick-jump-open" : ""}`} role="banner">
       <div className="container header-inner">
-        <a className="brand-lockup" href="/a-i-r-o-n" aria-label="A.I.R.O.N. home">
+        <a className="brand-lockup" href="https://dingfelder.co" aria-label="Dingfelder Enterprises home">
           <span className="brand-name">A.I.R.O.N.™</span>
           <span className="brand-support">Pronounced “Iron”</span>
         </a>
