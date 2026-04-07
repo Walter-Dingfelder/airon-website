@@ -31,7 +31,7 @@ type HeaderProps = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Home", href: "https://dingfelder.co" },
+  { label: "Home", href: "https://dingfelder.co", external: true },
   { label: "Modules", href: "/a-i-r-o-n/modules" },
   { label: "Campus", href: "/a-i-r-o-n/industrial-campus" },
   {
@@ -291,9 +291,9 @@ export default function Header({
   }, []);
 
   return (
-    <header className={`site-header${isQuickJumpOpen ? " quick-jump-open" : ""}`} role="banner">
+    <header className="site-header" role="banner">
       <div className="container header-inner">
-        <a className="brand-lockup" href="https://dingfelder.co" aria-label="Dingfelder Enterprises home">
+        <a className="brand-lockup" href="https://dingfelder.co" aria-label="Return to Dingfelder home">
           <span className="brand-name">A.I.R.O.N.™</span>
           <span className="brand-support">Pronounced “Iron”</span>
         </a>
@@ -349,7 +349,7 @@ export default function Header({
         </nav>
 
         {showHeaderCTA ? (
-          <a className="btn btn-primary header-cta" href="/a-i-r-o-n/contact">
+          <a className={`btn btn-primary header-cta${isQuickJumpOpen ? " header-cta-hidden-mobile" : ""}`} href="/a-i-r-o-n/contact">
             Start Discovery
           </a>
         ) : null}

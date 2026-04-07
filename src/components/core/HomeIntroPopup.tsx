@@ -3,7 +3,7 @@ import popupArtwork from "../../assets/workforce-skill-boost-popup.webp";
 
 const INTRO_POPUP_STORAGE_KEY = "airon-home-intro-dismissed-at";
 const INTRO_POPUP_DISMISS_HOURS = 24;
-const SHOW_INTRO_POPUP_ALWAYS = true;
+const SHOW_INTRO_POPUP_ALWAYS = false;
 const ROBLOX_URL = "";
 
 function shouldShowPopup(): boolean {
@@ -113,10 +113,6 @@ export default function HomeIntroPopup(): JSX.Element | null {
               </a>
             </p>
           ) : null}
-
-          <p className="intro-popup-note intro-popup-note-compact">
-            Development mode is active. This popup is currently set to appear on every homepage visit so we can catch layout issues before production.
-          </p>
         </div>
       </div>
     </div>
